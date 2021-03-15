@@ -1,0 +1,9 @@
+{
+	"Nom":"Harold's Quest 2",
+
+	"Version":"1.0",
+
+	"Auteur":"Julien",
+
+	"Desc":"Le seul et l'unique !",
+}

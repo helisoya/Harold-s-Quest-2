@@ -1,0 +1,106 @@
+{
+	"Test1": {
+		"Voix":None,
+		"Decor":"river",
+		"PersoImg":"Harold",
+		"CustomPlacement":[200,229],
+		"Mus":None,
+		"Perso":"Hérold",
+		"PersoCouleur":"#008080",
+		"Dialogue":"C'est moi, Harold le Grand.",
+		"Choix":{
+			"Choix1":("Salut","Test2"),
+		},
+		"Extra":[],
+	},
+	
+	"Test2": {
+		"Voix":"V_1",
+		"Decor":"TV",
+		"PersoImg":"Harold_Lit",
+		"CustomPlacement":[200,229],
+		"Mus":None,
+		"Perso":"Harald",
+		"PersoCouleur":"#000000",
+		"Dialogue":"Tu veut reecouter ?",
+		"Choix":{
+			"Choix1":("NON","Test3"),
+			"Choix2":("OUI","Test1"),
+		},
+		"Extra":[],
+	},
+	
+	"Test3": {
+		"Voix":"V_2",
+		"Decor":"TV",
+		"PersoImg":"Harold_Secret",
+		"CustomPlacement":[200,229],
+		"Mus":None,
+		"Perso":"Harald",
+		"PersoCouleur":"#000080",
+		"Dialogue":"OK...",
+		"Choix":{
+		},
+		"Extra":[],
+	},
+
+	"Test4": {
+		"Voix":None,
+		"Decor":"Snow",
+		"PersoImg":"Garde",
+		"CustomPlacement":[200,229],
+		"Mus":"Menu",
+		"Perso":"Dorito",
+		"PersoCouleur":"#8000ff",
+		"Dialogue":"Un Gateau ? !Player, il te faut 10 credits pour cela !",
+		"Choix":{
+			"Choix1":("Cool","Test5"),
+		},
+		"Extra":["CreateReaction('!','red')"],
+	},
+
+	"Test5": {
+		"Voix":None,
+		"Decor":"Snow",
+		"PersoImg":"Rickey",
+		"CustomPlacement":[200,215],
+		"Mus":None,
+		"Perso":"Mickey",
+		"PersoCouleur":"#8000ff",
+		"Dialogue":"C'est une blague ! Tu va mourir !",
+		"Choix":{
+			"Choix1":("Euh...","Test6"),
+		},
+		"Extra":[],
+	},
+
+	"Test6": {
+		"Voix":None,
+		"Decor":"Snow",
+		"PersoImg":"Rick0",
+		"CustomPlacement":[200,215],
+		"Mus":None,
+		"Perso":"Garde",
+		"PersoCouleur":"#8000ff",
+		"Dialogue":"Il a raison ! Meurt !",
+		"Choix":{
+			"Choix1":("Euh...","Test1"),
+		},
+		"Extra":[],
+	},
+
+	"Test7": {
+		"Voix":None,
+		"Decor":"Snow",
+		"PersoImg":"Rickey_Fou",
+		"CustomPlacement":[200,215],
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"#8000ff",
+		"Dialogue":"Wow...Regarde cette neige...",
+		"Choix":{
+			"Choix1":("...","Test4"),
+		},
+		"Extra":["ShakeScreen(0,5,4)"],
+	},
+}
