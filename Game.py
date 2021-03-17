@@ -1,17 +1,12 @@
 from Engine import *
-from Cerf import *
+from Pages import *
 from Livre import *
 
 from random import *
 import os
 
 Init()
-#Apparition()
 RenameWindow("Harold's Quest 2")
-#TableauSuivant("Test7")
-#TableauSuivant("§_Titre")
-
-
 
 
 
@@ -26,7 +21,7 @@ def NewGame(event):
     menu.pack_forget()
     Apparition()
     AddCustomMenu()
-    TableauSuivant("§_Titre")
+    TableauSuivant("?_Prologue")
 
 
 def LoadSave(event):
@@ -52,8 +47,10 @@ menu.pack()
 curr = 0
 
 def StartScreenNormal():
-    menu.delete("egg")
     global curr
+    if curr == 0:
+        menu.delete("egg")
+        SetMusic("Menu")
     if 0 <= curr <= 50:
         menu.move("t",0,1)
     if 50 <= curr <= 100:

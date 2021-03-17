@@ -1,9 +1,9 @@
 {
 	"Nom":"Harold's Quest 2",
 
-	"Version":"1.0",
+	"Version":"0.1",
 
-	"Auteur":"Julien",
+	"Auteur":"Julien, Mathis, Corentin",
 
-	"Desc":"Le seul et l'unique !",
+	"Desc":"Ceci est une description.",
 }

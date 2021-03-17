@@ -1,0 +1,24 @@
+{
+
+	"?_Prologue": {
+	"Titre":"Prologue",
+    	"Suite":"Intro_1",
+	"Mus":None,
+	},
+
+
+	"Intro_1": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Il n'y a rien à voir pour le moment.",
+		"Choix":{
+		},
+		"Extra":[],
+	},
+	
+}
