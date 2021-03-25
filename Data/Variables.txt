@@ -1,4 +1,31 @@
 { 
+
+    "quest":{
+    	"type":"int",
+    	"valeur":0,
+    },
+
+    "mapOpened":{
+    	"type":"bool",
+    	"valeur":False,
+    },
+
+    "canMove":{
+    	"type":"bool",
+    	"valeur":False,
+    },
+
+    "ptmoral":{
+    	"type":"int",
+    	"valeur":0,
+    },
+
+    "difficulte":{
+    	"type":"int",
+    	"valeur":1,
+    },
+
+
     "page1":{
     	"type":"bool",
     	"valeur":False,
@@ -31,6 +58,9 @@
     	"type":"bool",
     	"valeur":False,
     },
+
+
+
 
     "dic_harold":{
     	"type":"bool",
@@ -80,7 +110,17 @@
     	"type":"bool",
     	"valeur":False,
     },
+    "dic_chezchasseur":{
+    	"type":"bool",
+    	"valeur":False,
+    },
     "dic_tournoir":{
+    	"type":"bool",
+    	"valeur":False,
+    },
+
+
+    "card_harold":{
     	"type":"bool",
     	"valeur":False,
     },

@@ -1,0 +1,19 @@
+{	
+	"ChezChasseur_Arrive": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je suis au 3 rue du Merle, que vais-je faire ?",
+		"Choix":{
+			"Choix1":("Aller voir le Chasseur","!_ChezChasseur_Chasseur"),
+			"Choix2":("Aller derrière la maison","ChezChasseur_Derriere"),
+		},
+		"Extra":["ModifVar('dic_chezchasseur',True)","ModifVar('canMove',True)"],
+	},
+	
+}

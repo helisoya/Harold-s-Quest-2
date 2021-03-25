@@ -1,0 +1,99 @@
+{
+
+	"ChezHarold_ReveilEasterEgg_1": {
+		"Voix":None,
+		"Decor":"ChezHarold_EasterEgg",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'entre dans une piece étrange.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_ReveilEasterEgg_2"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_ReveilEasterEgg_2": {
+		"Voix":None,
+		"Decor":"ChezHarold_EasterEgg",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"???",
+		"PersoCouleur":"green",
+		"Dialogue":"He He He...",
+		"Choix":{
+			"Choix1":(">","ChezHarold_ReveilEasterEgg_3"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_ReveilEasterEgg_3": {
+		"Voix":None,
+		"Decor":"ChezHarold_EasterEgg",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"Je me tourne et...",
+		"Choix":{
+			"Choix1":(">","ChezHarold_ReveilEasterEgg_4"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_ReveilEasterEgg_4": {
+		"Voix":None,
+		"Decor":"ChezHarold_EasterEgg",
+		"PersoImg":"Harold_Hurt_Secret",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Ah ! !Player ! Que faites-vous ici !",
+		"Choix":{
+			"Choix1":(">","ChezHarold_ReveilEasterEgg_5"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_ReveilEasterEgg_5": {
+		"Voix":None,
+		"Decor":"ChezHarold_EasterEgg",
+		"PersoImg":"Harold_Hurt_Secret",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Sortez ! Vite ! Et ne revenez pas !",
+		"Choix":{
+			"Choix1":(">","ChezHarold_ReveilEasterEgg_6"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_ReveilEasterEgg_6": {
+		"Voix":None,
+		"Decor":"ChezHarold_EasterEgg",
+		"PersoImg":"Harold_Hurt_Secret",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"Je sort immédiatement de la piece et je m'en vais.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Reveil_8"),
+		},
+		"Extra":[],
+	},
+	
+}

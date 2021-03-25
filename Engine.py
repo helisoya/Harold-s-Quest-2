@@ -3,9 +3,10 @@
 #-------------------------------------------------------------
 #----------------- !!! NE PAS MODIFIER !!! -------------------
 
-Engine_Version = "3.5.4" # Version du Moteur
+Engine_Version = "3.6.1" # Version du Moteur
 
 from tkinter import *
+from tkinter import simpledialog
 from time import *
 from random import *
 import pygame
@@ -47,6 +48,10 @@ Dic_Variables = {
     "type":"_",
     "valeur":None,},
 
+    "Skiped":{
+    "type":"bool",
+    "valeur":False,},
+
     "IsUsingSpeak":{
     "type":"bool",
     "valeur":False,},
@@ -82,6 +87,10 @@ Next1 = Button(fenetre, text=">",overrelief="groove")
 Next2 = Button(fenetre, text=">",overrelief="groove")
 Next3 = Button(fenetre, text=">",overrelief="groove")
 Next4 = Button(fenetre, text=">",overrelief="groove")
+
+
+
+
 
 
 def RenameWindow(New):
@@ -201,15 +210,12 @@ def SetMusic(Mus):
 
     if pygame.mixer.get_init() != None:
         if Mus != None:
-
             if type(Mus) != str:
                 CrashReport("Erreur : "+str(Mus)+" n'est pas une chaine de caractères")
-            
-            if Dic_Variables["CurrentMusic"] != Mus:
+            if GetVar("CurrentMusic") != Mus or not CBGM.get_busy():
                 CBGM.set_volume(GetVar("MusicVolume"))
                 if not Mus in D_Data["BGM"].keys():
                     CrashReport("Erreur : "+Mus+" n'est pas un fichier audio répertorié")
-                    
                 ModifVar("CurrentMusic",Mus)
                 CBGM.fadeout(200)
                 CBGM.play(D_Data["BGM"][Mus],-1)
@@ -245,7 +251,7 @@ def SetDialogue(Texte,Id):
         TypeWriterEffect(0,Texte,Id)
 
 def ImageSetUseSpeak(Image):
-    if "speak" in list(D_Data["Persos"][Image].keys()):
+    if "speak" in list(D_Data["Persos"][Image].keys()) and D_Tableaux[GetVar("Current")]["UseSpeak"] == True:
         return True
     return False
 
@@ -260,6 +266,12 @@ def SetTitre(Text,Id):
     #Visuel.itemconfigure("Text",text=Text)
     TypeWriterEffectTitle(0,Text,Id)
 
+def SkipText():
+    Cvoix.fadeout(1)
+    txt = D_Tableaux[GetVar("Current")]["Dialogue"].replace("!Player",GetVar("PlayerName"))
+    Visuel.itemconfigure("Dialog",text=txt)
+    ModifVar("Skiped",True)
+
 def TypeWriterEffect(counter,Text,Id):
     """
 
@@ -267,7 +279,7 @@ def TypeWriterEffect(counter,Text,Id):
 
     """
     CorrectId = GetVar("Current")
-    if counter <= len(Text) and Id == GetVar("TableauId"):
+    if counter <= len(Text) and Id == GetVar("TableauId") and not GetVar("Skiped"):
         Beep(37,1)
         Visuel.itemconfigure("Dialog",text=Text[:counter])
         
@@ -285,12 +297,13 @@ def TypeWriterEffect(counter,Text,Id):
                      
         fenetre.after(GetVar("TWESpeed"), lambda: TypeWriterEffect(counter+1,Text,Id))
     elif Id == GetVar("TableauId"):
+        SetFunction(D_Tableaux[GetVar("Current")]["Choix"])
         if not D_Tableaux[CorrectId]["PersoImg"] == None:
             if type(D_Data["Persos"][D_Tableaux[CorrectId]["PersoImg"]]) == dict:
                 if ImageSetUseSpeak(D_Tableaux[CorrectId]["PersoImg"]):
                     fenetre.after(1, lambda: Visuel.itemconfigure("Perso",image=D_Data["Persos"][D_Tableaux[CorrectId]["PersoImg"]]["speak"]))
                     ModifVar("IsUsingSpeak",False)
-                    SetPersoVisuel(D_Tableaux[CorrectId]["PersoImg"])
+                    AnimationPersoVisuel(D_Tableaux[CorrectId]["PersoImg"],0)
 
 
 def TypeWriterEffectTitle(counter,Text,Id):
@@ -479,9 +492,11 @@ def SetPersoVisuel(Image):
         if not Image in D_Data["Persos"].keys():
             CrashReport("Erreur : "+Image+" n'est pas un fichier Image répertorié")
 
-        if type(D_Data["Persos"][Image]) == dict and "speak" in D_Data["Persos"][Image].keys():
+        if type(D_Data["Persos"][Image]) == dict and ImageSetUseSpeak(Image):
+            Visuel.itemconfigure("Perso",image=D_Data["Persos"][Image]["normal"][0])
             AnimationPersoVisuel(Image,0)
         elif type(D_Data["Persos"][Image]) == dict and not CheckSameImage(Image,"Perso"):
+            Visuel.itemconfigure("Perso",image=D_Data["Persos"][Image]["normal"][0])
             AnimationPersoVisuel(Image,0)
         elif type(D_Data["Persos"][Image]) != dict:
             Visuel.itemconfigure("Perso",image=D_Data["Persos"][Image])
@@ -518,12 +533,7 @@ def SetFunction(Dic):
     Next3.pack_forget()
     Next4.pack_forget()
 
-    Visuel.tag_unbind("Dialog_Box","<Button-1>")
-    Visuel.tag_unbind("Dialog_Perso","<Button-1>")
-    Visuel.tag_unbind("Dialog","<Button-1>")
-    Visuel.tag_unbind("Decor","<Button-1>")
-    Visuel.tag_unbind("Perso","<Button-1>")
-    Visuel.delete("Buttons")
+
 
     for num in range(1,len(Dic)+1):
         if num <= 4:
@@ -581,7 +591,7 @@ def Sauvegarde(file):
         with open(file, 'w',encoding="utf8") as configfile:
             New = {}
             for item in Dic_Variables:
-                if not item in ["TWESpeed","MusicVolume","VoiceVolume","SEVolume"]:
+                if not item in ["TWESpeed","MusicVolume","VoiceVolume","SEVolume","CurrentMusic","Skiped"]:
                     New[item] = Dic_Variables[item]
             configfile.write(str(New))
 
@@ -643,18 +653,27 @@ def TableauSuivant(Id):
     if not Id in D_Tableaux.keys():
         CrashReport("Erreur : "+Id+" n'est pas un tableau répertorié")
 
+    ModifVar("Skiped",False)
     ModifVar("Current",Id)
     ModifVar("TableauId",randint(-10**9,10**9)+GetVar("TableauId"))
     DeleteGUI("reaction")
     SetTitre("",GetVar("TableauId"))
     Visuel.itemconfigure("Choice_Img_Filter",state="hidden")
 
+    Visuel.tag_unbind("Dialog_Box","<Button-1>")
+    Visuel.tag_unbind("Dialog_Perso","<Button-1>")
+    Visuel.tag_unbind("Dialog","<Button-1>")
+    Visuel.tag_unbind("Decor","<Button-1>")
+    Visuel.tag_unbind("Perso","<Button-1>")
+    Visuel.delete("Buttons")
+
+
     if Id[0:2] == "§_": # Titre déroulant
         SetVoix(None)
         SetDecor(None)
         SetPersoVisuel(None)
         SetPerso("","black")
-        SetDialogue("",GetVar("TableauId"))
+        Visuel.itemconfigure("Dialog",text="")
         SetFunction({})
         SetMusic(D_Tableaux[Id]["Mus"])
         SetScrollingTitre(D_Tableaux[Id]["Text"],GetVar("TableauId"),D_Tableaux[Id]["Suite"])
@@ -669,7 +688,7 @@ def TableauSuivant(Id):
         SetDecor(None)
         SetPersoVisuel(None)
         SetPerso("","black")
-        SetDialogue("",GetVar("TableauId"))
+        Visuel.itemconfigure("Dialog",text="")
         SetFunction({})
         SetMusic(D_Tableaux[Id]["Mus"])
         SetTitre(D_Tableaux[Id]["Titre"],GetVar("TableauId"))
@@ -694,7 +713,10 @@ def TableauSuivant(Id):
         SetMusic(D_Tableaux[Id]["Mus"])
         SetPerso(D_Tableaux[Id]["Perso"],D_Tableaux[Id]["PersoCouleur"])
         SetDialogue(D_Tableaux[Id]["Dialogue"],GetVar("TableauId"))
-        SetFunction(D_Tableaux[Id]["Choix"])
+        Visuel.tag_bind("Dialog_Box","<Button-1>",Visuel.tag_bind("Dialog_Box","<Button-1>",lambda arg=0 : SkipText()))
+        Visuel.tag_bind("Dialog_Perso","<Button-1>",Visuel.tag_bind("Dialog_Perso","<Button-1>",lambda arg=0 : SkipText()))
+        Visuel.tag_bind("Dialog","<Button-1>",Visuel.tag_bind("Dialog","<Button-1>",lambda arg=0 : SkipText()))
+        #SetFunction(D_Tableaux[Id]["Choix"])
         for Action in D_Tableaux[Id]["Extra"]:
             eval(Action)
     Visuel.update()
@@ -873,6 +895,6 @@ def Init():
         CrashReport("Erreur : Dossier Data endommagé, vérifier l'intégrité des éléments ")
 
 
-
+from Functions import *
 
 #------------------- Fin Moteur --------------------

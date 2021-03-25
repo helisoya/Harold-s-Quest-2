@@ -1,0 +1,21 @@
+{
+
+	
+	"ChezChasseur_Derriere": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"brown",
+		"Dialogue":"Il n'y a rien ici.",
+		"Choix":{
+			"Choix1":(">","ChezChasseur_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	
+}

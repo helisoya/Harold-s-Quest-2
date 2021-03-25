@@ -1,0 +1,19 @@
+{	
+	"ChezHarold_Arrive": {
+		"Voix":None,
+		"Decor":"ChezHarold_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je suis chez Harold. Que vais-je faire ?",
+		"Choix":{
+			"Choix1":("Parler à Harold","ChezHarold_Harold"),
+			"Choix2":("Regarder la voiture","ChezHarold_Voiture_1"),
+		},
+		"Extra":["ModifVar('canMove',True)"],
+	},
+	
+}

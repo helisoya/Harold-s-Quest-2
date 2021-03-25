@@ -1,6 +1,10 @@
+# Boucle Principal + Menu par Julien
+
 from Engine import *
 from Pages import *
 from Livre import *
+from Cartes import *
+from MiniMap import *
 
 from random import *
 import os
@@ -8,27 +12,35 @@ import os
 Init()
 RenameWindow("Harold's Quest 2")
 
-
-
-
 def AddCustomMenu():
     Visuel.create_image(146,516,image=D_Data["Icons"]["pages"],tags="Pages_Button")
     Visuel.tag_bind("Pages_Button","<Button-1>",lambda arg=0:PagesWindow())
     Visuel.create_image(178,516,image=D_Data["Icons"]["livre"],tags="Dic_Button")
     Visuel.tag_bind("Dic_Button","<Button-1>",lambda arg=0:DicWindow())
+    Visuel.create_image(210,516,image=D_Data["Icons"]["card"],tags="Card_Button")
+    Visuel.tag_bind("Card_Button","<Button-1>",lambda arg=0:CardsWindow())
+    Visuel.create_image(242,516,image=D_Data["Icons"]["map"],tags="Map_Button")
+    Visuel.tag_bind("Map_Button","<Button-1>",lambda arg=0:MapWindow())
     
-def NewGame(event):
+def NewGame():
+    name = simpledialog.askstring("HQ2","Quel est votre nom ?")
+    if name != "":
+        ModifVar("PlayerName",name)
+    else:
+        ModifVar("PlayerName","Héro")
     menu.pack_forget()
     Apparition()
     AddCustomMenu()
     TableauSuivant("?_Prologue")
 
 
-def LoadSave(event):
+def LoadSave():
     menu.pack_forget()
     Apparition()
     AddCustomMenu()
     Chargement("save.sav")
+
+    
     
 img = PhotoImage(file="Data//Autres//HQ2.png")
 img2 = PhotoImage(file="Data//Autres//HQ2_white.png")
@@ -46,6 +58,29 @@ menu = Canvas(fenetre,width=400,height=300)
 menu.pack()
 curr = 0
 
+
+def SetUpDifficulty():
+    menu.delete("ng")
+    menu.delete("c")
+
+    menu.create_rectangle(25,205,125,225,fill="green",tags="t1")
+    menu.create_text(75,215,text="Facile",tags="t1")
+    menu.tag_bind("t1","<Button-1>",lambda arg=1:SetDifficulty(1))
+
+    menu.create_rectangle(150,205,250,225,fill="orange",tags="t2")
+    menu.create_text(200,215,text="Normal",tags="t2")
+    menu.tag_bind("t2","<Button-1>",lambda arg=2:SetDifficulty(2))
+
+    menu.create_rectangle(275,205,375,225,fill="red",tags="t3")
+    menu.create_text(325,215,text="Difficile",tags="t3")
+    menu.tag_bind("t3","<Button-1>",lambda arg=3:SetDifficulty(3))
+    
+
+def SetDifficulty(diff):
+    ModifVar("difficulte",diff)
+    NewGame()
+    
+
 def StartScreenNormal():
     global curr
     if curr == 0:
@@ -56,8 +91,8 @@ def StartScreenNormal():
     if 50 <= curr <= 100:
         menu.move("but",0,-2)
     elif curr == 101:
-        menu.tag_bind("ng","<Button-1>",NewGame)
-        menu.tag_bind("c","<Button-1>",LoadSave)
+        menu.tag_bind("ng","<Button-1>",lambda arg=0:SetUpDifficulty())
+        menu.tag_bind("c","<Button-1>",lambda arg=0:LoadSave())
 
     menu.update()
     if curr != 101:
@@ -149,7 +184,7 @@ def ChooseMenu():
             menu.create_image(200,150,image=img_fort_normal)
             menu.create_image(200,50,image=img,tags="t")
         else:
-            PlaySE("Cerf_1")
+            PlaySE("menu_laugh")
             menu.create_image(200,150,image=img_fort_vrai)
             menu.create_image(200,50,image=img5,tags="t")
         menu.create_rectangle(150,305,250,325,fill="red",tags=("but","ng"))

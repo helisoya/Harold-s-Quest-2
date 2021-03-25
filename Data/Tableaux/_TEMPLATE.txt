@@ -1,0 +1,23 @@
+{
+	"!_Test": {
+    	"DRecours":"Test7",
+    	"Evals":[
+        	("1 == 4","Test3"),
+		("1 == 5","Test2"),
+    	],
+	},
+
+
+	"§_Titre": {
+	"Text":"Salut \nAimez-vous ce texte ?\nMoi oui, enfin...\nC'est juste un joli texte pour vous parler...\n\nAussi pour vous vendre\n\n HARDOLD QUEST 2",
+    	"Suite":"?_Titre",
+	"Mus":None,
+	},
+
+	"?_Titre": {
+	"Titre":"Test Moteur",
+    	"Suite":"!_Test",
+	"Mus":None,
+	},
+}
+

@@ -1,3 +1,5 @@
+# Menu des Pages à collecter par Julien
+
 from tkinter import *
 from random import *
 from Engine import *

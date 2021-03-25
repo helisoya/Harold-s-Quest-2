@@ -1,3 +1,5 @@
+# Dictionnaire informatif par Julien
+
 from tkinter import *
 from Engine import *
 
@@ -119,6 +121,12 @@ def DicWindow():
             "nom":"4 rue du Cerf",
             "desc":"Ce chalet est le lieu de vie d'Harold, il y a vecu toute sa vie et il l'aime beaucoup. Parlez-lui de sa maison et il pourrait vous raconter pendant des journées entières son enfance.",
             "img":PhotoImage(master=livre,file="Data\\Autres\\Livre\\chezharold.png"),
+        },
+        "chezchasseur":{
+            "type":"lieu",
+            "nom":"3 rue du Merle",
+            "desc":"Cette maison est le lieu de vie d'un chasseur de Vlatyr. On raconte qu'il lui arrive de tirer sur des passants depuis sa fenêtre. C'est pour cela que personne ne s'aventure près de ce lieu.",
+            "img":PhotoImage(master=livre,file="Data\\Autres\\Livre\\chezchasseur.png"),
         },
         "tournoir":{
             "type":"lieu",

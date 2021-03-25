@@ -1,0 +1,66 @@
+{	
+	"ChezHarold_Voiture_1": {
+		"Voix":None,
+		"Decor":"ChezHarold_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je m'approche de la voiture d'Harold.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Voiture_2"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"ChezHarold_Voiture_2": {
+		"Voix":None,
+		"Decor":"ChezHarold_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"C'est une belle voiture blanche. Elle a l'air recente.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Voiture_3"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Voiture_3": {
+		"Voix":None,
+		"Decor":"ChezHarold_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"...",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Voiture_4"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Voiture_4": {
+		"Voix":None,
+		"Decor":"ChezHarold_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Elle est fermée, je ne peux pas l'utiliser.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+}

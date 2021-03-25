@@ -1,0 +1,244 @@
+{
+
+	"!_ChezChasseur_Chasseur": {
+    	"DRecours":"ChezChasseur_Chasseur_Normal",
+    	"Evals":[
+        	("GetVar('quest')==2","ChezChasseur_Chasseur_GetCard"),
+    	],
+	},
+
+	
+	"ChezChasseur_Chasseur_Normal": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"Chut ! Je suis en train de repérer des galinettes cendrées !",
+		"Choix":{
+			"Choix1":("Parlez-moi de vous","ChezChasseur_Chasseur_Topic1_1"),
+			"Choix2":("Pourquoi m'avoir attaqué ?","ChezChasseur_Chasseur_Topic2_1"),
+			"Choix3":("Rien (Partir)","ChezChasseur_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"ChezChasseur_Chasseur_GetCard": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"Chut ! Je suis en train de repérer des galinettes cendrées !",
+		"Choix":{
+			"Choix1":("Parlez-moi de vous","ChezChasseur_Chasseur_Topic1_1"),
+			"Choix2":("Pourquoi m'avoir attaqué ?","ChezChasseur_Chasseur_Topic2_1"),
+			"Choix3":("Connaissez-vous RickeyLand ?","ChezChasseur_Chasseur_Card_1"),
+			"Choix4":("Rien (Partir)","ChezChasseur_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	
+	"ChezChasseur_Chasseur_Topic1_1": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"Moi ? Je suis le plus grand chasseur de la province !",
+		"Choix":{
+			"Choix1":(">","ChezChasseur_Chasseur_Topic1_2"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezChasseur_Chasseur_Topic1_2": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"Aucune galinette cendrée ne m'a échappée ! Aucune ! Et c'est la même choses avec les humains !",
+		"Choix":{
+			"Choix1":(">","ChezChasseur_Chasseur_Topic1_3"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezChasseur_Chasseur_Topic1_3": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"Certains disent que je suis aveugle, mais c'est faux ! Je vois très bien les galinettes cendrées !",
+		"Choix":{
+			"Choix1":(">","!_ChezChasseur_Chasseur"),
+		},
+		"Extra":[],
+	},
+	
+	
+	"ChezChasseur_Chasseur_Topic2_1": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"Comment ? Je vous aurais tiré dessus ? C'est faux !",
+		"Choix":{
+			"Choix1":(">","ChezChasseur_Chasseur_Topic2_2"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezChasseur_Chasseur_Topic2_2": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"Hier, je chassais la galinette cendrée dans les bois. Il n'y a pas de doutes à cela !",
+		"Choix":{
+			"Choix1":(">","ChezChasseur_Chasseur_Topic2_3"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezChasseur_Chasseur_Topic2_3": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"Même si, je dois l'avouer... l'oiseau d'hier courait très vite. C'est très suspect !",
+		"Choix":{
+			"Choix1":(">","!_ChezChasseur_Chasseur"),
+		},
+		"Extra":[],
+	},
+	
+	
+	
+	"ChezChasseur_Chasseur_Card_1": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"RickoLand ? Non, je ne vois pas de quoi vous parlez. Je ne connais pas cet oiseau !",
+		"Choix":{
+			"Choix1":(">","ChezChasseur_Chasseur_Card_2"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezChasseur_Chasseur_Card_2": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"C'est un parc d'attractions au Nord, vous n'avez jamais entendu parlez de lui ?",
+		"Choix":{
+			"Choix1":(">","ChezChasseur_Chasseur_Card_3"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezChasseur_Chasseur_Card_3": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"Maintenant que vous le dites, j'ai ouie dire de cet endroit ! Ils m'ont même envoyé une carte de visite !",
+		"Choix":{
+			"Choix1":(">","ChezChasseur_Chasseur_Card_4"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezChasseur_Chasseur_Card_4": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"Mais je suis trop occupé pour y aller, j'ai des galinettes cendrées à chasser, moi !",
+		"Choix":{
+			"Choix1":(">","ChezChasseur_Chasseur_Card_5"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezChasseur_Chasseur_Card_5": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"Alors, prenez cette carte et partez ! Je dois chasser en paix.",
+		"Choix":{
+			"Choix1":(">","ChezChasseur_Chasseur_Card_6"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezChasseur_Chasseur_Card_5": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"brown",
+		"Dialogue":"Je peux acceder au parc maintenant. Allons-y !",
+		"Choix":{
+			"Choix1":(">","!_ChezChasseur_Chasseur"),
+		},
+		"Extra":["ModifVar('quest',3)"],
+	},
+	
+}

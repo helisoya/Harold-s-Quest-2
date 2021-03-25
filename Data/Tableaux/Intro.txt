@@ -9,16 +9,260 @@
 
 	"Intro_1": {
 		"Voix":None,
-		"Decor":None,
+		"Decor":"Intro_Mountain",
 		"PersoImg":None,
 		"CustomPlacement":None,
-		"Mus":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Il n'y a rien à voir pour le moment.",
+		"Dialogue":"Il était une fois, dans la lointaine province de Vlatyr, un terrible dragon.",
 		"Choix":{
+			"Choix1":(">","Intro_2"),
 		},
 		"Extra":[],
 	},
 	
+	"Intro_2": {
+		"Voix":None,
+		"Decor":"Intro_Braise",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Ce tyran sanguinaire, qui se faisair appeler le Seigneur Braise, terrorisait la population, il s'attaquait au femmes, aux enfants.",
+		"Choix":{
+			"Choix1":(">","Intro_3"),
+		},
+		"Extra":[],
+	},
+	
+	"Intro_3": {
+		"Voix":None,
+		"Decor":"Intro_Braise",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Mais un jour, un vaillant héro arriva et partit terrasser le dragon. Nul ne savait d'ou il venait.",
+		"Choix":{
+			"Choix1":(">","Intro_4"),
+		},
+		"Extra":[],
+	},
+	
+	"Intro_4": {
+		"Voix":None,
+		"Decor":"Intro_Braise_Normal",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Après moultes aventures, il arriva enfin à la forteresse du dragon. La forteresse Braise.",
+		"Choix":{
+			"Choix1":(">","Intro_5"),
+		},
+		"Extra":[],
+	},
+	
+	"Intro_5": {
+		"Voix":None,
+		"Decor":"Intro_Braise_Normal",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Il tua sans mal le seigneur Braise, et trouva même son trésor. La paix était revenu dans la province.",
+		"Choix":{
+			"Choix1":(">","Intro_6"),
+		},
+		"Extra":[],
+	},
+	
+	"Intro_6": {
+		"Voix":None,
+		"Decor":"Intro_Braise_Normal",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Mais personne n'est incorruptible. Il vit le trésor et fut tenté par le malin, il décida alors...",
+		"Choix":{
+			"Choix1":("De le voler","Intro_7_Vol"),
+			"Choix2":("De le rendre","Intro_7_Rend"),
+		},
+		"Extra":[],
+	},
+	
+	"Intro_7_Vol": {
+		"Voix":None,
+		"Decor":"Intro_Braise_Normal",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Cet energumène vola le trésor au lieu de le rendre à son propriétaire. C'était la fin d'une époque.",
+		"Choix":{
+			"Choix1":(">","Intro_8"),
+		},
+		"Extra":["ModifVar('ptmoral',-2)"],
+	},	
+	
+	"Intro_7_Rend": {
+		"Voix":None,
+		"Decor":"Intro_Braise_Normal",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Combattant les forces obscures qui le menaçait, il rendit le trésor à son propriétaire. Il fut remplit de joie et le Héro fut heureux en retour.",
+		"Choix":{
+			"Choix1":(">","Intro_8"),
+		},
+		"Extra":["ModifVar('ptmoral',2)"],
+	},	
+
+	"Intro_8": {
+		"Voix":None,
+		"Decor":"Intro_Braise_Normal",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Mais le Héro disparu après son exploit, il ne fut plus jamais vu après ces évenements dantesques.",
+		"Choix":{
+			"Choix1":(">","Intro_9"),
+		},
+		"Extra":[],
+	},	
+
+	"Intro_9": {
+		"Voix":None,
+		"Decor":"Intro_Braise_Normal",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Ce fut ainsi que finissa l'aventure épique de !Player. Mais la paix n'était pas revenu totalement pour autant.",
+		"Choix":{
+			"Choix1":(">","Intro_10"),
+		},
+		"Extra":[],
+	},
+	
+	"Intro_10": {
+		"Voix":None,
+		"Decor":"Intro_AfterMath",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Après la mort du seigneur braise, certaines personnes ont vu l'opportunité de s'emparer du chateau.",
+		"Choix":{
+			"Choix1":(">","Intro_11"),
+		},
+		"Extra":[],
+	},
+	
+	"Intro_11": {
+		"Voix":None,
+		"Decor":"Intro_AfterMath",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Mais une fois de plus, un vaillant héro arriva et empecha leur complot. Il disparu lui aussi, laissant derrière lui une journée folle.",
+		"Choix":{
+			"Choix1":(">","Intro_12"),
+		},
+		"Extra":[],
+	},	
+	
+	"Intro_12": {
+		"Voix":None,
+		"Decor":"Intro_Braise_Normal",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Un an passa et la paix était de retour. Les marchands voyagaient librement, les enfants pouvait jouer dehors sans crainte. Jusqu'à ce que...",
+		"Choix":{
+			"Choix1":(">","Intro_13"),
+		},
+		"Extra":[],
+	},	
+	
+	"Intro_13": {
+		"Voix":None,
+		"Decor":"Intro_Braise_Detruit",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Un terroriste inconnu arriva vers le chateau et le fit exploser. Elle fit des morts et des blessés, dans l'incompréhension totale.",
+		"Choix":{
+			"Choix1":(">","Intro_14"),
+		},
+		"Extra":[],
+	},		
+	
+	"Intro_14": {
+		"Voix":None,
+		"Decor":"Intro_Mountain",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Les évenements s'enchainèrent les uns après les autres, et le chaos reignait de nouveau dans la région. Une fois de plus...",
+		"Choix":{
+			"Choix1":(">","Intro_15"),
+		},
+		"Extra":[],
+	},
+	
+	"Intro_15": {
+		"Voix":None,
+		"Decor":"Intro_Mountain",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Intro",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Il était donc l'heure pour le héro de revenir, pour !Player de revenir. Vlatyr avait besoin d'un sauveur une dernière fois.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_1"),
+		},
+		"Extra":[],
+	},
+	
+
 }

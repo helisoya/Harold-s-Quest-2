@@ -1,0 +1,395 @@
+{
+
+	"IntroChasseur_1": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"...",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_2"),
+		},
+		"Extra":[],
+	},
+	
+	"IntroChasseur_2": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Ou suis-je ? J'ai perdu connaissance pendant un instant.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_3"),
+		},
+		"Extra":[],
+	},
+
+	"IntroChasseur_3": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"On dirait que je suis perdu dans une forêt, et il fait nuit.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_4"),
+		},
+		"Extra":[],
+	},
+	
+	"IntroChasseur_4": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je devrais trouver un refuge pour la nuit, avant de chercher la raison de ma presence ici.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_5"),
+		},
+		"Extra":[],
+	},
+	
+	"IntroChasseur_5": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je commence donc à partir et à chercher un refuge pour la nuit.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_6"),
+		},
+		"Extra":[],
+	},
+
+	"IntroChasseur_6": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"La lune me permet de voir clair dans la nuit. C'est très pratique pour avancer sans trébucher.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_7"),
+		},
+		"Extra":[],
+	},
+	
+	
+	"IntroChasseur_7": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"La forêt a l'air hostile, mais il n'y a personne pour m'attaquer.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_8"),
+		},
+		"Extra":[],
+	},
+	
+	"IntroChasseur_8": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Il n'y a personne dans cette forêt. Je n'ai rien à craindre.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_9"),
+		},
+		"Extra":[],
+	},
+	
+	"IntroChasseur_9": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je sens un bout de metal froid qui me touche le dos.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_10"),
+		},
+		"Extra":[],
+	},
+	
+	"IntroChasseur_10": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"Tu connait la différence entre une gallinete cendrée et un Homme en pleine nuit ?",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_11"),
+		},
+		"Extra":["ModifVar('dic_chasseur',True)"],
+	},
+	
+	"IntroChasseur_11": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":"Night",
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Euh... Ils ne se ressemblent pas ?",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_12"),
+		},
+		"Extra":[],
+	},
+	
+	"IntroChasseur_12": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"Ah bon ? Moi je vois pas la difference ! Meurt petit oiseau !",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_13"),
+		},
+		"Extra":[],
+	},
+	
+	"IntroChasseur_13": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":"Night",
+		"Perso":"",
+		"PersoCouleur":"brown",
+		"Dialogue":"Je commence à courir. Le chasseur me poursuit.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_MiniJeu"),
+		},
+		"Extra":[],
+	},
+	
+	"IntroChasseur_MiniJeu": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"brown",
+		"Dialogue":"INSERER MINI JEU 'COURSE POURSUITE AVEC CHASSEUR' .",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_15"),
+		},
+		"Extra":[],
+	},
+	
+	"IntroChasseur_15": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"",
+		"PersoCouleur":"brown",
+		"Dialogue":"...",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_16"),
+		},
+		"Extra":[],
+	},
+	
+	"IntroChasseur_16": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'ai réussi à semer le chasseur. Je suis en sécurité maintenant.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_17"),
+		},
+		"Extra":[],
+	},
+	
+	"IntroChasseur_17": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Vite, je doit trouver un refuge avant qu'il ne me retrouve.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_18"),
+		},
+		"Extra":[],
+	},
+
+	"IntroChasseur_18": {
+		"Voix":None,
+		"Decor":"Intro_Forest",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je continue donc d'avancer dans la forêt en espérant trouver un abri.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_19"),
+		},
+		"Extra":[],
+	},
+	
+	"IntroChasseur_19": {
+		"Voix":None,
+		"Decor":"Intro_Harold",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Après quelques minutes de marche, j'arrive vers un chalet familier.",
+		"Choix":{
+			"Choix1":(">","!_IntroChasseur_Check"),
+		},
+		"Extra":[],
+	},
+
+	"!_IntroChasseur_Check": {
+    	"DRecours":"IntroChasseur_20a",
+    	"Evals":[
+        	("GetVar('ptmoral') < 0","IntroChasseur_20b"),
+    	],
+	},
+
+	"IntroChasseur_20a": {
+		"Voix":None,
+		"Decor":"Intro_Harold",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"C'est la maison de celui qui m'a invoqué la dernière fois.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_21"),
+		},
+		"Extra":["ModifVar('dic_chezharold',True)"],
+	},
+	
+	"IntroChasseur_20b": {
+		"Voix":None,
+		"Decor":"Intro_Harold",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"C'est la maison de celui à qui j'ai volé la voiture !",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_21"),
+		},
+		"Extra":["ModifVar('dic_chezharold',True)"],
+	},
+	
+	"IntroChasseur_21": {
+		"Voix":None,
+		"Decor":"Intro_Harold",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Vais-je vraiment y aller ? Qui sait ce qu'il va me faire cette fois ci...",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_22"),
+		},
+		"Extra":["ModifVar('dic_chezharold',True)"],
+	},
+	
+	"IntroChasseur_22": {
+		"Voix":None,
+		"Decor":"Intro_Harold",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je n'ai pas vraiment le choix, je dois trouver un refuge pour cette nuit.",
+		"Choix":{
+			"Choix1":(">","IntroChasseur_23"),
+		},
+		"Extra":[],
+	},
+	
+	"IntroChasseur_23": {
+		"Voix":None,
+		"Decor":"Intro_Harold",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Night",
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je m'approche de la porte d'entrée et je frappe à la porte.",
+		"Choix":{
+			"Choix1":(">","IntroHarold_1"),
+		},
+		"Extra":[],
+	},
+
+}

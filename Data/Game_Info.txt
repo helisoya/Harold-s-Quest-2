@@ -1,9 +1,9 @@
 {
 	"Nom":"Harold's Quest 2",
 
-	"Version":"0.1",
+	"Version":"INDEV",
 
 	"Auteur":"Julien, Mathis, Corentin",
 
-	"Desc":"Ceci est une description.",
+	"Desc":"DESC",
 }

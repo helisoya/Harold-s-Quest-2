@@ -1,0 +1,140 @@
+{	
+	"ChezHarold_Harold": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Vous avez besoin de quelque chose, !Player ?",
+		"Choix":{
+			"Choix1":("Rappelez-moi ma mission","ChezHarold_Harold_Topic1_1"),
+			"Choix2":("Parlez-moi de la région","ChezHarold_Harold_Topic2_1"),
+			"Choix3":("Rien (Partir)","ChezHarold_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	
+	
+	
+
+	"ChezHarold_Harold_Topic1_1": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"!Player ! Vous devez aller à Rickeyland afin de retrouver mon livre !",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold_Topic1_2"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic1_2": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Si vous ne vous dépechez pas, qui sait ce qu'il va devenir !",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold_Topic1_3"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic1_3": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"C'est un livre de...cuisine ! Il m'est très cher car c'était un cadeau de mes petits enfants.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold_Topic1_4"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic1_4": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Alors dépéchez-vous, je vous en suplie ! Vous êtes mon seul espoir.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold"),
+		},
+		"Extra":[],
+	},
+
+
+
+
+
+	"ChezHarold_Harold_Topic2_1": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Nous sommes situé dans la province de Vlatyr, du nom de sa capitale régionale.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold_Topic2_2"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic2_2": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Elle est une provinces à l'Est des Provinces Unis de Kosky, dont la capitale est Aajotyr.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold_Topic2_3"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic2_3": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Au nord, il y a les raideurs du Nord. Au sud, les montagnards. A l'est Marklicht et à l'ouest Oremil.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold"),
+		},
+		"Extra":[],
+	},
+
+}

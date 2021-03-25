@@ -1,0 +1,19 @@
+{	
+	"RickeyLandEntree_Arrive": {
+		"Voix":None,
+		"Decor":"Parc_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je suis à l'entrée de RickeyLand, que vais-je faire ?",
+		"Choix":{
+			"Choix1":("Aller au guichet (PAS IMPLEMENTE)","RickeyLandEntree_Guichet"),
+			"Choix2":("Entrer dans RickeyLand","!_RickeyLandEntree_Entree"),
+		},
+		"Extra":["ModifVar('canMove',True)"],
+	},
+	
+}

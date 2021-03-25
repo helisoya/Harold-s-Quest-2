@@ -1,0 +1,170 @@
+{	
+
+	"?_NouveauDepart": {
+	"Titre":"Nouveau Depart",
+    	"Suite":"ChezHarold_Reveil_1",
+	"Mus":None,
+	},
+
+	"ChezHarold_Reveil_1": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"...",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Reveil_2"),
+		},
+		"Extra":["ModifVar('quest',1)"],
+	},
+
+	"ChezHarold_Reveil_2": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je suis prêt à partir maintenant.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Reveil_3"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Reveil_3": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je me demande ou est Harold, il ne m'a pas reveiller aujourd'hui.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Reveil_4"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Reveil_4": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Ce n'est pas grave, je devrais aller au parc le plus rapidement possible.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Reveil_5"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Reveil_5": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Si je veux obtenir le livre d'Harold, je doit être le premier à terminer les 4 attractions de RickeyLand.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Reveil_6"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Reveil_6": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je commence donc à partir de chez Harold.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Reveil_7"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Reveil_7": {
+		"Voix":None,
+		"Decor":"ChezHarold_Couloir",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je marche dans le couloir du chalet d'Harold.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Reveil_8"),
+		},
+		"Extra":["ClickEvent_ReveilEasterEgg()"],
+	},
+
+	"ChezHarold_Reveil_8": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var2_Page",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'arrive assez vite à l'entrée de la maison.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Reveil_9"),
+		},
+		"Extra":["ClickEvent_GetPageOne()"],
+	},
+	
+	
+	"ChezHarold_Reveil_9": {
+		"Voix":None,
+		"Decor":"ChezHarold_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Arrivé à l'exterieur, je me demande quoi faire.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Reveil_10"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Reveil_10": {
+		"Voix":None,
+		"Decor":"ChezHarold_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Utilisez l'icone de carte en bas à gauche afin de vous déplacer.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+}
