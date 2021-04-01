@@ -1,0 +1,34 @@
+{	
+	"RickeyLandWaldo_Pancarte_1": {
+		"Voix":None,
+		"Decor":"Parc_Quiz",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"'Perdants de l'attraction : Personne'.",
+		"Choix":{
+			"Choix1":(">","RickeyLandWaldo_Pancarte_2"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandWaldo_Pancarte_2": {
+		"Voix":None,
+		"Decor":"Parc_Quiz",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Cette attraction a l'air si simple...",
+		"Choix":{
+			"Choix1":(">","RickeyLandWaldo_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+}

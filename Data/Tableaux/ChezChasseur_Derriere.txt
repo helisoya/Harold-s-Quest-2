@@ -1,7 +1,14 @@
 {
 
+	"!_ChezChasseur_Derriere": {
+    	"DRecours":"ChezChasseur_Derriere_Normal",
+    	"Evals":[
+        	("GetVar('page2')==False","ChezChasseur_Derriere_Page"),
+    	],
+	},
+
 	
-	"ChezChasseur_Derriere": {
+	"ChezChasseur_Derriere_Normal": {
 		"Voix":None,
 		"Decor":"ChezChasseur",
 		"PersoImg":None,
@@ -15,6 +22,22 @@
 			"Choix1":(">","ChezChasseur_Arrive"),
 		},
 		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"ChezChasseur_Derriere_Page": {
+		"Voix":None,
+		"Decor":"ChezChasseur_Page",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"brown",
+		"Dialogue":"Il n'y a rien ici.",
+		"Choix":{
+			"Choix1":(">","ChezChasseur_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)","ClickEvent_GetPageTwo()"],
 	},
 	
 	

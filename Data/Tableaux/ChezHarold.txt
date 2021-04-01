@@ -12,6 +12,7 @@
 		"Choix":{
 			"Choix1":("Parler à Harold","ChezHarold_Harold"),
 			"Choix2":("Regarder la voiture","ChezHarold_Voiture_1"),
+			"Choix3":("Regarder le papier au sol","ChezHarold_Papier_1"),
 		},
 		"Extra":["ModifVar('canMove',True)"],
 	},

@@ -1,0 +1,19 @@
+{	
+	"RickeyLandHorse_Arrive": {
+		"Voix":None,
+		"Decor":"Parc_Cheval",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je suis au centre hippique. Que vais-je faire ?",
+		"Choix":{
+			"Choix1":("Parler au maitre du stade","!_RickeyLandHorse_Maitre"),
+			"Choix2":("Regarder les concurants","RickeyLandHorse_Concurants_1"),
+		},
+		"Extra":["ModifVar('canMove',True)"],
+	},
+	
+}

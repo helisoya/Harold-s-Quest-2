@@ -1,0 +1,180 @@
+{
+
+	"!_RickeyLandHante_Maitre": {
+    	"DRecours":"RickeyLandHante_Maitre",
+    	"Evals":[
+        	("GetVar('attr_hante') == True","RickeyLandHante_Done"),
+    	],
+	},
+
+	
+	"RickeyLandHante_Done": {
+		"Voix":None,
+		"Decor":"Parc_Hante",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Tu as déja réussit l'attraction. Essaie-en une autre !",
+		"Choix":{
+			"Choix1":(">","RickeyLandHante_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandHante_Maitre": {
+		"Voix":None,
+		"Decor":"Parc_Hante",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Comment puis-je vous aider ?",
+		"Choix":{
+			"Choix1":("Essayer l'attraction","RickeyLandHante_Attr_1"),
+			"Choix2":("Quelles sont les règles ?","RickeyLandHante_Topic1_1"),
+			"Choix3":("Rien (Partir)","RickeyLandHante_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandHante_Topic1_1": {
+		"Voix":None,
+		"Decor":"Parc_Hante",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Dans cette attraction, vous devez trouver la sortie la maison hantée.",
+		"Choix":{
+			"Choix1":(">","RickeyLandHante_Topic1_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandHante_Topic1_2": {
+		"Voix":None,
+		"Decor":"Parc_Hante",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Si vous n'arrivez pas à le faire dans le temps imparti, vous avez perdu.",
+		"Choix":{
+			"Choix1":(">","RickeyLandHante_Topic1_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandHante_Topic1_3": {
+		"Voix":None,
+		"Decor":"Parc_Hante",
+		"PersoImg":"Waldo_Fou",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Faites attention ! Si vous mourrez, ce n'est absolument pas de la faute du PDG qui s'amuse à faire des blagues dans l'attraction.",
+		"Choix":{
+			"Choix1":(">","RickeyLandHante_Maitre"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandHante_Attr_1": {
+		"Voix":None,
+		"Decor":"Parc_Hante",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Parfait ! Commençont l'attraction !",
+		"Choix":{
+			"Choix1":(">","RickeyLandHante_Attr_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandHante_Attr_2": {
+		"Voix":None,
+		"Decor":"Parc_Hante",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"AJOUTER MINI JEU MAISON HANTE",
+		"Choix":{
+			"Choix1":(">","RickeyLandHante_Attr_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandHante_Attr_3": {
+		"Voix":None,
+		"Decor":"Parc_Hante",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Bravo ! Vous avez réussit à sortir ! C'est un exploit ! Vous avez reçu une carte en cadeau.",
+		"Choix":{
+			"Choix1":(">","!_RickeyLandHante_Attr_4"),
+		},
+		"Extra":["ModifVar('attr_hante',True)","ModifVar('card_waldo_uniforme',True)"],
+	},
+	
+	"!_RickeyLandHante_Attr_4": {
+    	"DRecours":"RickeyLandHante_Attr_4a",
+    	"Evals":[
+        	("GetVar('attr_waldo') == True and GetVar('attr_cheval') == True and GetVar('attr_marchand') == True ","RickeyLandHante_Attr_4b"),
+    	],
+	},
+	
+	"RickeyLandHante_Attr_4a": {
+		"Voix":None,
+		"Decor":"Parc_Hante",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'ai encore des attractions à réussir, je devrais y aller.",
+		"Choix":{
+			"Choix1":(">","RickeyLandHante_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandHante_Attr_4b": {
+		"Voix":None,
+		"Decor":"Parc_Hante",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'ai fini toutes les attractions, je devrais aller au palais pour obtenir le livre d'Harold.",
+		"Choix":{
+			"Choix1":(">","RickeyLandHante_Arrive"),
+		},
+		"Extra":["ModifVar('quest',5)"],
+	},
+	
+}

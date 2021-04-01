@@ -1,0 +1,180 @@
+{
+
+	"!_RickeyLandMarchand_Marchand": {
+    	"DRecours":"RickeyLandMarchand_Marchand",
+    	"Evals":[
+        	("GetVar('attr_marchand') == True","RickeyLandMarchand_Done"),
+    	],
+	},
+
+	
+	"RickeyLandMarchand_Done": {
+		"Voix":None,
+		"Decor":"Parc_Marchand",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Marchand",
+		"PersoCouleur":"steelblue",
+		"Dialogue":"Tu as déja réussit l'attraction. Je n'en peux plus !",
+		"Choix":{
+			"Choix1":(">","RickeyLandMarchand_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandMarchand_Marchand": {
+		"Voix":None,
+		"Decor":"Parc_Marchand",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Marchand",
+		"PersoCouleur":"steelblue",
+		"Dialogue":"Comment puis-je vous aider ?",
+		"Choix":{
+			"Choix1":("Essayer l'attraction","RickeyLandMarchand_Attr_1"),
+			"Choix2":("Quelles sont les règles ?","RickeyLandMarchand_Topic1_1"),
+			"Choix3":("Rien (Partir)","RickeyLandMarchand_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandMarchand_Topic1_1": {
+		"Voix":None,
+		"Decor":"Parc_Marchand",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Marchand",
+		"PersoCouleur":"steelblue",
+		"Dialogue":"Dans cette attraction, vous devez me tirer des couteaux dessus. Attention à ne pas me toucher !",
+		"Choix":{
+			"Choix1":(">","RickeyLandMarchand_Topic1_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandMarchand_Topic1_2": {
+		"Voix":None,
+		"Decor":"Parc_Marchand",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Marchand",
+		"PersoCouleur":"steelblue",
+		"Dialogue":"Plus vous tirez proche de moi, plus vous gagnez de points. Si je suis touché, vous avez perdu.",
+		"Choix":{
+			"Choix1":(">","RickeyLandMarchand_Topic1_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandMarchand_Topic1_3": {
+		"Voix":None,
+		"Decor":"Parc_Marchand",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Marchand",
+		"PersoCouleur":"steelblue",
+		"Dialogue":"Par pitié, ne me tuez pas ! Je n'ai rien fait de mal !",
+		"Choix":{
+			"Choix1":(">","RickeyLandMarchand_Marchand"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandMarchand_Attr_1": {
+		"Voix":None,
+		"Decor":"Parc_Marchand",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Marchand",
+		"PersoCouleur":"steelblue",
+		"Dialogue":"Ah, très bien... Commençons l'attraction...",
+		"Choix":{
+			"Choix1":(">","RickeyLandMarchand_Attr_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandMarchand_Attr_2": {
+		"Voix":None,
+		"Decor":"Parc_Marchand",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"Marchand",
+		"PersoCouleur":"steelblue",
+		"Dialogue":"AJOUTER MINI JEU TIR SUR MARCHAND",
+		"Choix":{
+			"Choix1":(">","RickeyLandMarchand_Attr_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandMarchand_Attr_3": {
+		"Voix":None,
+		"Decor":"Parc_Marchand",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Marchand",
+		"PersoCouleur":"steelblue",
+		"Dialogue":"Bravo ! Vous avez réussit à ne pas me tuez ! Vous avez reçu une carte en cadeau.",
+		"Choix":{
+			"Choix1":(">","!_RickeyLandMarchand_Attr_4"),
+		},
+		"Extra":["ModifVar('attr_marchand',True)","ModifVar('card_harold_fete',True)"],
+	},
+	
+	"!_RickeyLandMarchand_Attr_4": {
+    	"DRecours":"RickeyLandMarchand_Attr_4a",
+    	"Evals":[
+        	("GetVar('attr_hante') == True and GetVar('attr_cheval') == True and GetVar('attr_waldo') == True ","RickeyLandMarchand_Attr_4b"),
+    	],
+	},
+	
+	"RickeyLandMarchand_Attr_4a": {
+		"Voix":None,
+		"Decor":"Parc_Marchand",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'ai encore des attractions à réussir, je devrais y aller.",
+		"Choix":{
+			"Choix1":(">","RickeyLandMarchand_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandMarchand_Attr_4b": {
+		"Voix":None,
+		"Decor":"Parc_Marchand",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'ai fini toutes les attractions, je devrais aller au palais pour obtenir le livre d'Harold.",
+		"Choix":{
+			"Choix1":(">","RickeyLandMarchand_Arrive"),
+		},
+		"Extra":["ModifVar('quest',5)"],
+	},
+	
+}

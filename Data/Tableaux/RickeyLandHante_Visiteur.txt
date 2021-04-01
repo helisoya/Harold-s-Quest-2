@@ -1,0 +1,34 @@
+{	
+	"RickeyLandHante_Passant_1": {
+		"Voix":None,
+		"Decor":"Parc_Hante",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Visiteur",
+		"PersoCouleur":"tan",
+		"Dialogue":"Cette attraction est très effrayante, j'ai eu des frissons.",
+		"Choix":{
+			"Choix1":(">","RickeyLandHante_Passant_2"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandHante_Passant_2": {
+		"Voix":None,
+		"Decor":"Parc_Hante",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Visiteur",
+		"PersoCouleur":"tan",
+		"Dialogue":"J'ai eu l'impression que quelqu'un me suivait dans la maison hantée.",
+		"Choix":{
+			"Choix1":(">","RickeyLandHante_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+}

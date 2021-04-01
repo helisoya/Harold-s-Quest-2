@@ -162,21 +162,24 @@ tab = [
     "Harold a encore mangé tout le gateau"
     ]
 
+def AfficheDefaultMenu():
+    de = randint(0,4)
+    menu.create_image(200,150,image=D_Menu[de])
+    if de == 2:
+        menu.create_image(200,50,image=img,tags="t")
+    else:
+        menu.create_image(200,50,image=img2,tags="t")
+    menu.create_rectangle(150,305,250,325,fill="red",tags=("but","ng"))
+    menu.create_text(200,315,text="Jouer",tags=("but","ng"))
+    if os.path.exists("save.sav"):
+        menu.create_rectangle(150,335,250,355,fill="red",tags=("but","c"))
+        menu.create_text(200,345,text="Continuer",tags=("but","c"))
+
 def ChooseMenu():
     menu.delete("all")
     de = randint(1,100)
     if 1 <= de <= 50 : # Menu Normal
-        de = randint(0,4)
-        menu.create_image(200,150,image=D_Menu[de])
-        if de == 2:
-            menu.create_image(200,50,image=img,tags="t")
-        else:
-            menu.create_image(200,50,image=img2,tags="t")
-        menu.create_rectangle(150,305,250,325,fill="red",tags=("but","ng"))
-        menu.create_text(200,315,text="Jouer",tags=("but","ng"))
-        if os.path.exists("save.sav"):
-            menu.create_rectangle(150,335,250,355,fill="red",tags=("but","c"))
-            menu.create_text(200,345,text="Continuer",tags=("but","c"))
+        AfficheDefaultMenu()
         StartScreenNormal()
         
     elif  51 <= de <= 80 : # Menu Fort
@@ -196,14 +199,7 @@ def ChooseMenu():
         
     elif 81 <= de <= 85: # Easter Egg 1 (Yeux) 
         
-        menu.create_image(200,150,image=choice(D_Menu))
-        menu.create_image(200,50,image=img,tags="t")
-        menu.create_rectangle(150,305,250,325,fill="red",tags=("but","ng"))
-        menu.create_text(200,315,text="Jouer",tags=("but","ng"))
-        if os.path.exists("save.sav"):
-            menu.create_rectangle(150,335,250,355,fill="red",tags=("but","c"))
-            menu.create_text(200,345,text="Continuer",tags=("but","c"))
-
+        AfficheDefaultMenu()
         menu.create_rectangle(0,0,400,300,fill="black",tags="egg")
         menu.create_oval(150,150,160,160,fill="red",tags="egg")
         menu.create_oval(250,150,260,160,fill="red",tags="egg")
@@ -212,30 +208,16 @@ def ChooseMenu():
 
     elif 86 <= de <= 91: # Easter Egg 2 (Yeux+Texte)
 
-        menu.create_image(200,150,image=choice(D_Menu))
-        menu.create_image(200,50,image=img,tags="t")
-        menu.create_rectangle(150,305,250,325,fill="red",tags=("but","ng"))
-        menu.create_text(200,315,text="Jouer",tags=("but","ng"))
-        if os.path.exists("save.sav"):
-            menu.create_rectangle(150,335,250,355,fill="red",tags=("but","c"))
-            menu.create_text(200,345,text="Continuer",tags=("but","c"))
-
+        AfficheDefaultMenu()
         menu.create_rectangle(0,0,400,300,fill="black",tags="egg")
         menu.create_oval(150,150,160,160,fill="red",tags="egg")
         menu.create_oval(250,150,260,160,fill="red",tags="egg")
-        menu.create_text(205,200,text="Je te regarde, mortel",fill="red",tags="egg")
         PlaySE("Cerf_1")
         fenetre.after(2500,lambda:StartScreenNormal())
 
     elif 92 <= de <= 95: # Easter Egg 3 (Dialogue - 1)
 
-        menu.create_image(200,150,image=choice(D_Menu))
-        menu.create_image(200,50,image=img,tags="t")
-        menu.create_rectangle(150,305,250,325,fill="red",tags=("but","ng"))
-        menu.create_text(200,315,text="Jouer",tags=("but","ng"))
-        if os.path.exists("save.sav"):
-            menu.create_rectangle(150,335,250,355,fill="red",tags=("but","c"))
-            menu.create_text(200,345,text="Continuer",tags=("but","c"))
+        AfficheDefaultMenu()
 
         menu.create_rectangle(0,0,400,300,fill="black",tags="egg")
         menu.create_oval(150,150,160,160,fill="red",tags="egg")
@@ -245,13 +227,7 @@ def ChooseMenu():
 
     elif 96 <= de <= 99: # Easter Egg 4 (Dialogue - 2) 
 
-        menu.create_image(200,150,image=choice(D_Menu))
-        menu.create_image(200,50,image=img,tags="t")
-        menu.create_rectangle(150,305,250,325,fill="red",tags=("but","ng"))
-        menu.create_text(200,315,text="Jouer",tags=("but","ng"))
-        if os.path.exists("save.sav"):
-            menu.create_rectangle(150,335,250,355,fill="red",tags=("but","c"))
-            menu.create_text(200,345,text="Continuer",tags=("but","c"))
+        AfficheDefaultMenu()
 
         menu.create_rectangle(0,0,400,300,fill="black",tags="egg")
         menu.create_image(200,250,image=img3,tags="egg")
@@ -262,8 +238,16 @@ def ChooseMenu():
         PlaySE("Cerf_2")
         menu.create_image(200,150,image=img4,tags="egg")
         fenetre.after(2000,lambda:exit())
-    
-menu.create_text(200,150,text=choice(tab))
-fenetre.after(1500,ChooseMenu)
+
+de = randint(1,100)
+if 1 <= de <= 91: # Jeu se lance Normalement
+    menu.create_text(200,150,text=choice(tab))
+    fenetre.after(1500,ChooseMenu)
+elif 92 <= de <= 99: # Easter Egg 6 (DLC Missing)
+    menu.create_text(200,150,text="Attention, il vous manque des DLCs pour pouvoir jouer ! \n -Premium Edition \n -Gold Edition \n -Game Of The Year Edition \n -Skin Packs n°1-50")
+    fenetre.after(4000,lambda:exit())
+else: # Easter Egg 7 (CoV)
+    menu.create_text(200,150,text="Mini-jeu manquant !")
+    fenetre.after(2000,lambda:exit())
 
 fenetre.mainloop()

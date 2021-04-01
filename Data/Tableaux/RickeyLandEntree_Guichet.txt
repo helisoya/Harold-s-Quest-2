@@ -1,0 +1,88 @@
+{	
+
+
+	"RickeyLandEntree_Guichet": {
+		"Voix":None,
+		"Decor":"Parc_Exterieur",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Que puis-je faire pour vous ?",
+		"Choix":{
+			"Choix1":("Vous ne vous occupez pas du quiz ?","RickeyLandEntree_Guichet_Topic1_1"),
+			"Choix2":("Je peux entrer ?","RickeyLandEntree_Guichet_Topic2_1"),
+			"Choix3":("Rien (Partir)","RickeyLandEntree_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+
+
+	"RickeyLandEntree_Guichet_Topic1_1": {
+		"Voix":None,
+		"Decor":"Parc_Exterieur",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Moi ? Mais je m'occupe de tout ici ! Je suis le seul employé du parc.",
+		"Choix":{
+			"Choix1":(">","RickeyLandEntree_Guichet_Topic1_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandEntree_Guichet_Topic1_2": {
+		"Voix":None,
+		"Decor":"Parc_Exterieur",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Le PDG préfère payer plus de gardes, mais bon... au moins j'ai une chambre dans un placard du palais.",
+		"Choix":{
+			"Choix1":(">","RickeyLandEntree_Guichet"),
+		},
+		"Extra":[],
+	},
+	
+	
+	"RickeyLandEntree_Guichet_Topic2_1": {
+		"Voix":None,
+		"Decor":"Parc_Exterieur",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Pour entrer, il vous faut obligatoirement une invitation du parc.",
+		"Choix":{
+			"Choix1":(">","RickeyLandEntree_Guichet_Topic2_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandEntree_Guichet_Topic2_2": {
+		"Voix":None,
+		"Decor":"Parc_Exterieur",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Nous avons eu des problèmes avec un...visiteur il y a environ 1 an.",
+		"Choix":{
+			"Choix1":(">","RickeyLandEntree_Guichet"),
+		},
+		"Extra":[],
+	},
+	
+}

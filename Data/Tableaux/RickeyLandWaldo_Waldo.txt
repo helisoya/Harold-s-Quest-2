@@ -1,0 +1,180 @@
+{
+
+	"!_RickeyLandWaldo_Waldo": {
+    	"DRecours":"RickeyLandWaldo_Waldo",
+    	"Evals":[
+        	("GetVar('attr_waldo') == True","RickeyLandWaldo_Done"),
+    	],
+	},
+
+	
+	"RickeyLandWaldo_Done": {
+		"Voix":None,
+		"Decor":"Parc_Quiz",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Tu as déja réussit l'attraction. Essaie-en une autre !",
+		"Choix":{
+			"Choix1":(">","RickeyLandWaldo_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandWaldo_Waldo": {
+		"Voix":None,
+		"Decor":"Parc_Quiz",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Comment puis-je vous aider ?",
+		"Choix":{
+			"Choix1":("Essayer l'attraction","RickeyLandWaldo_Attr_1"),
+			"Choix2":("Quelles sont les règles ?","RickeyLandWaldo_Topic1_1"),
+			"Choix3":("Rien (Partir)","RickeyLandWaldo_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandWaldo_Topic1_1": {
+		"Voix":None,
+		"Decor":"Parc_Quiz",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Dans cette attraction, vous devez répondre à mon quiz.",
+		"Choix":{
+			"Choix1":(">","RickeyLandWaldo_Topic1_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandWaldo_Topic1_2": {
+		"Voix":None,
+		"Decor":"Parc_Quiz",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Je vais vous posez des questions de culture génerale du parc. Si vous vous trompez, vous avez perdu.",
+		"Choix":{
+			"Choix1":(">","RickeyLandWaldo_Topic1_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandWaldo_Topic1_3": {
+		"Voix":None,
+		"Decor":"Parc_Quiz",
+		"PersoImg":"Waldo_Fou",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Mais je vous previent ! Personne n'a jamais perdu à ce quiz. Si vous perdez, vous êtes le plus nul au monde !",
+		"Choix":{
+			"Choix1":(">","RickeyLandWaldo_Waldo"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandWaldo_Attr_1": {
+		"Voix":None,
+		"Decor":"Parc_Quiz",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Parfait ! Commençont le quiz !",
+		"Choix":{
+			"Choix1":(">","RickeyLandWaldo_Attr_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandWaldo_Attr_2": {
+		"Voix":None,
+		"Decor":"Parc_Quiz",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"AJOUTER MINI JEU QUIZ DE WALDO",
+		"Choix":{
+			"Choix1":(">","RickeyLandWaldo_Attr_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandWaldo_Attr_3": {
+		"Voix":None,
+		"Decor":"Parc_Quiz",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Bravo ! Vous avez réussit le quiz ! C'est un exploit pour vous ! Vous avez reçu une carte en cadeau.",
+		"Choix":{
+			"Choix1":(">","!_RickeyLandWaldo_Attr_4"),
+		},
+		"Extra":["ModifVar('attr_waldo',True)","ModifVar('card_waldo',True)"],
+	},
+	
+	"!_RickeyLandWaldo_Attr_4": {
+    	"DRecours":"RickeyLandWaldo_Attr_4a",
+    	"Evals":[
+        	("GetVar('attr_hante') == True and GetVar('attr_cheval') == True and GetVar('attr_marchand') == True ","RickeyLandWaldo_Attr_4b"),
+    	],
+	},
+	
+	"RickeyLandWaldo_Attr_4a": {
+		"Voix":None,
+		"Decor":"Parc_Quiz",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'ai encore des attractions à réussir, je devrais y aller.",
+		"Choix":{
+			"Choix1":(">","RickeyLandWaldo_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandWaldo_Attr_4b": {
+		"Voix":None,
+		"Decor":"Parc_Quiz",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'ai fini toutes les attractions, je devrais aller au palais pour obtenir le livre d'Harold.",
+		"Choix":{
+			"Choix1":(">","RickeyLandWaldo_Arrive"),
+		},
+		"Extra":["ModifVar('quest',5)"],
+	},
+	
+}

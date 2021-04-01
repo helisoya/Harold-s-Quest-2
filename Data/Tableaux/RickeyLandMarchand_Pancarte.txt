@@ -1,0 +1,34 @@
+{	
+	"RickeyLandMarchand_Pancarte_1": {
+		"Voix":None,
+		"Decor":"Parc_Marchand",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"'Défoulez-vous sur cette enflure qui m'a arnaqué ! Tirez-lui dessus ! Mais assurez-vous qu'il survive, je veux le finir ! Ah Ah !'.",
+		"Choix":{
+			"Choix1":(">","RickeyLandMarchand_Pancarte_2"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandMarchand_Pancarte_2": {
+		"Voix":None,
+		"Decor":"Parc_Marchand",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Le PDG n'aime vraiment pas cette personne.",
+		"Choix":{
+			"Choix1":(">","RickeyLandMarchand_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+}

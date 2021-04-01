@@ -1,60 +1,114 @@
 { 
 
     "quest":{
+	"save":True,
     	"type":"int",
     	"valeur":0,
     },
 
     "mapOpened":{
+	"save":False,
     	"type":"bool",
     	"valeur":False,
     },
 
+    "exterieur":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":True,
+    },
+
     "canMove":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
 
     "ptmoral":{
+	"save":True,
     	"type":"int",
     	"valeur":0,
     },
 
     "difficulte":{
+	"save":True,
     	"type":"int",
     	"valeur":1,
     },
 
+    "foughtArcher":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+
+    "attr_waldo":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+
+    "attr_cheval":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+
+    "attr_hante":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+
+    "attr_marchand":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+
+    "wentToBts":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
 
     "page1":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "page2":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "page3":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "page4":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "page5":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "page6":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "page7":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "page8":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
@@ -63,64 +117,119 @@
 
 
     "dic_harold":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "dic_rickey":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "dic_rick0":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "dic_chasseur":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "dic_garde":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "dic_archer":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "dic_marchand":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "dic_invocateurs":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "dic_cerf":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "dic_waldo":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "dic_rickeyland":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "dic_chezharold":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "dic_chezchasseur":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
     "dic_tournoir":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
 
 
     "card_harold":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+    "card_harold_fete":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+    "card_rickey":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+    "card_waldo":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+    "card_waldo_cuisine":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+    "card_waldo_uniforme":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+    "card_garde":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+    "card_garde_cagoule":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+    "card_garde_uniforme":{
+	"save":True,
     	"type":"bool",
     	"valeur":False,
     },

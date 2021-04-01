@@ -3,7 +3,7 @@
 #-------------------------------------------------------------
 #----------------- !!! NE PAS MODIFIER !!! -------------------
 
-Engine_Version = "3.6.1" # Version du Moteur
+Engine_Version = "3.6.2" # Version du Moteur
 
 from tkinter import *
 from tkinter import simpledialog
@@ -37,46 +37,57 @@ D_Data = {"BGM":{},
           "Icons":{}}
 Dic_Variables = {
         "Current":{
+        "save":True,
         "type":"str",
         "valeur":"",},
 
     "TableauId":{
+    "save":True,
     "type":"int",
     "valeur":0,},
 
     "CurrentImg":{
+    "save":True,
     "type":"_",
     "valeur":None,},
 
     "Skiped":{
+    "save":False,
     "type":"bool",
     "valeur":False,},
 
     "IsUsingSpeak":{
+    "save":True,
     "type":"bool",
     "valeur":False,},
-		
+
     "CurrentMusic":{
+        "save":False,
         "type":"str",
         "valeur":"",},
-		
+
     "PlayerName":{
+        "save":True,
         "type":"str",
         "valeur":"SwagMaster",},
 
     "TWESpeed":{
+        "save":False,
         "type":"int",
         "valeur":75,},
 
     "MusicVolume":{
+        "save":False,
         "type":"float",
         "valeur":0.15,},
 
     "VoiceVolume":{
+        "save":False,
         "type":"float",
         "valeur":0.80,},
 
     "SEVolume":{
+        "save":False,
         "type":"float",
         "valeur":0.20,}}
 
@@ -108,7 +119,7 @@ def CrashReport(text):
         log.write("\nRapport d'Erreur :")
         log.write("\n"+text)
     exit()
-        
+
 
 
 def Blank():
@@ -124,7 +135,7 @@ def GetVar(cle):
     """
 
     Renvoie la valeur associée à la clé
-        
+
     """
     return Dic_Variables[cle]["valeur"]
 
@@ -133,7 +144,7 @@ def ModifVar(cle,val):
     """
 
     Modifie la valeur associé à la clée
-        
+
     """
     global Dic_Variables
     if Dic_Variables[cle]["type"] == "_" or type(val) == eval(Dic_Variables[cle]["type"]) :
@@ -160,7 +171,7 @@ fenetre.protocol("WM_DELETE_WINDOW", QuitGame)
 def CheckIfExist(tag):
     """
 
-    Verifie si le tag existe dans le visuel 
+    Verifie si le tag existe dans le visuel
 
     """
     if len(Visuel.find_withtag(tag)) != 0:
@@ -170,7 +181,7 @@ def CheckIfExist(tag):
 def SetVoix(Voix):
     """
 
-    Change la voix utilisé (facultatif) 
+    Change la voix utilisé (facultatif)
 
     """
 
@@ -191,7 +202,7 @@ def PlaySE(Sound):
 
     """
 
-    if pygame.mixer.get_init() != None:        
+    if pygame.mixer.get_init() != None:
         CSE.set_volume(GetVar("SEVolume"))
         if Sound != None:
             if type(Sound) != str:
@@ -282,7 +293,7 @@ def TypeWriterEffect(counter,Text,Id):
     if counter <= len(Text) and Id == GetVar("TableauId") and not GetVar("Skiped"):
         Beep(37,1)
         Visuel.itemconfigure("Dialog",text=Text[:counter])
-        
+
         if not D_Tableaux[CorrectId]["PersoImg"] == None:
             if type(D_Data["Persos"][D_Tableaux[CorrectId]["PersoImg"]]) == dict:
                 if ImageSetUseSpeak(D_Tableaux[CorrectId]["PersoImg"]) and counter%2==0:
@@ -294,7 +305,7 @@ def TypeWriterEffect(counter,Text,Id):
                     if GetVar("CurrentImg") != None:
                         fenetre.after_cancel(GetVar("CurrentImg"))
                     Visuel.update()
-                     
+
         fenetre.after(GetVar("TWESpeed"), lambda: TypeWriterEffect(counter+1,Text,Id))
     elif Id == GetVar("TableauId"):
         SetFunction(D_Tableaux[GetVar("Current")]["Choix"])
@@ -316,7 +327,7 @@ def TypeWriterEffectTitle(counter,Text,Id):
         Beep(37,1)
         Visuel.itemconfigure("Text",text=Text[:counter])
         fenetre.after(GetVar("TWESpeed"), lambda: TypeWriterEffectTitle(counter+1,Text,Id))
-        
+
 
 def SetScrollingTitre(Text,Id,Next):
     """
@@ -338,7 +349,7 @@ def ScrollingTitleEffect(Text,Id,Next):
     if Visuel.bbox("ScrollText")[3] > 0 and Id == GetVar("TableauId"):
         Visuel.move("ScrollText",0,-0.5)
         fenetre.after(10, lambda: ScrollingTitleEffect(Text,Id,Next))
-        
+
     else:
         Visuel.itemconfigure("ScrollText",text="")
         Visuel.move("ScrollText",0,int(Visuel['height']))
@@ -390,7 +401,7 @@ def CreateReaction(text,col):
 
     """
 
-    if not CheckIfExist("reaction"): 
+    if not CheckIfExist("reaction"):
         if type(text) != str:
             CrashReport("Erreur : "+str(text)+" n'est pas une chaine de caractères")
         if type(col) != str:
@@ -407,8 +418,8 @@ def CreateSystemMessage(text,col):
     Crée un message système
 
     """
-    if not CheckIfExist("systemMessage"): 
-    
+    if not CheckIfExist("systemMessage"):
+
         if type(text) != str:
             CrashReport("Erreur : "+str(text)+" n'est pas une chaine de caractères")
         if type(col) != str:
@@ -451,10 +462,10 @@ def SetDecor(Image):
 
         if type(Image) != str:
             CrashReport("Erreur : "+str(Image)+" n'est pas une chaine de caractères")
-        
+
         if not Image in D_Data["Decor"].keys():
             CrashReport("Erreur : "+Image+" n'est pas un fichier Image répertorié")
-        
+
         if type(D_Data["Decor"][Image]) == list and not CheckSameImage(Image,"Decor"):
             AnimationDecor(Image,0)
         elif type(D_Data["Decor"][Image]) != list:
@@ -484,11 +495,11 @@ def SetPersoVisuel(Image):
 
 
     if Image != None:
-        
+
 
         if type(Image) != str:
             CrashReport("Erreur : "+str(Image)+" n'est pas une chaine de caractères")
-        
+
         if not Image in D_Data["Persos"].keys():
             CrashReport("Erreur : "+Image+" n'est pas un fichier Image répertorié")
 
@@ -517,7 +528,7 @@ def AnimationPersoVisuel(Image,Counter):
         Visuel.itemconfigure("Perso",image=D_Data["Persos"][Image]["normal"][Counter])
         ModifVar("CurrentImg",fenetre.after(Duree, lambda: AnimationPersoVisuel(Image,Counter+1)))
 
-		
+
 def SetFunction(Dic):
     """
 
@@ -527,7 +538,7 @@ def SetFunction(Dic):
 
     if type(Dic) != dict:
         CrashReport("Erreur : "+str(Dic)+" n'est pas une chaine de caractères")
-    
+
     Next1.pack_forget()
     Next2.pack_forget()
     Next3.pack_forget()
@@ -569,7 +580,7 @@ def SetFunction(Dic):
                 else:
                     eval("Next"+str(num)).configure(text=Dic[Numero]["else"][0])
                     eval("Next"+str(num)).configure(command= lambda arg=Numero: TableauSuivant(Dic[arg]["else"][1]))
-    
+
 
 def Sauvegarde(file):
     """
@@ -586,12 +597,12 @@ def Sauvegarde(file):
             New["SEVolume"] = Dic_Variables["SEVolume"]
             configfile.write(str(New))
             return
-    
+
     if GetVar("Current")[0:2] != "!_" and GetVar("Current")[0:2] != "?_" and GetVar("Current")[0:2] != "§_":
         with open(file, 'w',encoding="utf8") as configfile:
             New = {}
             for item in Dic_Variables:
-                if not item in ["TWESpeed","MusicVolume","VoiceVolume","SEVolume","CurrentMusic","Skiped"]:
+                if Dic_Variables[item]["save"]:
                     New[item] = Dic_Variables[item]
             configfile.write(str(New))
 
@@ -629,7 +640,7 @@ def Chargement(file):
         for n_key in Dic_Charge.keys():
             Dic_Variables[n_key] = Dic_Charge[n_key]
         return
-    
+
     if os.path.exists(file) and (GetVar("Current")[0:2] != "!_" and GetVar("Current")[0:2] != "?_"):
         with open(file, 'r',encoding="utf8") as configfile:
             Dic_Charge = eval(configfile.read())
@@ -641,14 +652,14 @@ def Chargement(file):
         CreateSystemMessage("Echec","red")
 
 
-        
+
 
 
 def TableauSuivant(Id):
     """
 
-    Charge le prochain tableau 
-    
+    Charge le prochain tableau
+
     """
     if not Id in D_Tableaux.keys():
         CrashReport("Erreur : "+Id+" n'est pas un tableau répertorié")
@@ -702,7 +713,7 @@ def TableauSuivant(Id):
         SetDecor(D_Tableaux[Id]["Decor"])
         if not D_Tableaux[Id]["PersoImg"] == None:
             if type(D_Data["Persos"][D_Tableaux[Id]["PersoImg"]]) == dict:
-                if not ImageSetUseSpeak(D_Tableaux[Id]["PersoImg"]): 
+                if not ImageSetUseSpeak(D_Tableaux[Id]["PersoImg"]):
                     SetPersoVisuel(D_Tableaux[Id]["PersoImg"])
                 else:
                     ModifVar("IsUsingSpeak",True)
@@ -725,7 +736,7 @@ def BuiltInSettingsMenu():
     """
 
     Menu de paramètre préconcu pour les paramètres moteur
-    
+
     """
     Settings = Tk()
     Settings.title("Parametres")
@@ -768,22 +779,22 @@ def Apparition():
     """
 
     Apparition des widgets visuels
-    
+
     """
     Visuel.pack(padx=5,pady=5)
 
     Visuel.create_rectangle(0,0,400,300,fill="black",tags="Background")
-    
+
     Visuel.create_image(int(Visuel['width'])/2,150,image="",tags="Decor")
     Visuel.create_image(int(Visuel['width'])/2,150,image="",tags="Perso")
 
     Visuel.create_rectangle(0, 0, 400, 300, fill="grey", stipple="gray50",state="hidden", tags="Choice_Img_Filter")
-    
+
     Visuel.create_text(int(Visuel['width'])/2,150,fill="white",text="",tags="Text")
     Visuel.create_text(int(Visuel['width'])/2,400,fill="white",text="",tags="ScrollText",justif="left",width=380)
 
     Visuel.create_rectangle(2,300,399,532,fill="lightgray",tags="Dialog_Box")
-    
+
     Visuel.create_text(int(Visuel['width'])/2,310,text="",width=300,tags="Dialog_Perso")
     Visuel.create_text(int(Visuel['width'])/2,340,text="",width=380,tags="Dialog",justif="left")
 
@@ -796,21 +807,21 @@ def Apparition():
     Visuel.tag_bind("Load_Button","<Button-1>",lambda arg=0:Chargement("save.sav"))
     Visuel.tag_bind("Settings_Button","<Button-1>",lambda arg=0:BuiltInSettingsMenu())
     Visuel.tag_bind("Help_Button","<Button-1>",lambda arg=0:BuiltInHelpMenu())
-    
-    
+
+
 def Init():
     """
 
     Initialisation du moteur et synchronisation avec le fichier Data
-    
+
     """
     global D_Tableaux,Dic_Variables,D_Data,GameInfo
     print("Version du Moteur : "+Engine_Version)
 
     if True:
-        
+
         for file in os.listdir("Data\Tableaux"):
-            if file.split(".")[1] == "txt": 
+            if file.split(".")[1] == "txt":
                 with open("Data\\Tableaux\\"+file,encoding="utf8") as jsonp_file:
                     jsonp_str = jsonp_file.read()
                     Dico_Full = eval(jsonp_str)
@@ -819,22 +830,22 @@ def Init():
         if pygame.mixer.get_init() != None:
             for file in os.listdir("Data\BGM"):
                 key = file.split(".")[0]
-                if file.split(".")[1] == "ogg": 
+                if file.split(".")[1] == "ogg":
                     D_Data["BGM"][key] = pygame.mixer.Sound("Data\\BGM\\"+file)
 
             for file in os.listdir("Data\SE"):
                 key = file.split(".")[0]
-                if file.split(".")[1] == "wav": 
+                if file.split(".")[1] == "wav":
                     D_Data["SE"][key] = pygame.mixer.Sound("Data\\SE\\"+file)
 
             for file in os.listdir("Data\Voix"):
                 key = file.split(".")[0]
-                if file.split(".")[1] == "wav": 
+                if file.split(".")[1] == "wav":
                     D_Data["Voix"][key] = pygame.mixer.Sound("Data\\Voix\\"+file)
 
         for file in os.listdir("Data\Decors"):
             key = file.split(".")[0]
-            if file.split(".")[1] == "png": 
+            if file.split(".")[1] == "png":
                 D_Data["Decor"][key] = PhotoImage(file="Data\\Decors\\"+file)
             elif file.split(".")[1] == "zip":
                 D_Data["Decor"][key] = []
@@ -847,7 +858,7 @@ def Init():
 
         for file in os.listdir("Data\Persos"):
             key = file.split(".")[0]
-            if file.split(".")[1] == "png": 
+            if file.split(".")[1] == "png":
                 D_Data["Persos"][key] = PhotoImage(file="Data\\Persos\\"+file)
             elif file.split(".")[1] == "zip":
                 D_Data["Persos"][key] = {}
@@ -855,7 +866,7 @@ def Init():
                 with zipfile.ZipFile("Data\\Persos\\"+file) as myzip:
                     L = myzip.namelist()
                     myzip.extractall("Data\\Zip")
-                    if "speak.png" in L:   
+                    if "speak.png" in L:
                         L.remove("speak.png")
                         D_Data["Persos"][key]["speak"] = PhotoImage(file="Data\\Zip\\speak.png")
                         os.remove("Data\\Zip\\speak.png")
@@ -883,18 +894,19 @@ def Init():
         with zipfile.ZipFile("Data\\Icons.zip") as myzip:
             L = myzip.namelist()
             myzip.extractall("Data\\Zip")
-            
+
             for item in L:
                 D_Data["Icons"][item.split(".")[0]] = PhotoImage(file="Data\\Zip\\"+item)
                 os.remove("Data\\Zip\\"+item)
 
         os.rmdir("Data\\Zip")
         Chargement("settings.sav")
-        
+
     else:
         CrashReport("Erreur : Dossier Data endommagé, vérifier l'intégrité des éléments ")
 
 
 from Functions import *
+
 
 #------------------- Fin Moteur --------------------

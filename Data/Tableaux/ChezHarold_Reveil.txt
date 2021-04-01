@@ -115,7 +115,7 @@
 		"Choix":{
 			"Choix1":(">","ChezHarold_Reveil_8"),
 		},
-		"Extra":["ClickEvent_ReveilEasterEgg()"],
+		"Extra":["ClickEvent_Decor('ChezHarold_ReveilEasterEgg_1')"],
 	},
 
 	"ChezHarold_Reveil_8": {

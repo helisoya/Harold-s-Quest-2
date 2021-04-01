@@ -1,0 +1,212 @@
+{	
+
+
+	"Event_Archer_1": {
+		"Voix":None,
+		"Decor":"Route",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"J'arrive vers RickeyLand. Je vais enfin pouvoir entrer avec le passe du chasseur.",
+		"Choix":{
+			"Choix1":(">","Event_Archer_2"),
+		},
+		"Extra":["ModifVar('foughtArcher',True)","ModifVar('canMove',False)"],
+	},
+
+	"Event_Archer_2": {
+		"Voix":None,
+		"Decor":"Route",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Une flèche vient se planter sur un arbre à coté de moi.",
+		"Choix":{
+			"Choix1":(">","Event_Archer_3"),
+		},
+		"Extra":[],
+	},
+	
+	"Event_Archer_3": {
+		"Voix":None,
+		"Decor":"Route",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Toi ! Je vais te tuer ! Je ne te le pardonerais jamais !",
+		"Choix":{
+			"Choix1":(">","Event_Archer_4"),
+		},
+		"Extra":["ModifVar('dic_archer',True)"],
+	},
+	
+	"Event_Archer_4": {
+		"Voix":None,
+		"Decor":"Route",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"A cause de toi, j'ai été relegué au rang d'antagoniste de seconde zone ! C'est inacceptable !",
+		"Choix":{
+			"Choix1":(">","Event_Archer_5"),
+		},
+		"Extra":[],
+	},
+	
+	"Event_Archer_5": {
+		"Voix":None,
+		"Decor":"Route",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Je dois me venger pour cette injustice ! Je suis l'archer le plus cool et le plus fort de la région !",
+		"Choix":{
+			"Choix1":(">","Event_Archer_6"),
+		},
+		"Extra":[],
+	},
+	
+	"Event_Archer_6": {
+		"Voix":None,
+		"Decor":"Route",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Mais je n'ai rien...",
+		"Choix":{
+			"Choix1":(">","Event_Archer_7"),
+		},
+		"Extra":[],
+	},
+	
+	"Event_Archer_7": {
+		"Voix":None,
+		"Decor":"Route",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Silence, je vais je faire manger par mes vatours ! BRAHHH !",
+		"Choix":{
+			"Choix1":(">","Event_Archer_8"),
+		},
+		"Extra":[],
+	},
+	
+	"Event_Archer_8": {
+		"Voix":None,
+		"Decor":"Route",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"J'entend des bruits d'oiseaux au loin, ils ont l'air de se rapprocher.",
+		"Choix":{
+			"Choix1":(">","Event_Archer_9"),
+		},
+		"Extra":[],
+	},
+	
+	"Event_Archer_9": {
+		"Voix":None,
+		"Decor":"Route",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Un horde de vautours commence à me poursuivre. Je cours dans la forêt.",
+		"Choix":{
+			"Choix1":(">","Event_Archer_10"),
+		},
+		"Extra":[],
+	},
+	
+	"Event_Archer_10": {
+		"Voix":None,
+		"Decor":"Route",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"INSERER MINI JEU COURSE POURSUITE VAUTOUR.",
+		"Choix":{
+			"Choix1":(">","Event_Archer_11"),
+		},
+		"Extra":[],
+	},
+	
+	"Event_Archer_11": {
+		"Voix":None,
+		"Decor":"Route",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"...Je pense que je l'ai semé...",
+		"Choix":{
+			"Choix1":(">","Event_Archer_12"),
+		},
+		"Extra":[],
+	},
+	
+	"Event_Archer_12": {
+		"Voix":None,
+		"Decor":"Route",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je devrais aller à RickeyLand avant qu'il ne me retrouve.",
+		"Choix":{
+			"Choix1":(">","Event_Archer_13"),
+		},
+		"Extra":[],
+	},
+
+	"Event_Archer_13": {
+		"Voix":None,
+		"Decor":"Route",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Après quelques minutes de marche, j'arrive enfin au parc.",
+		"Choix":{
+			"Choix1":(">","RickeyLandEntree_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+}

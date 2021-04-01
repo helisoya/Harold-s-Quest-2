@@ -465,7 +465,7 @@
 		"UseSpeak":False,
 		"Mus":"Rickeyland_Anthem",
 		"Perso":"Marchand",
-		"PersoCouleur":"lightblue",
+		"PersoCouleur":"steelblue",
 		"Dialogue":"Au secours ! Aisez-moi ! Laissez-moi partir ! Je n'ai rien fait de mal !",
 		"Choix":{
 			"Choix1":(">","IntroHarold_29"),
@@ -757,7 +757,7 @@
 		"Dialogue":"!Player ! Vous pouvez intéragir avec le monde en cliquant sur l'image ! Essayez de prendre la carte !",
 		"Choix":{
 		},
-		"Extra":["ClickEvent_IntroGetFirstCard()"],
+		"Extra":["ClickEvent_Perso('IntroHarold_47')"],
 	},	
 	
 	"IntroHarold_47": {
@@ -803,7 +803,7 @@
 		"PersoCouleur":"green",
 		"Dialogue":"Je part donc dormir afin de me préparer aux défis à venir.",
 		"Choix":{
-			"Choix1":(">","ChezHarold_Reveil_1"),
+			"Choix1":(">","?_NouveauDepart"),
 		},
 		"Extra":[],
 	},

@@ -1,0 +1,66 @@
+{	
+	"ChezHarold_Papier_1": {
+		"Voix":None,
+		"Decor":"ChezHarold_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je regarde le papier, il est déchiré mais j'arrive encore à le lire.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Papier_2"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"ChezHarold_Papier_2": {
+		"Voix":None,
+		"Decor":"ChezHarold_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"'Cher Harold, j'ai l'immense plaisir de vous annoncer que vous êtes privé d'accès à RickeyLand.'",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Papier_3"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Papier_3": {
+		"Voix":None,
+		"Decor":"ChezHarold_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"'Vous pensez que je vous avait oublié ? Mourez, espèce de monstre ! Je vais vous...'",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Papier_4"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Papier_4": {
+		"Voix":None,
+		"Decor":"ChezHarold_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je n'arrive pas à lire la suite.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+}

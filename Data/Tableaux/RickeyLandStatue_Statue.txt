@@ -1,0 +1,34 @@
+{	
+	"RickeyLandStatue_Statut_1": {
+		"Voix":None,
+		"Decor":"Parc_Entree",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Cette statue représente le PDG du parc, Rickey. Il tient une arme et porte une coiffe d'offcier.",
+		"Choix":{
+			"Choix1":(">","RickeyLandStatue_Statut_2"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandStatue_Statut_2": {
+		"Voix":None,
+		"Decor":"Parc_Entree",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je me demande pourquoi il s'habille comme cela. Ce n'est pas très astucieux pour faire venir des visiteurs.",
+		"Choix":{
+			"Choix1":(">","RickeyLandStatue_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+}

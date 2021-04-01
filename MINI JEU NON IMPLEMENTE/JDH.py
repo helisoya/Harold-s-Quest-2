@@ -1,3 +1,5 @@
+# Juste Dance Harold par Julien
+
 from tkinter import *
 from random import *
 from time import *
@@ -10,7 +12,7 @@ currMove = 0
 score = 0
 combo = 0
 scoreHarold = 0
-diff = 1
+diff = 3
 total = 300+100*diff
 anim_Frame = 0
 
@@ -35,7 +37,7 @@ for i in range(288):
     while len(nb) < 3:
         nb = "0"+nb
     List_Anim.append(PhotoImage(master=root,file="Img\\JDH\\frame_"+nb+"_delay-0.06s.png"))
-    
+
 
 def AddReaction(txt):
     can.create_text(200,250,text=txt,tags="reaction",fill="white")
@@ -64,12 +66,12 @@ def Harold_NextFrame():
 
     if score < total and scoreHarold < total:
         root.after(50,Harold_NextFrame)
-    
+
 
 
 def NewTurn():
     global moveDone,currMove,score,wrongMove,combo,scoreHarold,total
-    
+
     scoreHarold += randint(5,10+5*diff)
     end = False
     if not moveDone:
@@ -85,7 +87,7 @@ def NewTurn():
         else:
             AddReaction("Super !")
         score+=5*combo
-        
+
     wrongMove = False
     moveDone = False
     currMove = randint(37,40)
@@ -93,7 +95,7 @@ def NewTurn():
     can.itemconfigure("touche",text=GetName(currMove))
     can.itemconfigure("score",text="Vous : "+str(score))
     can.itemconfigure("scoreHarold",text="Harold : "+str(scoreHarold))
-    
+
     if score < total and scoreHarold < total:
         root.after(1100-100*diff,NewTurn)
     else:
@@ -123,7 +125,7 @@ def NewGame():
     root.bind("<Right>",Input)
     Harold_NextFrame()
     root.after(2000,NewTurn)
-    
-NewGame()    
+
+NewGame()
 
 root.mainloop()

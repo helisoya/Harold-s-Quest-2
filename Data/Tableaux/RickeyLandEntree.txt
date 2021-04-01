@@ -10,10 +10,10 @@
 		"PersoCouleur":"blue",
 		"Dialogue":"Je suis à l'entrée de RickeyLand, que vais-je faire ?",
 		"Choix":{
-			"Choix1":("Aller au guichet (PAS IMPLEMENTE)","RickeyLandEntree_Guichet"),
+			"Choix1":("Aller au guichet","RickeyLandEntree_Guichet"),
 			"Choix2":("Entrer dans RickeyLand","!_RickeyLandEntree_Entree"),
 		},
-		"Extra":["ModifVar('canMove',True)"],
+		"Extra":["ModifVar('canMove',True)","ModifVar('exterieur',True)"],
 	},
 	
 }

@@ -1,10 +1,10 @@
 {	
 
 	"!_RickeyLandEntree_Entree": {
-    	"DRecours":"RickeyLandEntree_Entree_CanGo",
+    	"DRecours":"RickeyLandStatue_Arrive",
     	"Evals":[
         	("GetVar('quest') in [1,2]","RickeyLandEntree_Entree_NoCard_1"),
-			("GetVar('quest') in [1,2]","RickeyLandEntree_Entree_GotCard"),
+			("GetVar('quest') == 3","RickeyLandEntree_Entree_GotCard_1"),
     	],
 	},
 
@@ -17,11 +17,11 @@
 		"Mus":None,
 		"Perso":"Garde",
 		"PersoCouleur":"red",
-		"Dialogue":"Halte ! vous n'avez pas le droit d'entrée ! Il vous faut une carte de visite pour entrer !",
+		"Dialogue":"Halte ! Vous n'avez pas le droit d'entrer ! Il vous faut une carte de visite pour entrer !",
 		"Choix":{
 			"Choix1":(">","RickeyLandEntree_Entree_NoCard_2"),
 		},
-		"Extra":["ModifVar('canMove',False)","ModifVar('quest',2)"],
+		"Extra":["ModifVar('canMove',False)","ModifVar('quest',2)","CreateReaction('!','red')"],
 	},
 	
 	"RickeyLandEntree_Entree_NoCard_2": {
@@ -33,7 +33,73 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"blue",
-		"Dialogue":"je devrais trouver une carte de visite...",
+		"Dialogue":"Je devrais trouver une carte de visite...",
+		"Choix":{
+			"Choix1":(">","RickeyLandEntree_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+
+	
+	"RickeyLandEntree_Entree_GotCard_1": {
+		"Voix":None,
+		"Decor":"Parc_Exterieur",
+		"PersoImg":"Garde",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Garde",
+		"PersoCouleur":"red",
+		"Dialogue":"Halte ! Montrez-moi votre passe !",
+		"Choix":{
+			"Choix1":(">","RickeyLandEntree_Entree_GotCard_2"),
+		},
+		"Extra":["ModifVar('canMove',False)","ModifVar('quest',4)"],
+	},
+	
+	"RickeyLandEntree_Entree_GotCard_2": {
+		"Voix":None,
+		"Decor":"Parc_Exterieur",
+		"PersoImg":"Garde",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Garde",
+		"PersoCouleur":"red",
+		"Dialogue":"... C'est bon, vous pouvez entrer. Bienvenue à RickeyLand !",
+		"Choix":{
+			"Choix1":(">","RickeyLandEntree_Entree_GotCard_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandEntree_Entree_GotCard_3": {
+		"Voix":None,
+		"Decor":"Parc_Exterieur",
+		"PersoImg":"Garde",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Garde",
+		"PersoCouleur":"red",
+		"Dialogue":"N'oubliez pas ! Completez les attractions pour obtenir un prix !",
+		"Choix":{
+			"Choix1":(">","RickeyLandEntree_Entree_GotCard_4"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandEntree_Entree_GotCard_4": {
+		"Voix":None,
+		"Decor":"Parc_Exterieur",
+		"PersoImg":"Garde",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"red",
+		"Dialogue":"Je peux entrer dans RickeyLand maintenant.",
 		"Choix":{
 			"Choix1":(">","RickeyLandEntree_Arrive"),
 		},
