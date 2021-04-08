@@ -1,0 +1,35 @@
+{	
+	"Montagne_Pancarte_1": {
+		"Voix":None,
+		"Decor":"Montagnes",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"'Demeure du magicien le plus cool de la province.'",
+		"Choix":{
+			"Choix1":(">","Montagne_Pancarte_2"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"Montagne_Pancarte_2": {
+		"Voix":None,
+		"Decor":"Montagnes",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"C'est ce qui est marqué sur la pancarte. Je ne vois pas de maison...",
+		"Choix":{
+			"Choix1":(">","Montagne_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+	
+}

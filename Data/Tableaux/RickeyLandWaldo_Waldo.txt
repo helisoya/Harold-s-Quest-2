@@ -17,7 +17,7 @@
 		"Mus":None,
 		"Perso":"Waldo",
 		"PersoCouleur":"forestgreen",
-		"Dialogue":"Tu as déja réussit l'attraction. Essaie-en une autre !",
+		"Dialogue":"Tu as déjà réussit l'attraction. Essaie-en une autre !",
 		"Choix":{
 			"Choix1":(">","RickeyLandWaldo_Arrive"),
 		},
@@ -83,7 +83,7 @@
 		"Mus":None,
 		"Perso":"Waldo",
 		"PersoCouleur":"forestgreen",
-		"Dialogue":"Mais je vous previent ! Personne n'a jamais perdu à ce quiz. Si vous perdez, vous êtes le plus nul au monde !",
+		"Dialogue":"Mais je vous prévient ! Personne n'a jamais perdu à ce quiz. Si vous perdez, vous êtes le plus nul au monde !",
 		"Choix":{
 			"Choix1":(">","RickeyLandWaldo_Waldo"),
 		},
@@ -99,7 +99,7 @@
 		"Mus":None,
 		"Perso":"Waldo",
 		"PersoCouleur":"forestgreen",
-		"Dialogue":"Parfait ! Commençont le quiz !",
+		"Dialogue":"Parfait ! Commençons le quiz !",
 		"Choix":{
 			"Choix1":(">","RickeyLandWaldo_Attr_2"),
 		},

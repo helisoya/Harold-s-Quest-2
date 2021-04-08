@@ -7,9 +7,14 @@ root = Tk()
 can = Canvas(root,width=600,height=300,bg="black")
 can.pack()
 
+bg = [PhotoImage(master=root,file="Data\\Autres\\MHR\\bg1.png"),
+    PhotoImage(master=root,file="Data\\Autres\\MHR\\bg2.png"),
+    PhotoImage(master=root,file="Data\\Autres\\MHR\\bg3.png"),
+     ]
+screamer1 = PhotoImage(master=root,file="Data\\Autres\\MHR\\screamer_normal.png")
+screamer2 = PhotoImage(master=root,file="Data\\Autres\\MHR\\screamer_spooky.png")
 
-
-diff = 1
+diff = 2
 
 posX = 0
 posY = 0
@@ -22,7 +27,7 @@ def generateMap():
     border = 10*diff
     max_tunnel = 5*border
     curLength = 0
-    randLength = randint(2,5)
+    randLength = randint(2,5*diff)
 
     CurX = 0
     CurY = 0
@@ -32,20 +37,25 @@ def generateMap():
     map = [[1 for i in range(border)] for i in range(border)]
 
     while max_tunnel > 0:
+        
+        ways = [[1,0],[-1,0],[0,1],[0,-1]]
+        if CurX <= 0:
+            ways.remove([-1,0])
+        if CurX >= border-1:
+            ways.remove([1,0])
+        if CurY <= 0:
+            ways.remove([0,-1])
+        if CurY >= border-1:
+            ways.remove([0,1])
 
+        move = choice(ways)
 
         while curLength < randLength:
-            ways = [[1,0],[-1,0],[0,1],[0,-1]]
-            if CurX <= 0:
-                ways.remove([-1,0])
-            if CurX >= border-1:
-                ways.remove([1,0])
-            if CurY <= 0:
-                ways.remove([0,-1])
-            if CurY >= border-1:
-                ways.remove([0,1])
-
-            move = choice(ways)
+                
+            if CurX+move[0] > 10*diff-1 or CurY+move[1] > 10*diff-1 or CurX+move[0] < 0 or CurY+move[1] < 0:
+                curLength = randLength
+                break
+            
             map[CurX][CurY] = 0
 
             CurX+=move[0]
@@ -53,7 +63,7 @@ def generateMap():
             curLength+=1
 
         curLength = 0
-        randLength = randint(2,5)
+        randLength = randint(2,5*diff)
         max_tunnel-=1
 
     map[CurX][CurY] = 2
@@ -118,21 +128,30 @@ def UpdateAffiche():
                 col = "slateblue"
 
         can.itemconfigure(tag,fill=col)
+        
 
 def Input(event):
     global posX,posY
     if event.keycode == 37: # Gauche
         if posX > 0 and map_data[posY][posX-1] != 1:
             posX-=1
+        else:
+            return
     elif event.keycode == 38: # Haut
         if posY > 0 and map_data[posY-1][posX] != 1:
             posY-=1
+        else:
+            return
     elif event.keycode == 39: # Droite
         if posX < 10*diff-1 and map_data[posY][posX+1] != 1:
             posX+=1
+        else:
+            return
     elif event.keycode == 40: # Bas
         if posY <  10*diff-1 and map_data[posY+1][posX] != 1:
             posY+=1
+        else:
+            return
 
     if posX < 0:
         posX = 0
@@ -144,6 +163,7 @@ def Input(event):
         posY = 10*diff
 
     UpdateAffiche()
+    can.itemconfigure("bg",image=choice(bg))
     can.update()
 
     if map_data[posY][posX] == 2:
@@ -155,7 +175,7 @@ def Input(event):
         can.create_text(300,150,text="BRAVO",fill="red")
 
 def SupprSpook():
-    can.itemconfigure("spook",text="")
+    can.itemconfigure("spook",image="")
 
 
 def UpdateTime():
@@ -167,8 +187,11 @@ def UpdateTime():
         return
 
     if time > 0:
-        if randint(1,100-diff*5) == 1:
-            can.itemconfigure("spook",text="BOUH !")
+        if randint(1,500-diff*5) == 1:
+            if randint(1,30) == 1:
+                can.itemconfigure("spook",image=screamer2)
+            else:
+                can.itemconfigure("spook",image=screamer1)
             root.after(1000,SupprSpook)
         root.after(5,UpdateTime)
     else:
@@ -194,8 +217,9 @@ def NewGame():
     can.create_rectangle(100,200,200,300,fill="gray",tags="down")
     can.create_rectangle(200,200,300,300,fill="gray",tags="down_right")
 
+    can.create_image(450,150,image=bg[0],tags="bg")
+    can.create_image(450,150,image="",tags="spook")
     can.create_text(450,10,text="Temps : ",fill="white",tags="time")
-    can.create_text(450,150,text="",fill="red",tags="spook")
 
     UpdateAffiche()
 
@@ -205,6 +229,9 @@ def NewGame():
     root.bind("<Right>",Input)
 
     UpdateTime()
+
+for data in map_data:
+    print(data)
 
 can.create_text(300,150,text="Fleches du Clavier pour se déplacer. Trouver la case bleu pour gagner.",fill="white")
 root.after(2000,NewGame)

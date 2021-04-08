@@ -1,0 +1,19 @@
+{	
+	"Lac_Arrive": {
+		"Voix":None,
+		"Decor":"Lac",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je suis au bord du lac de Vlatyr, un coffre étrange flotte sur le lac. Que vais-je faire ?",
+		"Choix":{
+			"Choix1":("Essayer d'atteindre le coffre","Lac_Coffre_1"),
+			"Choix2":("Fouiller les alentours","Lac_Fouiller_1"),
+		},
+		"Extra":["ModifVar('canMove',True)"],
+	},
+	
+}

@@ -17,7 +17,7 @@
 		"Mus":None,
 		"Perso":"Waldo",
 		"PersoCouleur":"forestgreen",
-		"Dialogue":"Tu as déja réussit l'attraction. Essaie-en une autre !",
+		"Dialogue":"Tu as déjà réussit l'attraction. Essaie-en une autre !",
 		"Choix":{
 			"Choix1":(">","RickeyLandHante_Arrive"),
 		},
@@ -77,7 +77,7 @@
 	"RickeyLandHante_Topic1_3": {
 		"Voix":None,
 		"Decor":"Parc_Hante",
-		"PersoImg":"Waldo_Fou",
+		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
 		"Mus":None,
@@ -99,7 +99,7 @@
 		"Mus":None,
 		"Perso":"Waldo",
 		"PersoCouleur":"forestgreen",
-		"Dialogue":"Parfait ! Commençont l'attraction !",
+		"Dialogue":"Parfait ! Commençons l'attraction !",
 		"Choix":{
 			"Choix1":(">","RickeyLandHante_Attr_2"),
 		},
@@ -115,11 +115,10 @@
 		"Mus":None,
 		"Perso":"Waldo",
 		"PersoCouleur":"forestgreen",
-		"Dialogue":"AJOUTER MINI JEU MAISON HANTE",
+		"Dialogue":"",
 		"Choix":{
-			"Choix1":(">","RickeyLandHante_Attr_3"),
 		},
-		"Extra":[],
+		"Extra":["MiniGame_MHR()"],
 	},
 	
 	"RickeyLandHante_Attr_3": {

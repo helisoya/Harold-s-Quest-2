@@ -234,7 +234,7 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"brown",
-		"Dialogue":"Je peux acceder au parc maintenant. Allons-y !",
+		"Dialogue":"Je peux accéder au parc maintenant. Allons-y !",
 		"Choix":{
 			"Choix1":(">","!_ChezChasseur_Chasseur"),
 		},

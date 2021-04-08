@@ -10,7 +10,7 @@
 		"PersoCouleur":"blue",
 		"Dialogue":"Je suis à l'entrée de RickeyLand, devant une statue du PDG. Que vais-je faire ?",
 		"Choix":{
-			"Choix1":("Regarder la statue","RickeyLandStatue_Statut_1"),
+			"Choix1":("Regarder la statue","RickeyLandStatue_Statue_1"),
 			"Choix2":("Sortir du Parc","RickeyLandEntree_Arrive"),
 		},
 		"Extra":["ModifVar('canMove',True)","ModifVar('exterieur',False)"],

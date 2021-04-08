@@ -57,7 +57,7 @@
 		"Mus":"Night",
 		"Perso":"!Player",
 		"PersoCouleur":"blue",
-		"Dialogue":"Je devrais trouver un refuge pour la nuit, avant de chercher la raison de ma presence ici.",
+		"Dialogue":"Je devrais trouver un refuge pour la nuit, avant de chercher la raison de ma présence ici.",
 		"Choix":{
 			"Choix1":(">","IntroChasseur_5"),
 		},
@@ -138,7 +138,7 @@
 		"Mus":"Night",
 		"Perso":"",
 		"PersoCouleur":"blue",
-		"Dialogue":"Je sens un bout de metal froid qui me touche le dos.",
+		"Dialogue":"Je sens un bout de métal froid qui me touche le dos.",
 		"Choix":{
 			"Choix1":(">","IntroChasseur_10"),
 		},
@@ -154,7 +154,7 @@
 		"Mus":"Night",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
-		"Dialogue":"Tu connait la différence entre une gallinete cendrée et un Homme en pleine nuit ?",
+		"Dialogue":"Tu connaît la différence entre une gallinete cendrée et un Homme en pleine nuit ?",
 		"Choix":{
 			"Choix1":(">","IntroChasseur_11"),
 		},
@@ -186,7 +186,7 @@
 		"Mus":"Night",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
-		"Dialogue":"Ah bon ? Moi je vois pas la difference ! Meurt petit oiseau !",
+		"Dialogue":"Ah bon ? Moi je vois pas la différence ! Meurt petit oiseau !",
 		"Choix":{
 			"Choix1":(">","IntroChasseur_13"),
 		},

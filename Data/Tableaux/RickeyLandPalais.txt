@@ -1,0 +1,19 @@
+{	
+	"RickeyLandPalais_Arrive": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je suis devant le palais du PDG. Que vais-je faire ?",
+		"Choix":{
+			"Choix1":("Essayer d'entrer","!_RickeyLandPalais_Entrer"),
+			"Choix2":("Regarder au alentours","RickeyLandPalais_Regarder_1"),
+		},
+		"Extra":["ModifVar('canMove',True)"],
+	},
+	
+}

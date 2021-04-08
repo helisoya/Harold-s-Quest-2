@@ -1,0 +1,58 @@
+{	
+	"Lac_Coffre_1": {
+		"Voix":None,
+		"Decor":"Lac",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'essaie d'attraper le coffre.",
+		"Choix":{
+			"Choix1":(">","!_Lac_Coffre"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"Lac_Coffre_2b": {
+		"Voix":None,
+		"Decor":"Lac",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je n'y arrive pas.",
+		"Choix":{
+			"Choix1":(">","Lac_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+	
+	"!_Lac_Coffre": {
+    	"DRecours":"Lac_Coffre_2b",
+    	"Evals":[
+        	("GetVar('card_harold')==GetVar('card_harold_fete')==GetVar('card_rickey')==GetVar('card_waldo')==GetVar('card_waldo_cuisine')==GetVar('card_waldo_uniforme')==GetVar('card_garde')==GetVar('card_garde_cagoule')==GetVar('card_garde_uniforme')==True and GetVar('ultimateCard')==False","Lac_Coffre_2a"),
+    	],
+	},
+	
+	"Lac_Coffre_2a": {
+		"Voix":None,
+		"Decor":"Lac",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'arrive à attraper le coffre, il y a une carte étrange à l'intérieur. Je remet le coffre à l'eau.",
+		"Choix":{
+			"Choix1":(">","Lac_Arrive"),
+		},
+		"Extra":["ModifVar('ultimateCard',True)"],
+	},
+	
+}

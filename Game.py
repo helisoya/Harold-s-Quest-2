@@ -54,6 +54,11 @@ D_Menu = [PhotoImage(file="Data//Autres//Menu//menu1.png"),
           PhotoImage(file="Data//Autres//Menu//menu3.png"),
           PhotoImage(file="Data//Autres//Menu//menu4.png"),
           PhotoImage(file="Data//Autres//Menu//menu5.png")]
+
+
+cut1_mountain = PhotoImage(file="Data//Autres//Cutscenes//IntroA//mountain.png")
+cut1_castle = PhotoImage(file="Data//Autres//Cutscenes//IntroA//castle.png")
+
 menu = Canvas(fenetre,width=400,height=300)
 menu.pack()
 curr = 0
@@ -239,10 +244,46 @@ def ChooseMenu():
         menu.create_image(200,150,image=img4,tags="egg")
         fenetre.after(2000,lambda:exit())
 
+
+
+
+def Cutscene_IntroA():
+    global curr
+    if curr == 0:
+        menu.create_image(200,400,image=cut1_castle,tags="castle")
+        menu.create_image(230,250,image=cut1_mountain,tags="right")
+        menu.create_image(100,250,image=cut1_mountain,tags="left")
+        menu.create_image(190,270,image=cut1_mountain,tags="right")
+        menu.create_image(150,270,image=cut1_mountain,tags="left")
+        menu.create_image(350,270,image=cut1_mountain,tags="right")
+        menu.create_image(300,270,image=cut1_mountain,tags="right")
+        menu.create_image(50,270,image=cut1_mountain,tags="left")
+
+    elif curr < 50:
+        menu.move("right",1,0)
+        menu.move("left",-1,0)
+    elif curr < 150:
+        menu.move("right",1,1)
+        menu.move("left",-1,1)
+        menu.move("castle",0,-2)
+        
+
+    menu.update()
+    curr+=1
+    if curr < 150:
+        fenetre.after(10,Cutscene_IntroA)
+    else:
+        curr = 0
+        fenetre.after(1000,ChooseMenu)
+
+
 de = randint(1,100)
-if 1 <= de <= 91: # Jeu se lance Normalement
+if 1 <= de <= 50: # Lancement texte d'acceuil
     menu.create_text(200,150,text=choice(tab))
     fenetre.after(1500,ChooseMenu)
+elif 51 <= de <= 91: # Cutscene A (Montagne avec Chateau)
+    Cutscene_IntroA()
+    
 elif 92 <= de <= 99: # Easter Egg 6 (DLC Missing)
     menu.create_text(200,150,text="Attention, il vous manque des DLCs pour pouvoir jouer ! \n -Premium Edition \n -Gold Edition \n -Game Of The Year Edition \n -Skin Packs n°1-50")
     fenetre.after(4000,lambda:exit())

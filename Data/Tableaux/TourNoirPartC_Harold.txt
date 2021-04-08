@@ -1,0 +1,239 @@
+{
+	
+	"TourNoir_PartC_Harold_1": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Je vais utiliser ma plus grand arme !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Harold_2"),
+		},
+		"Extra":[],
+	},
+
+	"TourNoir_PartC_Harold_2": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono_Card",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"La carte Harold ! Avec elle, je vais lancer un sortilège qui va vous détruire !",
+		"Choix":{
+			"Choix1":(">","!_TourNoir_PartC_Harold"),
+		},
+		"Extra":[],
+	},
+	
+	"!_TourNoir_PartC_Harold": {
+    	"DRecours":"TourNoir_PartC_Harold_Good_1",
+    	"Evals":[
+			("GetVar('ultimateCard') == True","TourNoir_PartC_Harold_Ultimate_1"),
+        	("GetVar('ptmoral') < 0","TourNoir_PartC_Harold_Bad_1"),
+    	],
+	},
+	
+	"TourNoir_PartC_Harold_Good_1": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"J'arrache la carte de la main d'Harold et la déchire.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Harold_Good_2"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Harold_Good_2": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Non ! Impossible ! Je ne peux pas perdre !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Harold_Good_3"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Harold_Good_3": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Il est l'heure pour vous de vous rendre !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Harold_Good_4"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Harold_Good_4": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Jamais ! Je préfère mourir !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Harold_Good_5"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Harold_Good_5": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":None,
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"Harold saute par la fenêtre, il va évidemment mourir de la chute.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Harold_Good_6"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Harold_Good_6": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":None,
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'ai gagné. Ma quête est enfin fini. Je devrais trouver un moyen de rentrer chez moi.",
+		"Choix":{
+			"Choix1":(">","§_HaroldGoodEnding_Credits"),
+		},
+		"Extra":[],
+	},
+	
+	
+	
+	"TourNoir_PartC_Harold_Ultimate_1": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono_Ultimate",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"J'arrache la carte de la main d'Harold et la remplace par la carte trouvé dans le lac.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Harold_Ultimate_2"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Harold_Ultimate_2": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono_Ultimate",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Quel est cette chose ? Au secours ! Mes yeux sont en train de bruler !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Harold_Ultimate_3"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Harold_Ultimate_3": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono_Ultimate",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"Harold fait des pas en arrière. Il s'approche de la fenêtre.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Harold_Good_5"),
+		},
+		"Extra":[],
+	},
+	
+	
+	
+	"TourNoir_PartC_Harold_Bad_1": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono_Card",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"VIRVOK DEK CERKYR ! KARRBUM !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Harold_Bad_2"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Harold_Bad_2": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"Une déflagration énorme m'emporte, la forteresse s'effondre.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Harold_Bad_3"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Harold_Bad_3": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"Je n'ai aucune chance de survie, mais j'ai besoin de repos.",
+		"Choix":{
+			"Choix1":(">","§_HaroldBadEnding_Credits"),
+		},
+		"Extra":[],
+	},
+	
+}

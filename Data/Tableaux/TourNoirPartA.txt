@@ -1,0 +1,345 @@
+{
+
+	"?_EndGame": {
+	"Titre":"Malédiction de la Finalité Infini",
+    	"Suite":"TourNoir_PartA_1",
+	"Mus":None,
+	},
+
+	"TourNoir_PartA_1": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"...",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_2"),
+		},
+		"Extra":["ModifVar('quest',8)"],
+	},
+	
+	"TourNoir_PartA_2": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Une fois de plus, j'ai l'impression que ma tête va exploser.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_3"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_3": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'ouvre les yeux, espérant ne pas trouver Harold devant moi.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_4"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_4": {
+		"Voix":None,
+		"Decor":"Tour_Cell",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je suis dans une cellule, il y a un garde qui me surveille.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_5"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_5": {
+		"Voix":None,
+		"Decor":"Tour_Cell",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je me demande ou je suis, qui sait ou Harold a bien pu m'envoyer.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_6"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_6": {
+		"Voix":None,
+		"Decor":"Tour_Cell",
+		"PersoImg":"Invocateur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Invocateur",
+		"PersoCouleur":"red",
+		"Dialogue":"Eh , la ferme ! Tu n'as pas le droit de parler comme cela de notre chef, Harold. Les Invocateurs ne le permettent pas !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_7"),
+		},
+		"Extra":["ModifVar('dic_invocateurs',True)"],
+	},
+	
+	"TourNoir_PartA_7": {
+		"Voix":None,
+		"Decor":"Tour_Cell",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Mes gardes n'ont pas l'air très commode cependant.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_8"),
+		},
+		"Extra":[],
+	},
+
+	"TourNoir_PartA_8": {
+		"Voix":None,
+		"Decor":"Tour_Cell",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je vais devoir m'enfuir, qui sait ce qu'il vont me faire.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_9"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_9": {
+		"Voix":None,
+		"Decor":"Tour_Cell",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"La porte de ma cellule s'ouvre brusquement et un garde entre.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_10"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_10": {
+		"Voix":None,
+		"Decor":"Tour_Cell",
+		"PersoImg":"Invocateur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Invocateur",
+		"PersoCouleur":"red",
+		"Dialogue":"Toi ! Le Grand veux te parler et éclairer ta vision brouillé par des masques impies et criminels.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_11"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_11": {
+		"Voix":None,
+		"Decor":"Tour_Cell",
+		"PersoImg":"Invocateur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"red",
+		"Dialogue":"C'est ma seul occasion pour fuir ! Je ne doit pas échouer !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_12"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_12": {
+		"Voix":None,
+		"Decor":"Tour_Cell",
+		"PersoImg":"Invocateur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"red",
+		"Dialogue":"Je fonce sur le garde et je le pousse par terre. J'en profite pour sortir de la cellule.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_13"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_13": {
+		"Voix":None,
+		"Decor":"Tour_Cell",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"Invocateur",
+		"PersoCouleur":"red",
+		"Dialogue":"Alerte ! Le prisonnier s'échappe ! J'ai besoin d'aide pour l’arrêter !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_14"),
+		},
+		"Extra":[],
+	},
+
+	"TourNoir_PartA_14": {
+		"Voix":None,
+		"Decor":"Tour_Couloir",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"red",
+		"Dialogue":"Je commence à courir, j’entends les 'invocateurs' se déplacer dans les couloirs.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_15"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_15": {
+		"Voix":None,
+		"Decor":"Tour_Couloir",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"red",
+		"Dialogue":"Après quelques minutes de course, je trouve une arme par terre.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_16"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_16": {
+		"Voix":None,
+		"Decor":"Tour_Couloir",
+		"PersoImg":"Invocateur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Invocateur",
+		"PersoCouleur":"red",
+		"Dialogue":"Le voila ! Ne le laisser pas s'échapper !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_17"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_17": {
+		"Voix":None,
+		"Decor":"Tour_Couloir",
+		"PersoImg":"Invocateur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"red",
+		"Dialogue":"Il y a de nombreux 'invocateurs' autour de moi, je commence à ouvrir le feu.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_18"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_18": {
+		"Voix":None,
+		"Decor":"Tour_Couloir",
+		"PersoImg":"Invocateur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"red",
+		"Dialogue":"INSERER MINI JEU TIR SUR SBIRE",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_19"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_19": {
+		"Voix":None,
+		"Decor":"Tour_Couloir",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je les ai tous tués, je crois...",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_20"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_20": {
+		"Voix":None,
+		"Decor":"Tour_Couloir",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je devrais partir avant que d'autres n'arrivent.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartA_21"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartA_21": {
+		"Voix":None,
+		"Decor":"Tour_Couloir",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'arrive assez rapidement dans une salle étrange.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_1"),
+		},
+		"Extra":[],
+	},
+	
+}

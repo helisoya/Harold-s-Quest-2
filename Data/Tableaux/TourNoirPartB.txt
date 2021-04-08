@@ -1,0 +1,390 @@
+{
+
+	"TourNoir_PartB_1": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"On dirait une salle de trône. Mais il n'y a personne.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_2"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_2": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Arme",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Ah ! Bien le bonjour, !Player ! C'est assez rude de tuer ses hôtes.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_3"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_3": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Arme",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Vous ! Je vais vous le faire regretter ! C'est du kidnapping !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_4"),
+		},
+		"Extra":[],
+	},
+
+	"TourNoir_PartB_4": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Arme",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Voyons ! Vous n'aimez pas le confort de la forteresse noire ? C'est pourtant ma seconde maison !",
+		"Choix":{
+			"Choix1":(">","!_TourNoir_PartB_Sheperd"),
+		},
+		"Extra":["ModifVar('dic_tournoir',True)"],
+	},
+	
+	
+	"!_TourNoir_PartB_Sheperd": {
+    	"DRecours":"TourNoir_PartB_5",
+    	"Evals":[
+        	("GetVar('ptmoral') < 0","TourNoir_PartB_Sheperd_1"),
+    	],
+	},
+	
+	
+	"TourNoir_PartB_Sheperd_1": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Arme",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je vais vous détruire, vous et votre culte !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_Sheperd_2"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_Sheperd_2": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Sheperd",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"???",
+		"PersoCouleur":"blue",
+		"Dialogue":"Jamais !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_Sheperd_3"),
+		},
+		"Extra":[""],
+	},
+	
+	"TourNoir_PartB_Sheperd_3": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Sheperd",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"He He He ! On dirait qu'il n'est pas du même avis.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_Sheperd_4"),
+		},
+		"Extra":["ModifVar('dic_sheperd',True)"],
+	},
+	
+	"TourNoir_PartB_Sheperd_4": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Sheperd",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Regardons ce qui va ce passer, même si le résultat est évident !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_Sheperd_5"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_Sheperd_5": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Sheperd",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"Le guerrier sombre me fonce dessus.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_Sheperd_6"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_Sheperd_6": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Sheperd",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"INSERER MINI JEU COMBAT QTE",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_Sheperd_7"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_Sheperd_7": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":None,
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"Le guerrier s’effondre mort au sol.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_Sheperd_8"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_Sheperd_8": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Arme",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Impossible ! Ce n'est pas ce qui devait arriver !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_5"),
+		},
+		"Extra":[],
+	},
+	
+	
+	
+	"TourNoir_PartB_5": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Arme",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Rendez-vous ! C'est votre dernière chance !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_6"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_6": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Arme",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"He He He ! HE HE HE ! Vous êtes si stupide !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_7"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_7": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Arme",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Je vais vous montrer ma puissance ! J'ai été le meilleur durant ma jeunesse !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_8"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_8": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Prenez garde ! Car je suis...",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_9"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_9": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"...Le magicien et le danseur le plus puissant du monde !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_10"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_10": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Je vais vous faire mordre la poussière à la dance !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_11"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_11": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Préparez-vous pour le combat de votre vie !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_12"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_12": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"Harold commence à danser. Je ne suis pas sur de pouvoir le battre.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_13"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_13": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"INSERE MINI JEU JUSTE DANCE HAROLD",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_14"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_14": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Impossible ! Comment ais-je pu perdre à mon propre mini jeu ?",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartB_15"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartB_15": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Je n'ai plus le choix ! Vous allez le regretter !",
+		"Choix":{
+			"Choix1":(">","!_TourNoir_PartB"),
+		},
+		"Extra":[],
+	},
+	
+	
+	"!_TourNoir_PartB": {
+    	"DRecours":"TourNoir_PartC_Harold_1",
+    	"Evals":[
+        	("GetVar('page1')==GetVar('page2')==GetVar('page3')==GetVar('page4')==GetVar('page5')==GetVar('page6')==GetVar('page7')==GetVar('page8')==True","TourNoir_PartC_Cerf_1"),
+    	],
+	},
+	
+}

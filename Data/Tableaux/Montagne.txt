@@ -1,0 +1,19 @@
+{	
+	"Montagne_Arrive": {
+		"Voix":None,
+		"Decor":"Montagnes",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je suis dans les montagnes, vers une étrange pancarte. Que vais-je faire ?",
+		"Choix":{
+			"Choix1":("Regarder la pancarte","Montagne_Pancarte_1"),
+			"Choix2":("Fouiller les alentours","Montagne_Fouiller_1"),
+		},
+		"Extra":["ModifVar('canMove',True)"],
+	},
+	
+}

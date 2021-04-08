@@ -1,0 +1,66 @@
+{	
+	"RickeyLandResto_Menu_1": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je regarde la liste des différents menu.",
+		"Choix":{
+			"Choix1":(">","RickeyLandResto_Menu_2"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandResto_Menu_2": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Menu du PDG : sanglier à l'ail et au vin.",
+		"Choix":{
+			"Choix1":(">","RickeyLandResto_Menu_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandResto_Menu_3": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Menu du Chef : cacahuètes flambées avec un coulis de framboises.",
+		"Choix":{
+			"Choix1":(">","RickeyLandResto_Menu_4"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandResto_Menu_4": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Menu de la Cantine : purée d'endives.",
+		"Choix":{
+			"Choix1":(">","RickeyLandResto_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+}

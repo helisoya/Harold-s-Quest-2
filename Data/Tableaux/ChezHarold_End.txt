@@ -1,0 +1,261 @@
+{	
+
+	"ChezHarold_End_1": {
+		"Voix":None,
+		"Decor":"ChezHarold_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Suis-je sur de le faire ? Mon aventure va s’arrêter si je rend le livre.",
+		"Choix":{
+			"Choix1":("Oui","ChezHarold_End_2"),
+			"Choix2":("Non","ChezHarold_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+
+	"ChezHarold_End_2": {
+		"Voix":None,
+		"Decor":"ChezHarold_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'entre donc chez Harold avec son livre en main.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_End_3"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_End_3": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var2",
+		"PersoImg":None,
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Une fois entré, Harold vient vers moi immédiatement.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_End_4"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_End_4": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var2",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"!Player ! Avez-vous réussit ? J'ai entendu dire que le parc était fermé.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_End_5"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_End_5": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var2",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"J'ai réussit à vaincre Rickey et à reprendre votre 'livre'.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_End_6"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_End_6": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var2",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Oh mais c'est normal ! C'est de la cuisine nordique ! Mes petits-enfants ont un humour fou !",
+		"Choix":{
+			"Choix1":(">","ChezHarold_End_7"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_End_7": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var2",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Ceci-dis, je vous est reconnaissant. Vous m'avez aider une fois de plus et je suis sur que vous avez aidé d'autre personnes.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_End_8"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_End_8": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var2",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je peux rentrer chez moi maintenant ? J'ai accomplis ma mission et plus rien ne me retient ici.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_End_9"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_End_9": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var2",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Bien sur, bien sur... Mais avant cela, j'aimerais vous... proposer quelque chose.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_End_10"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_End_10": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var2",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Voyez-vous, vos actes ne sont pas passé inaperçu, et... j'aimerais vous offrir un travail.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_End_11"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_End_11": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var2",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Le monde est dangereux et remplit de brigands. Mais avec vous, nous allons pouvoir le purifier.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_End_12"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_End_12": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var2",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Vous avez tué un dragon, ainsi qu'un psychopathe armé. Vous êtes parfait pour cet emploi que je vous propose.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_End_13"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_End_13": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var2",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Alors, qu'en dites-vous ? Voulez-vous devenir le pilier d'un monde nouveau, d'une utopie ? Vous n'avez qu'une seul chance.",
+		"Choix":{
+			"Choix1":("J'accepte","BadEnding_1"),
+			"Choix2":("Je refuse","ChezHarold_End_14"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_End_14": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var2",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"... Je vois...",
+		"Choix":{
+			"Choix1":(">","ChezHarold_End_15"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_End_15": {
+		"Voix":None,
+		"Decor":"ChezHarold_Var2",
+		"PersoImg":"Harold_Hurt_Arme",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Je vais devoir vous convaincre un peu mieux alors.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_End_16"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_End_16": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"Je me prend une balle et je perd connaissance.",
+		"Choix":{
+			"Choix1":(">","?_EndGame"),
+		},
+		"Extra":[],
+	},
+
+}

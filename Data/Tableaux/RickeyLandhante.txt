@@ -10,8 +10,8 @@
 		"PersoCouleur":"blue",
 		"Dialogue":"Je suis devant la maison hantée. Que vais-je faire ?",
 		"Choix":{
-			"Choix1":("Parler au maitre de l'attraction","!_RickeyLandHante_Maitre"),
-			"Choix2":("Parler à un passant.","RickeyLandHante_Passant_1"),
+			"Choix1":("Parler au maître de l'attraction","!_RickeyLandHante_Maitre"),
+			"Choix2":("Parler à un passant","RickeyLandHante_Passant_1"),
 		},
 		"Extra":["ModifVar('canMove',True)"],
 	},

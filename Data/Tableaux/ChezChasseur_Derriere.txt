@@ -1,4 +1,20 @@
 {
+	"ChezChasseur_Derriere": {
+		"Voix":None,
+		"Decor":"ChezChasseur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"brown",
+		"Dialogue":"Je regarde à l’arrière de la maison.",
+		"Choix":{
+			"Choix1":(">","!_ChezChasseur_Derriere"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+
 
 	"!_ChezChasseur_Derriere": {
     	"DRecours":"ChezChasseur_Derriere_Normal",
@@ -21,23 +37,23 @@
 		"Choix":{
 			"Choix1":(">","ChezChasseur_Arrive"),
 		},
-		"Extra":["ModifVar('canMove',False)"],
+		"Extra":[],
 	},
 	
 	"ChezChasseur_Derriere_Page": {
 		"Voix":None,
-		"Decor":"ChezChasseur_Page",
+		"Decor":"ChezChasseur",
 		"PersoImg":None,
 		"CustomPlacement":None,
 		"UseSpeak":True,
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"brown",
-		"Dialogue":"Il n'y a rien ici.",
+		"Dialogue":"Je trouve un bout de papier par terre, étrange...",
 		"Choix":{
 			"Choix1":(">","ChezChasseur_Arrive"),
 		},
-		"Extra":["ModifVar('canMove',False)","ClickEvent_GetPageTwo()"],
+		"Extra":["ModifVar('page2',True)",],
 	},
 	
 	

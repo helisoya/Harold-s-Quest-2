@@ -58,9 +58,32 @@
 		"PersoCouleur":"blue",
 		"Dialogue":"Je n'arrive pas à lire la suite.",
 		"Choix":{
-			"Choix1":(">","ChezHarold_Arrive"),
+			"Choix1":(">","!_ChezHarold_Papier"),
 		},
 		"Extra":[],
+	},
+	
+	"!_ChezHarold_Papier": {
+    	"DRecours":"ChezHarold_Arrive",
+    	"Evals":[
+        	("GetVar('page1')==False","ChezHarold_Papier_5"),
+    	],
+	},
+	
+	"ChezHarold_Papier_5": {
+		"Voix":None,
+		"Decor":"ChezHarold_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Il y a un bout de papier collé à cette lettre, étrange.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Arrive"),
+		},
+		"Extra":["ModifVar('page1',True)"],
 	},
 	
 }

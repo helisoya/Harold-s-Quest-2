@@ -3,7 +3,7 @@
 #-------------------------------------------------------------
 #----------------- !!! NE PAS MODIFIER !!! -------------------
 
-Engine_Version = "3.6.2" # Version du Moteur
+Engine_Version = "3.6.3" # Version du Moteur
 
 from tkinter import *
 from tkinter import simpledialog
@@ -102,7 +102,11 @@ Next4 = Button(fenetre, text=">",overrelief="groove")
 
 
 
-
+def DisableWindow():
+    fenetre.attributes('-disabled', True)
+    
+def EnableWindow():
+    fenetre.attributes('-disabled', False)
 
 def RenameWindow(New):
     """
@@ -266,7 +270,7 @@ def ImageSetUseSpeak(Image):
         return True
     return False
 
-def SetTitre(Text,Id):
+def SetTitre(Text,Id,corID):
     """
 
     Changer le Texte du Titre
@@ -275,7 +279,7 @@ def SetTitre(Text,Id):
     if type(Text) != str:
         CrashReport("Erreur : "+str(Text)+" n'est pas une chaine de caractères")
     #Visuel.itemconfigure("Text",text=Text)
-    TypeWriterEffectTitle(0,Text,Id)
+    TypeWriterEffectTitle(0,Text,Id,corID)
 
 def SkipText():
     Cvoix.fadeout(1)
@@ -317,7 +321,7 @@ def TypeWriterEffect(counter,Text,Id):
                     AnimationPersoVisuel(D_Tableaux[CorrectId]["PersoImg"],0)
 
 
-def TypeWriterEffectTitle(counter,Text,Id):
+def TypeWriterEffectTitle(counter,Text,Id,corID):
     """
 
     Effet Ecriture pour Titre
@@ -326,7 +330,9 @@ def TypeWriterEffectTitle(counter,Text,Id):
     if counter <= len(Text) and Id == GetVar("TableauId"):
         Beep(37,1)
         Visuel.itemconfigure("Text",text=Text[:counter])
-        fenetre.after(GetVar("TWESpeed"), lambda: TypeWriterEffectTitle(counter+1,Text,Id))
+        fenetre.after(GetVar("TWESpeed"), lambda: TypeWriterEffectTitle(counter+1,Text,Id,corID))
+    elif Id == GetVar("TableauId") and corID[:2] == "?_":
+        fenetre.after(2000, lambda: TableauSuivant(D_Tableaux[corID]["Suite"]))
 
 
 def SetScrollingTitre(Text,Id,Next):
@@ -347,7 +353,7 @@ def ScrollingTitleEffect(Text,Id,Next):
 
     """
     if Visuel.bbox("ScrollText")[3] > 0 and Id == GetVar("TableauId"):
-        Visuel.move("ScrollText",0,-0.5)
+        Visuel.move("ScrollText",0,-0.3)
         fenetre.after(10, lambda: ScrollingTitleEffect(Text,Id,Next))
 
     else:
@@ -668,7 +674,7 @@ def TableauSuivant(Id):
     ModifVar("Current",Id)
     ModifVar("TableauId",randint(-10**9,10**9)+GetVar("TableauId"))
     DeleteGUI("reaction")
-    SetTitre("",GetVar("TableauId"))
+    SetTitre("",GetVar("TableauId"),"__")
     Visuel.itemconfigure("Choice_Img_Filter",state="hidden")
 
     Visuel.tag_unbind("Dialog_Box","<Button-1>")
@@ -702,8 +708,7 @@ def TableauSuivant(Id):
         Visuel.itemconfigure("Dialog",text="")
         SetFunction({})
         SetMusic(D_Tableaux[Id]["Mus"])
-        SetTitre(D_Tableaux[Id]["Titre"],GetVar("TableauId"))
-        fenetre.after(int(GetVar("TWESpeed")*len(D_Tableaux[Id]["Titre"])*2), lambda: TableauSuivant(D_Tableaux[Id]["Suite"]))
+        SetTitre(D_Tableaux[Id]["Titre"],GetVar("TableauId"),Id)
     else: #Tableau
         if D_Tableaux[Id]["CustomPlacement"] != None:
             MovePersoImg(D_Tableaux[Id]["CustomPlacement"][0],D_Tableaux[Id]["CustomPlacement"][1])
@@ -796,7 +801,7 @@ def Apparition():
     Visuel.create_rectangle(2,300,399,532,fill="lightgray",tags="Dialog_Box")
 
     Visuel.create_text(int(Visuel['width'])/2,310,text="",width=300,tags="Dialog_Perso")
-    Visuel.create_text(int(Visuel['width'])/2,340,text="",width=380,tags="Dialog",justif="left")
+    Visuel.create_text(int(Visuel['width'])/2,340,text="",width=380,tags="Dialog",justif="left",anchor="n")
 
 
     Visuel.create_image(18,516,image=D_Data["Icons"]["save"],tags="Save_Button")
@@ -826,7 +831,7 @@ def Init():
                     jsonp_str = jsonp_file.read()
                     Dico_Full = eval(jsonp_str)
                 D_Tableaux.update(Dico_Full)
-
+                
         if pygame.mixer.get_init() != None:
             for file in os.listdir("Data\BGM"):
                 key = file.split(".")[0]

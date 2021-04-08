@@ -1,7 +1,7 @@
 {
 
 	"?_Prologue": {
-	"Titre":"Prologue",
+	"Titre":"Prologue de la Finalité",
     	"Suite":"Intro_1",
 	"Mus":None,
 	},
@@ -113,7 +113,7 @@
 		"Mus":"Intro",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Cet energumène vola le trésor au lieu de le rendre à son propriétaire. C'était la fin d'une époque.",
+		"Dialogue":"Cet énergumène vola le trésor au lieu de le rendre à son propriétaire. C'était la fin d'une époque.",
 		"Choix":{
 			"Choix1":(">","Intro_8"),
 		},
@@ -225,7 +225,7 @@
 		"Mus":"Intro",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Un terroriste inconnu arriva vers le chateau et le fit exploser. Elle fit des morts et des blessés, dans l'incompréhension totale.",
+		"Dialogue":"Un terroriste inconnu arriva vers le château et le fit exploser. Elle fit des morts et des blessés, dans l'incompréhension totale.",
 		"Choix":{
 			"Choix1":(">","Intro_14"),
 		},
@@ -241,7 +241,7 @@
 		"Mus":"Intro",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Les évenements s'enchainèrent les uns après les autres, et le chaos reignait de nouveau dans la région. Une fois de plus...",
+		"Dialogue":"Les événements s’enchaînèrent les uns après les autres, et le chaos régnait de nouveau dans la région. Une fois de plus...",
 		"Choix":{
 			"Choix1":(">","Intro_15"),
 		},

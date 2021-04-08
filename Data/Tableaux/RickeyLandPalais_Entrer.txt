@@ -1,0 +1,297 @@
+{
+
+	"!_RickeyLandPalais_Entrer": {
+    	"DRecours":"RickeyLandPalais_Before",
+    	"Evals":[
+        	("GetVar('quest') == 5","RickeyLandPalais_Confirm"),
+    	],
+	},
+
+	
+	"RickeyLandPalais_Before": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"Garde_Uniforme",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Garde",
+		"PersoCouleur":"red",
+		"Dialogue":"Halte ! Vous n'avez pas le droit d'entrer !",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandPalais_Confirm": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"red",
+		"Dialogue":"Suis-je sur de vouloir le faire ? Je ne peut plus revenir en arrière après.",
+		"Choix":{
+			"Choix1":("Oui","RickeyLandPalais_SNEncounter_1"),
+			"Choix2":("Non","RickeyLandPalais_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	
+	
+	
+	"RickeyLandPalais_SNEncounter_1": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Noir",
+		"PersoCouleur":"black",
+		"Dialogue":"Halte ! Avez-vous réussit les différentes attractions de RickeyLand ?",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_SNEncounter_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandPalais_SNEncounter_2": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Oui, j'ai réussit à finir toute vos attractions. Puis-je entrer pour recevoir le prix ?",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_SNEncounter_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandPalais_SNEncounter_3": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Noir",
+		"PersoCouleur":"black",
+		"Dialogue":"Attendez ! Avez-vous acheté quelque chose à la boutique de souvenir ?",
+		"Choix":{
+			"Choix1":(">","!_RickeyLandPalais_SNEncounter"),
+		},
+		"Extra":[],
+	},
+	
+	"!_RickeyLandPalais_SNEncounter": {
+    	"DRecours":"RickeyLandPalais_SNEncounter_4a",
+    	"Evals":[
+        	("GetVar('wentToBds') == 1","RickeyLandPalais_SNEncounter_4b"),
+			("GetVar('wentToBds') == 2","RickeyLandPalais_SNEncounter_4c"),
+    	],
+	},
+	
+	"RickeyLandPalais_SNEncounter_4a": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Euh....",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_SNEncounter_Battle_1"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandPalais_SNEncounter_4b": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Et bien... Non, mais on m'a proposé de la drogue...",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_SNEncounter_Battle_1"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandPalais_SNEncounter_4c": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Bien sur... C'est vraiment de la bonne qualité...",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_SNEncounter_OK_1"),
+		},
+		"Extra":[],
+	},	
+
+
+
+	"RickeyLandPalais_SNEncounter_OK_1": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Noir",
+		"PersoCouleur":"black",
+		"Dialogue":"Bien, vous êtes en règle. Vous pouvez entrer dans la palais du PDG.",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_SNEncounter_OK_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandPalais_SNEncounter_OK_2": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Noir",
+		"PersoCouleur":"black",
+		"Dialogue":"Ne faites pas l'imbécile dans le palais, ou vous risquez de perdre la vie tragiquement.",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_SNEncounter_OK_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandPalais_SNEncounter_OK_3": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Très bien, je ferais attention.",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_RickeyPartA_1"),
+		},
+		"Extra":[],
+	},	
+	
+	
+	"RickeyLandPalais_SNEncounter_Battle_1": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Noir",
+		"PersoCouleur":"black",
+		"Dialogue":"Comment ? Vous n'avez rien acheté ?! C'est inacceptable !",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_SNEncounter_Battle_2"),
+		},
+		"Extra":[],
+	},
+
+	"RickeyLandPalais_SNEncounter_Battle_2": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Noir",
+		"PersoCouleur":"black",
+		"Dialogue":"Je vais vous exterminer ! C'est un crime de ne pas aller acheter quelque chose dans la boutique de souvenir.",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_SNEncounter_Battle_3"),
+		},
+		"Extra":[],
+	},
+
+	"RickeyLandPalais_SNEncounter_Battle_3": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"black",
+		"Dialogue":"Le seigneur noir me fonce dessus, il m'engage dans un duel de... Tetris ?",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_SNEncounter_Battle_4"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandPalais_SNEncounter_Battle_4": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"black",
+		"Dialogue":"INSERER MINI JEU TETRIS",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_SNEncounter_Battle_5"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandPalais_SNEncounter_Battle_5": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"black",
+		"Dialogue":"Le seigneur noir s’effondre au sol. Il est vaincu, il murmure des mots incompréhensible.",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_SNEncounter_Battle_6"),
+		},
+		"Extra":[],
+	},
+
+	"RickeyLandPalais_SNEncounter_Battle_6": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"black",
+		"Dialogue":"Je peux entrer dans le palais maintenant.",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_RickeyPartA_1"),
+		},
+		"Extra":[],
+	},
+}

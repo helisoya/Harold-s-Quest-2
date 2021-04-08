@@ -1,0 +1,57 @@
+{	
+	"RickeyLandHorse_Concurrents_1": {
+		"Voix":None,
+		"Decor":"Parc_Cheval",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"tan",
+		"Dialogue":"Je regarde les concurrents de la course.",
+		"Choix":{
+			"Choix1":(">","RickeyLandHorse_Concurrents_2"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandHorse_Concurrents_2": {
+		"Voix":None,
+		"Decor":"Parc_Cheval",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"tan",
+		"Dialogue":"Il semblerait qu'il n'y ai que des gardes, ils ont l'air d'être armés.",
+		"Choix":{
+			"Choix1":(">","!_RickeyLandHorse_Concurrents"),
+		},
+		"Extra":[],
+	},
+	
+	"!_RickeyLandHorse_Concurrents": {
+    	"DRecours":"RickeyLandHorse_Arrive",
+    	"Evals":[
+        	("GetVar('card_garde')==False","RickeyLandHorse_Concurrents_3"),
+    	],
+	},
+	
+	"RickeyLandHorse_Concurrents_3": {
+		"Voix":None,
+		"Decor":"Parc_Cheval",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"tan",
+		"Dialogue":"Je trouve une carte par terre. Je la prend avec moi.",
+		"Choix":{
+			"Choix1":(">","RickeyLandHorse_Arrive"),
+		},
+		"Extra":["ModifVar('card_garde',True)"],
+	},
+	
+}

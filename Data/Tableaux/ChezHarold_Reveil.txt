@@ -1,7 +1,7 @@
 {	
 
 	"?_NouveauDepart": {
-	"Titre":"Nouveau Depart",
+	"Titre":"Départ de la Finalité",
     	"Suite":"ChezHarold_Reveil_1",
 	"Mus":None,
 	},
@@ -47,7 +47,7 @@
 		"Mus":None,
 		"Perso":"!Player",
 		"PersoCouleur":"blue",
-		"Dialogue":"Je me demande ou est Harold, il ne m'a pas reveiller aujourd'hui.",
+		"Dialogue":"Je me demande ou est Harold, il ne m'a pas réveillé aujourd'hui.",
 		"Choix":{
 			"Choix1":(">","ChezHarold_Reveil_4"),
 		},
@@ -120,7 +120,7 @@
 
 	"ChezHarold_Reveil_8": {
 		"Voix":None,
-		"Decor":"ChezHarold_Var2_Page",
+		"Decor":"ChezHarold_Var2",
 		"PersoImg":None,
 		"CustomPlacement":None,
 		"UseSpeak":True,
@@ -131,7 +131,7 @@
 		"Choix":{
 			"Choix1":(">","ChezHarold_Reveil_9"),
 		},
-		"Extra":["ClickEvent_GetPageOne()"],
+		"Extra":[],
 	},
 	
 	
@@ -144,7 +144,7 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"blue",
-		"Dialogue":"Arrivé à l'exterieur, je me demande quoi faire.",
+		"Dialogue":"Arrivé à l’extérieur, je me demande quoi faire.",
 		"Choix":{
 			"Choix1":(">","ChezHarold_Reveil_10"),
 		},

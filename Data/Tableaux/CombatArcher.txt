@@ -42,7 +42,7 @@
 		"Mus":None,
 		"Perso":"Archer",
 		"PersoCouleur":"palegreen",
-		"Dialogue":"Toi ! Je vais te tuer ! Je ne te le pardonerais jamais !",
+		"Dialogue":"Toi ! Je vais te tuer ! Je ne te le pardonnerais jamais !",
 		"Choix":{
 			"Choix1":(">","Event_Archer_4"),
 		},
@@ -58,7 +58,7 @@
 		"Mus":None,
 		"Perso":"Archer",
 		"PersoCouleur":"palegreen",
-		"Dialogue":"A cause de toi, j'ai été relegué au rang d'antagoniste de seconde zone ! C'est inacceptable !",
+		"Dialogue":"A cause de toi, j'ai été relégué au rang d'antagoniste de seconde zone ! C'est inacceptable !",
 		"Choix":{
 			"Choix1":(">","Event_Archer_5"),
 		},
@@ -154,11 +154,10 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"palegreen",
-		"Dialogue":"INSERER MINI JEU COURSE POURSUITE VAUTOUR.",
+		"Dialogue":"",
 		"Choix":{
-			"Choix1":(">","Event_Archer_11"),
 		},
-		"Extra":[],
+		"Extra":["MiniGame_EV()"],
 	},
 	
 	"Event_Archer_11": {

@@ -8,7 +8,7 @@
 	},
 
 
-	"§_Titre": {
+	"_Titre": {
 	"Text":"Salut \nAimez-vous ce texte ?\nMoi oui, enfin...\nC'est juste un joli texte pour vous parler...\n\nAussi pour vous vendre\n\n HARDOLD QUEST 2",
     	"Suite":"?_Titre",
 	"Mus":None,
@@ -19,5 +19,7 @@
     	"Suite":"!_Test",
 	"Mus":None,
 	},
+	
+
 }
 

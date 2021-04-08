@@ -1,0 +1,35 @@
+{	
+	"Braise_Regarder_1": {
+		"Voix":None,
+		"Decor":"Braise",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"La forteresse est complètement détruite. Il ne reste que des ruines.",
+		"Choix":{
+			"Choix1":(">","Braise_Regarder_2"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"Braise_Regarder_2": {
+		"Voix":None,
+		"Decor":"Braise",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je me demande ce qui a pu causer cette destruction. L'explosion a due être énorme.",
+		"Choix":{
+			"Choix1":(">","Braise_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+	
+}

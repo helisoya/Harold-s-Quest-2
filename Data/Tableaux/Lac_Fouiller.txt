@@ -1,0 +1,58 @@
+{	
+	"Lac_Fouiller_1": {
+		"Voix":None,
+		"Decor":"Lac",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je fouille la zone autour de moi.",
+		"Choix":{
+			"Choix1":(">","!_Lac_Fouiller"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"Lac_Fouiller_2b": {
+		"Voix":None,
+		"Decor":"Lac",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je ne trouve rien d'intéressant.",
+		"Choix":{
+			"Choix1":(">","Lac_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+	
+	"!_Lac_Fouiller": {
+    	"DRecours":"Lac_Fouiller_2b",
+    	"Evals":[
+        	("GetVar('page8')==False","Lac_Fouiller_2a"),
+    	],
+	},
+	
+	"Lac_Fouiller_2a": {
+		"Voix":None,
+		"Decor":"Lac",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je trouve un bout de papier par terre. Je le prend.",
+		"Choix":{
+			"Choix1":(">","Lac_Arrive"),
+		},
+		"Extra":["ModifVar('page8',True)"],
+	},
+	
+}

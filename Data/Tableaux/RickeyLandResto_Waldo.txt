@@ -1,0 +1,194 @@
+{
+
+	"!_RickeyLandResto_Waldo": {
+    	"DRecours":"RickeyLandResto_Done",
+    	"Evals":[
+        	("GetVar('resto_food') == False","RickeyLandResto_Normal"),
+    	],
+	},
+
+
+	
+	"RickeyLandResto_Normal": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":"Waldo_Cuisine",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Comment puis-je vous aider ?",
+		"Choix":{
+			"Choix1":("Prendre un Menu","RickeyLandResto_PrendreMenu_1"),
+			"Choix2":("Que faites-vous ici ?","RickeyLandResto_Topic1_1"),
+			"Choix3":("Rien (Partir)","RickeyLandResto_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandResto_Done": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":"Waldo_Cuisine",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Comment puis-je vous aider ?",
+		"Choix":{
+			"Choix1":("Le menu est...original","RickeyLandResto_Topic2_1"),
+			"Choix2":("Que faites-vous ici ?","RickeyLandResto_Topic1_1"),
+			"Choix3":("Rien (Partir)","RickeyLandResto_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandResto_Topic1_1": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":"Waldo_Cuisine",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Moi ? Je suis le cuisinier du parc voyons !",
+		"Choix":{
+			"Choix1":(">","RickeyLandResto_Topic1_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandResto_Topic1_2": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":"Waldo_Cuisine_Fou",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"C'est pas parce que j'ai aucune compétences en cuisine que je ne peux pas être cuisinier !",
+		"Choix":{
+			"Choix1":(">","RickeyLandResto_Topic1_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandResto_Topic1_3": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":"Waldo_Cuisine",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"La vérité c'est que je suis le seul employé du parc. Je n'ai pas le choix, je doit cuisiner pour la cantine.",
+		"Choix":{
+			"Choix1":(">","!_RickeyLandResto_Waldo"),
+		},
+		"Extra":[],
+	},
+	
+	
+
+	"RickeyLandResto_Topic2_1": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":"Waldo_Cuisine",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"En effet ! Ces menus sont les résultats de ma cuisine étoilé !",
+		"Choix":{
+			"Choix1":(">","RickeyLandResto_Topic2_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandResto_Topic2_2": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":"Waldo_Cuisine",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"C'est n'est pas tout les jours que vous pouvez manger aussi bien !",
+		"Choix":{
+			"Choix1":(">","RickeyLandResto_Topic2_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandResto_Topic2_3": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":"Waldo_Cuisine_Fou",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Je vous vois sourire ! Mes plats ne sont pas si mauvais que ça ! Je les goûte tous avant de les servir !",
+		"Choix":{
+			"Choix1":(">","!_RickeyLandResto_Waldo"),
+		},
+		"Extra":[],
+	},
+	
+	
+	"RickeyLandResto_PrendreMenu_1": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":"Waldo_Cuisine",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Mille fois merci ! Je n'ai jamais de clients ici à part les gardes qui viennent le midi.",
+		"Choix":{
+			"Choix1":(">","RickeyLandResto_PrendreMenu_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandResto_PrendreMenu_2": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":"Waldo_Cuisine",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Voici le menu du PDG pour vous ! Et une carte à collectionner en cadeau, c'est pour vous remercier !",
+		"Choix":{
+			"Choix1":(">","RickeyLandResto_PrendreMenu_3"),
+		},
+		"Extra":["ModifVar('resto_food',True)","ModifVar('ptmoral',GetVar('ptmoral')+2)","ModifVar('card_waldo_cuisine',True)"],
+	},
+	
+	"RickeyLandResto_PrendreMenu_3": {
+		"Voix":None,
+		"Decor":"Parc_Restaurant",
+		"PersoImg":"Waldo_Cuisine",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Je mange le sanglier de Waldo, il a un goût atroce. Je ne sais pas si c'est vraiment cela que je mange.",
+		"Choix":{
+			"Choix1":(">","!_RickeyLandResto_Waldo"),
+		},
+		"Extra":[],
+	},
+}

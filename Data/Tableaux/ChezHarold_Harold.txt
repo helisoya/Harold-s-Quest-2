@@ -1,4 +1,14 @@
 {	
+
+	"!_ChezHarold_Harold": {
+    	"DRecours":"ChezHarold_Harold",
+    	"Evals":[
+        	("GetVar('quest') == 7","ChezHarold_End_1"),
+    	],
+	},
+
+
+
 	"ChezHarold_Harold": {
 		"Voix":None,
 		"Decor":"ChezHarold_Var1",
@@ -78,7 +88,7 @@
 		"Mus":None,
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Alors dépéchez-vous, je vous en suplie ! Vous êtes mon seul espoir.",
+		"Dialogue":"Alors dépêchez-vous, je vous en supplie ! Vous êtes mon seul espoir.",
 		"Choix":{
 			"Choix1":(">","ChezHarold_Harold"),
 		},

@@ -1,5 +1,5 @@
 {	
-	"RickeyLandStatue_Statut_1": {
+	"RickeyLandStatue_Statue_1": {
 		"Voix":None,
 		"Decor":"Parc_Entree",
 		"PersoImg":None,
@@ -8,14 +8,14 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"blue",
-		"Dialogue":"Cette statue représente le PDG du parc, Rickey. Il tient une arme et porte une coiffe d'offcier.",
+		"Dialogue":"Cette statue représente le PDG du parc, Rickey. Il tient une arme et porte une coiffe d’officier.",
 		"Choix":{
-			"Choix1":(">","RickeyLandStatue_Statut_2"),
+			"Choix1":(">","RickeyLandStatue_Statue_2"),
 		},
 		"Extra":["ModifVar('canMove',False)"],
 	},
 	
-	"RickeyLandStatue_Statut_2": {
+	"RickeyLandStatue_Statue_2": {
 		"Voix":None,
 		"Decor":"Parc_Entree",
 		"PersoImg":None,
@@ -26,9 +26,32 @@
 		"PersoCouleur":"blue",
 		"Dialogue":"Je me demande pourquoi il s'habille comme cela. Ce n'est pas très astucieux pour faire venir des visiteurs.",
 		"Choix":{
+			"Choix1":(">","!_RickeyLandStatue_Statue"),
+		},
+		"Extra":[],
+	},
+	
+	"!_RickeyLandStatue_Statue": {
+    	"DRecours":"RickeyLandStatue_Arrive",
+    	"Evals":[
+        	("GetVar('card_rickey')==False","RickeyLandStatue_Statue_3"),
+    	],
+	},
+	
+	"RickeyLandStatue_Statue_3": {
+		"Voix":None,
+		"Decor":"Parc_Entree",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Il y a une carte dans la main de Rickey, je la prend avec moi.",
+		"Choix":{
 			"Choix1":(">","RickeyLandStatue_Arrive"),
 		},
-		"Extra":["ModifVar('canMove',False)"],
+		"Extra":["ModifVar('card_rickey',True)"],
 	},
 	
 }

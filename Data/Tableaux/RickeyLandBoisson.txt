@@ -1,0 +1,19 @@
+{	
+	"RickeyLandBoisson_Arrive": {
+		"Voix":None,
+		"Decor":"Parc_Boisson",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je suis dans la rue des boissons du parc. Que vais-je faire ?",
+		"Choix":{
+			"Choix1":("Regarder les stands","RickeyLandBoisson_Stand_1"),
+			"Choix2":("Fouiller les alentours","RickeyLandBoisson_Fouiller_1"),
+		},
+		"Extra":["ModifVar('canMove',True)"],
+	},
+	
+}

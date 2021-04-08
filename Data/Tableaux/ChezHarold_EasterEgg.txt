@@ -9,7 +9,7 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"blue",
-		"Dialogue":"J'entre dans une piece étrange.",
+		"Dialogue":"J'entre dans une pièce étrange.",
 		"Choix":{
 			"Choix1":(">","ChezHarold_ReveilEasterEgg_2"),
 		},
@@ -89,7 +89,7 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"green",
-		"Dialogue":"Je sort immédiatement de la piece et je m'en vais.",
+		"Dialogue":"Je sort immédiatement de la pièce et je m'en vais.",
 		"Choix":{
 			"Choix1":(">","ChezHarold_Reveil_8"),
 		},

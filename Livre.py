@@ -134,6 +134,36 @@ def DicWindow():
             "desc":"Cette forteresse est le lieu de vie des Invocateurs et de leur chef Harold. C'est un endroit sinistre ou de nombreuses invocations illégales et atroves ont été fait.",
             "img":PhotoImage(master=livre,file="Data\\Autres\\Livre\\tournoir.png"),
         },
+        "braise":{
+            "type":"lieu",
+            "nom":"Forteresse Braise",
+            "desc":"Cette forteresse fut le lieu de vie du Seigneur Braise quand il était encore en vie. Elle a été détruite par un inconnu un an après la mort de son propriétaire. Personne ne sait pourquoi.",
+            "img":PhotoImage(master=livre,file="Data\\Autres\\Livre\\braise.png"),
+        },
+        "marais":{
+            "type":"lieu",
+            "nom":"Marais Maudit",
+            "desc":"Ce marais est un lieu maudit, il fut pendant longtemps le lieu de vie d'un terrible ogre qui mangeait les enfants. Depuis quelques temps, l'ogre est mort et un archer s'est auto-proclamé seigneur du marais.",
+            "img":PhotoImage(master=livre,file="Data\\Autres\\Livre\\marais.png"),
+        },
+        "seigneurnoir":{
+            "type":"perso",
+            "nom":"Seigneur Noir",
+            "profession":"Bras Droit",
+            "age":"52 ans",
+            "residence":"RickeyLand",
+            "desc":"Le seigneur noir est le bras droit du PDG Rickey, c'est lui qui s'occupe de gérer les entrées du parc et du palais. On raconte qu'il a volé le titre à son prédecesseur, qui a gardé son chapeau en guise de protestation.",
+            "img":PhotoImage(master=livre,file="Data\\Autres\\Livre\\seigneurnoir.png"),
+        },
+        "sheperd":{
+            "type":"perso",
+            "nom":"???",
+            "profession":"???",
+            "age":"???",
+            "residence":"Forteresse Noire",
+            "desc":"Ce soldat est un vrai mystère. Personne ne sais d’où il vient, ni pourquoi il est là. La seule chose qui est sure c'est qu'il protégera son maître de sa vie. Il a beaucoup de talents qui font de lui un redoutable combattant.",
+            "img":PhotoImage(master=livre,file="Data\\Autres\\Livre\\sheperd.png"),
+        },
     }
 
 

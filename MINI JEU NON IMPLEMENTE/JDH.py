@@ -36,7 +36,7 @@ for i in range(288):
     nb = str(i)
     while len(nb) < 3:
         nb = "0"+nb
-    List_Anim.append(PhotoImage(master=root,file="Img\\JDH\\frame_"+nb+"_delay-0.06s.png"))
+    List_Anim.append(PhotoImage(master=root,file="Data\\Autres\\JDH\\frame_"+nb+"_delay-0.06s.png"))
 
 
 def AddReaction(txt):

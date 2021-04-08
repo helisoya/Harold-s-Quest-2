@@ -1,0 +1,66 @@
+{	
+	"RickeyLandBDS_Regarder_1": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je regarde les différents produits présent dans la boutique.",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_Regarder_2"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandBDS_Regarder_2": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"C'est étrange, on dirait qu'il y a beaucoup de produit qui ne devrait pas être ici.",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_Regarder_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandBDS_Regarder_3": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"C'est comme si cette boutique n'était pas vraiment une boutique de souvenir.",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_Regarder_4"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandBDS_Regarder_4": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Il me semble entendre des grognements venant de l'arrière boutique, espérons que ce n'est rien.",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+}

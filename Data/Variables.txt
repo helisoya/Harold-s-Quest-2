@@ -17,6 +17,12 @@
     	"type":"bool",
     	"valeur":True,
     },
+	
+    "ultimateCard":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":True,
+    },
 
     "canMove":{
 	"save":True,
@@ -37,6 +43,11 @@
     },
 
     "foughtArcher":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+    "talkedArcher":{
 	"save":True,
     	"type":"bool",
     	"valeur":False,
@@ -65,12 +76,22 @@
     	"type":"bool",
     	"valeur":False,
     },
-
-    "wentToBts":{
+	
+    "resto_food":{
 	"save":True,
     	"type":"bool",
     	"valeur":False,
     },
+
+    "wentToBds":{
+	"save":True,
+    	"type":"int",
+    	"valeur":0,
+    },
+	
+	
+	
+	
 
     "page1":{
 	"save":True,
@@ -186,7 +207,28 @@
     	"type":"bool",
     	"valeur":False,
     },
-
+    "dic_braise":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+    "dic_marais":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+    "dic_seigneurnoir":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+    "dic_sheperd":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+	
+	
 
     "card_harold":{
 	"save":True,

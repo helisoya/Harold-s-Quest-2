@@ -1,0 +1,61 @@
+{	
+
+	
+	
+	"RickeyLandBoisson_Fouiller_1": {
+		"Voix":None,
+		"Decor":"Parc_Boisson",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je fouille la zone autour de moi.",
+		"Choix":{
+			"Choix1":(">","!_RickeyLandBoisson_Fouiller"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandBoisson_Fouiller_2b": {
+		"Voix":None,
+		"Decor":"Parc_Boisson",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je ne trouve rien d'intéressant.",
+		"Choix":{
+			"Choix1":(">","RickeyLandBoisson_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+	
+	"!_RickeyLandBoisson_Fouiller": {
+    	"DRecours":"RickeyLandBoisson_Fouiller_2b",
+    	"Evals":[
+        	("GetVar('card_garde_cagoule')==False","RickeyLandBoisson_Fouiller_2a"),
+    	],
+	},
+	
+	"RickeyLandBoisson_Fouiller_2a": {
+		"Voix":None,
+		"Decor":"Parc_Boisson",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je trouve une carte à collectionner par terre. Je la prend.",
+		"Choix":{
+			"Choix1":(">","RickeyLandBoisson_Arrive"),
+		},
+		"Extra":["ModifVar('card_garde_cagoule',True)"],
+	},
+	
+}

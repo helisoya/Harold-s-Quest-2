@@ -24,7 +24,7 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"blue",
-		"Dialogue":"C'est une belle voiture blanche. Elle a l'air recente.",
+		"Dialogue":"C'est une belle voiture blanche. Elle a l'air récente.",
 		"Choix":{
 			"Choix1":(">","ChezHarold_Voiture_3"),
 		},

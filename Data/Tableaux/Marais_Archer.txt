@@ -1,0 +1,231 @@
+{
+
+	"!_Marais_Archer": {
+    	"DRecours":"Marais_Archer_Rien",
+    	"Evals":[
+        	("GetVar('foughtArcher')==True","!_Marais_Archer2"),
+    	],
+	},
+	
+	"!_Marais_Archer2": {
+    	"DRecours":"Marais_Archer_Talked",
+    	"Evals":[
+        	("GetVar('talkedArcher')==False","Marais_Archer_Normal"),
+    	],
+	},
+	
+	"Marais_Archer_Rien": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Il n'y a personne ici.",
+		"Choix":{
+			"Choix1":(">","Marais_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+
+	
+	"Marais_Archer_Normal": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Que voulez-vous ? Faites-vite...",
+		"Choix":{
+			"Choix1":("Qui êtes-vous ?","Marais_Archer_Topic1_1"),
+			"Choix2":("Pourquoi m'avoir attaqué ?","Marais_Archer_Topic2_1"),
+			"Choix3":("Rien (Partir)","Marais_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"Marais_Archer_Talked": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Que voulez-vous ? Faites-vite...",
+		"Choix":{
+			"Choix1":("Parlez-moi de vous","Marais_Archer_Topic1_1"),
+			"Choix2":("Rien (Partir)","Marais_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	
+	"Marais_Archer_Topic1_1": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Je suis le plus grand et le plus puissant archer de la province !",
+		"Choix":{
+			"Choix1":(">","Marais_Archer_Topic1_2"),
+		},
+		"Extra":[],
+	},
+	
+	"Marais_Archer_Topic1_2": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Durant toute ma carrière de vol et de kidnapping, aucun homme n'a pu me résisté !",
+		"Choix":{
+			"Choix1":(">","Marais_Archer_Topic1_3"),
+		},
+		"Extra":[],
+	},
+	
+	"Marais_Archer_Topic1_3": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Enfin, sauf vous et un autre. Mais ça compte pas !",
+		"Choix":{
+			"Choix1":(">","!_Marais_Archer2"),
+		},
+		"Extra":[],
+	},
+	
+	
+	"Marais_Archer_Topic2_1": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Vous ? Et bien, c'est à dire que....",
+		"Choix":{
+			"Choix1":(">","Marais_Archer_Topic2_2"),
+		},
+		"Extra":[],
+	},
+	
+	"Marais_Archer_Topic2_2": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Cela fait un an que je ne suis plus pris au sérieux dans la région...",
+		"Choix":{
+			"Choix1":(">","Marais_Archer_Topic2_3"),
+		},
+		"Extra":[],
+	},
+	
+	"Marais_Archer_Topic2_3": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"C'est la faute d'un certain Harold, j'en suis sur. Et j'avais entendu dire que vous aviez été envoyé par lui.",
+		"Choix":{
+			"Choix1":(">","Marais_Archer_Topic2_4"),
+		},
+		"Extra":[],
+	},
+	
+	"Marais_Archer_Topic2_4": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Me pardonnerez-vous ? J'ai agit sous l'effet de la colère, j'en avais marre de ne plus être un antagoniste principal.",
+		"Choix":{
+			"Choix1":("Oui","Marais_Archer_Topic2_5a"),
+			"Choix2":("Non","Marais_Archer_Topic2_5b"),
+		},
+		"Extra":[],
+	},
+	
+	"Marais_Archer_Topic2_5a": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Merci, vous ne savez pas à quel point c'était dur.",
+		"Choix":{
+			"Choix1":(">","Marais_Archer_Topic2_6"),
+		},
+		"Extra":["ModifVar('ptmoral',GetVar('ptmoral')+2)"],
+	},
+
+	"Marais_Archer_Topic2_5b": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"je vois... C'est logique après ce que j'ai fait...",
+		"Choix":{
+			"Choix1":(">","Marais_Archer_Topic2_6"),
+		},
+		"Extra":["ModifVar('ptmoral',GetVar('ptmoral')-2)"],
+	},	
+	
+	"Marais_Archer_Topic2_6": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":"Archer",
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Archer",
+		"PersoCouleur":"palegreen",
+		"Dialogue":"Ne reparlons plus de cela, par pitié.",
+		"Choix":{
+			"Choix1":(">","!_Marais_Archer2"),
+		},
+		"Extra":["ModifVar('talkedArcher',True)"],
+	},
+}

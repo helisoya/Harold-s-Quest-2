@@ -17,7 +17,7 @@
 		"Mus":None,
 		"Perso":"Marchand",
 		"PersoCouleur":"steelblue",
-		"Dialogue":"Tu as déja réussit l'attraction. Je n'en peux plus !",
+		"Dialogue":"Tu as déjà réussit l'attraction. Je n'en peux plus !",
 		"Choix":{
 			"Choix1":(">","RickeyLandMarchand_Arrive"),
 		},

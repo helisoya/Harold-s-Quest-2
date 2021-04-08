@@ -1,0 +1,427 @@
+{
+	
+	"TourNoir_PartC_Cerf_1": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Je vais invoquer mon maître ! Lui seul pourra vous vaincre !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_2"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_2": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Ah et merci d'avoir trouvé les pages pour moi, sans quoi je n'aurait pas pu le faire !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_3"),
+		},
+		"Extra":[],
+	},
+
+	"TourNoir_PartC_Cerf_3": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Mon seigneur et maître, entendez ma prière !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_4"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_4": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Harold_Kimono",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"SACTURR MEK DOLTY FOK DEK VILVOK DEK TOLKAS !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_5"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_5": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"D'un coup, ma vision est obstruée. Je n'arrive plus à voir.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_6"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_6": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"Quand j'arrive à voir devant moi, ma vision est frappée d'horreur.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_7"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_7": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Cerf",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"???",
+		"PersoCouleur":"purple",
+		"Dialogue":"HE HE HE ! Enfin ! Je peux enfin fouler la terre et la plonger dans le chaos !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_8"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_8": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Cerf",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Cerf",
+		"PersoCouleur":"purple",
+		"Dialogue":"Mortel ! Tremble devant le Seigneur Cerf, seigneur de la destruction et du chaos !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_9"),
+		},
+		"Extra":["ModifVar('dic_cerf',True)"],
+	},
+	
+	"TourNoir_PartC_Cerf_9": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Cerf",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Cerf",
+		"PersoCouleur":"purple",
+		"Dialogue":"Je vois que tu as tenu tête à mon pantin... Je pense que je vais le remplacer par toi.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_10"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_10": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Cerf",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Euh... non.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_11"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_11": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Cerf",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Cerf",
+		"PersoCouleur":"purple",
+		"Dialogue":"He He He ! Tu crois que je vais te laisser le choix ?",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_12"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_12": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Cerf",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Cerf",
+		"PersoCouleur":"purple",
+		"Dialogue":"Tremble devant ma puissance, mortel !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_13"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_13": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Cerf",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"purple",
+		"Dialogue":"J'ai une étrange sensation dans mon corps.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_14"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_14": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Cerf",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"purple",
+		"Dialogue":"INSERER MINI JEU COMBAT CONTRE SEIGNEUR CERF",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_15"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_15": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Cerf",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Cerf",
+		"PersoCouleur":"purple",
+		"Dialogue":"Étonnant ! Mais pas suffisant pour me vaincre, je vais corrompre ton esprit !",
+		"Choix":{
+			"Choix1":(">","!_TourNoir_PartC_Cerf"),
+		},
+		"Extra":[],
+	},
+	
+	"!_TourNoir_PartC_Cerf": {
+    	"DRecours":"TourNoir_PartC_Cerf_Good_1",
+    	"Evals":[
+        	("GetVar('ptmoral') < 0","TourNoir_PartC_Cerf_Bad_1"),
+    	],
+	},
+	
+	"TourNoir_PartC_Cerf_Good_1": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Cerf",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"???",
+		"PersoCouleur":"yellow",
+		"Dialogue":"Pas si vite ! Je vais t’arrêter, monstre !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_Good_2"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_Good_2": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Cerf",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Cerf",
+		"PersoCouleur":"purple",
+		"Dialogue":"NON ! Pas toi ! J'allais conquérir le monde !",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_Good_3"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_Good_3": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":"Cerf",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Cerf",
+		"PersoCouleur":"purple",
+		"Dialogue":"ARGH !!!!",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_Good_4"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_Good_4": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"yellow",
+		"Dialogue":"Le cerf se met à disparaître, et bientôt il n'y a plus que moi dans la salle.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_Good_5"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_Good_5": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"???",
+		"PersoCouleur":"yellow",
+		"Dialogue":"Mortel, je vous ai aidé car vous avez semé la bonté sur terre. Je vous en remercie.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_Good_6"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_Good_6": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"???",
+		"PersoCouleur":"yellow",
+		"Dialogue":"Je vais vous renvoyer dans votre monde, plus personne ne viendra vous torturer.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_Good_7"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_Good_7": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"???",
+		"PersoCouleur":"yellow",
+		"Dialogue":"Reposez-vous, !Player. Vous en avez besoin.",
+		"Choix":{
+			"Choix1":(">","§_CerfGoodEnding_Credits"),
+		},
+		"Extra":[],
+	},
+	
+	
+	"TourNoir_PartC_Cerf_Bad_1": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Cerf",
+		"PersoCouleur":"purple",
+		"Dialogue":"Petite marionnette. Je vais faire de toi mon plus beau pantin.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_Bad_2"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_Bad_2": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Cerf",
+		"PersoCouleur":"purple",
+		"Dialogue":"Nous allons accomplir beaucoup de choses ensemble. Vous allez voir.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_Bad_3"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_Bad_3": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Cerf",
+		"PersoCouleur":"purple",
+		"Dialogue":"Le monde sera bientôt à nos pied. Je serait enfin le maître absolu du monde.",
+		"Choix":{
+			"Choix1":(">","TourNoir_PartC_Cerf_Bad_4"),
+		},
+		"Extra":[],
+	},
+	
+	"TourNoir_PartC_Cerf_Bad_4": {
+		"Voix":None,
+		"Decor":None,
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Cerf",
+		"PersoCouleur":"purple",
+		"Dialogue":"En attendant, vous pouvez vous reposer. C'est bien mérité.",
+		"Choix":{
+			"Choix1":(">","§_CerfBadEnding_Credits"),
+		},
+		"Extra":[],
+	},
+	
+}

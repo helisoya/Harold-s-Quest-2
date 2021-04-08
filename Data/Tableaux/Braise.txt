@@ -1,0 +1,19 @@
+{	
+	"Braise_Arrive": {
+		"Voix":None,
+		"Decor":"Braise",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je suis vers les ruines de la forteresse Braise. Que vais-je faire ?",
+		"Choix":{
+			"Choix1":("Regarder les ruines","Braise_Regarder_1"),
+			"Choix2":("Fouiller les alentours","Braise_Fouiller_1"),
+		},
+		"Extra":["ModifVar('canMove',True)","ModifVar('dic_braise',True)"],
+	},
+	
+}

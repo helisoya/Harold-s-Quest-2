@@ -1,0 +1,60 @@
+{
+	"Marais_Regarder": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"brown",
+		"Dialogue":"Je regarde aux alentours.",
+		"Choix":{
+			"Choix1":(">","!_Marais_Regarder"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+
+
+	"!_Marais_Regarder": {
+    	"DRecours":"Marais_Regarder_Normal",
+    	"Evals":[
+        	("GetVar('page5')==False","Marais_Regarder_Page"),
+    	],
+	},
+
+	
+	"Marais_Regarder_Normal": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"brown",
+		"Dialogue":"Il n'y a rien d’intéressant.",
+		"Choix":{
+			"Choix1":(">","Marais_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+	"Marais_Regarder_Page": {
+		"Voix":None,
+		"Decor":"Marais",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"brown",
+		"Dialogue":"Je trouve un bout de papier par terre, étrange...",
+		"Choix":{
+			"Choix1":(">","Marais_Arrive"),
+		},
+		"Extra":["ModifVar('page5',True)",],
+	},
+	
+	
+}

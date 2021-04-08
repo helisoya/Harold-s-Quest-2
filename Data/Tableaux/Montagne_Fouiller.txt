@@ -1,0 +1,58 @@
+{	
+	"Montagne_Fouiller_1": {
+		"Voix":None,
+		"Decor":"Montagnes",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je fouille la zone autour de moi.",
+		"Choix":{
+			"Choix1":(">","!_Montagne_Fouiller"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"Montagne_Fouiller_2b": {
+		"Voix":None,
+		"Decor":"Montagnes",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je ne trouve rien d'intéressant.",
+		"Choix":{
+			"Choix1":(">","Montagne_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+	
+	"!_Montagne_Fouiller": {
+    	"DRecours":"Montagne_Fouiller_2b",
+    	"Evals":[
+        	("GetVar('page7')==False","Montagne_Fouiller_2a"),
+    	],
+	},
+	
+	"Montagne_Fouiller_2a": {
+		"Voix":None,
+		"Decor":"Montagnes",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je trouve un bout de papier par terre. Je le prend.",
+		"Choix":{
+			"Choix1":(">","Montagne_Arrive"),
+		},
+		"Extra":["ModifVar('page7',True)"],
+	},
+	
+}

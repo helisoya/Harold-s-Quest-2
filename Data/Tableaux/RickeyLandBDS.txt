@@ -1,0 +1,19 @@
+{	
+	"RickeyLandBDS_Arrive": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je suis à la boutique de souvenir. Que vais-je faire ?",
+		"Choix":{
+			"Choix1":("Parler au caissier","!_RickeyLandBDS_Waldo"),
+			"Choix2":("Regarder les produits","RickeyLandBDS_Regarder_1"),
+		},
+		"Extra":["ModifVar('canMove',True)"],
+	},
+	
+}

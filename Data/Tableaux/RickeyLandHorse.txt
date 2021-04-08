@@ -10,8 +10,8 @@
 		"PersoCouleur":"blue",
 		"Dialogue":"Je suis au centre hippique. Que vais-je faire ?",
 		"Choix":{
-			"Choix1":("Parler au maitre du stade","!_RickeyLandHorse_Maitre"),
-			"Choix2":("Regarder les concurants","RickeyLandHorse_Concurants_1"),
+			"Choix1":("Parler au maître du stade","!_RickeyLandHorse_Maitre"),
+			"Choix2":("Regarder les concurrents","RickeyLandHorse_Concurrents_1"),
 		},
 		"Extra":["ModifVar('canMove',True)"],
 	},

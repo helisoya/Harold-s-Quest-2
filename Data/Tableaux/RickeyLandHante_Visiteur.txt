@@ -26,9 +26,32 @@
 		"PersoCouleur":"tan",
 		"Dialogue":"J'ai eu l'impression que quelqu'un me suivait dans la maison hantée.",
 		"Choix":{
-			"Choix1":(">","RickeyLandHante_Arrive"),
+			"Choix1":(">","!_RickeyLandHante_Passant"),
 		},
 		"Extra":[],
+	},
+	
+	"!_RickeyLandHante_Passant": {
+    	"DRecours":"RickeyLandHante_Arrive",
+    	"Evals":[
+        	("GetVar('page3')==False","RickeyLandHante_Passant_3"),
+    	],
+	},
+	
+	"RickeyLandHante_Passant_3": {
+		"Voix":None,
+		"Decor":"Parc_Hante",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Visiteur",
+		"PersoCouleur":"tan",
+		"Dialogue":"J'avais trouvé ce bout de papier dans la maison. Prenez-le, il pourrait vous servir.",
+		"Choix":{
+			"Choix1":(">","RickeyLandHante_Arrive"),
+		},
+		"Extra":["ModifVar('page3',True)"],
 	},
 	
 }

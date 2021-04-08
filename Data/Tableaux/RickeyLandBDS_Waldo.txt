@@ -1,0 +1,327 @@
+{
+
+	"!_RickeyLandBDS_Waldo": {
+    	"DRecours":"RickeyLandBDS_Done",
+    	"Evals":[
+        	("GetVar('wentToBds') == 0","RickeyLandBDS_Normal"),
+    	],
+	},
+
+
+	
+	"RickeyLandBDS_Normal": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Comment puis-je vous aider ?",
+		"Choix":{
+			"Choix1":("Qu'avez vous à vendre ?","RickeyLandBDS_ChoixMoral_1"),
+			"Choix2":("C'est la boutique de souvenir, ici ?","RickeyLandBDS_Topic1_1"),
+			"Choix3":("Rien (Partir)","RickeyLandBDS_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandBDS_Done": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Comment puis-je vous aider ?",
+		"Choix":{
+			"Choix1":("Qui était cet homme ?","RickeyLandBDS_Topic2_1"),
+			"Choix2":("C'est la boutique de souvenir, ici ?","RickeyLandBDS_Topic1_1"),
+			"Choix3":("Rien (Partir)","RickeyLandBDS_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandBDS_Topic1_1": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"En effet, ceci est la boutique de souvenir du parc. C'est un endroit très important au parc.",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_Topic1_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandBDS_Topic1_2": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Le PDG s'énerve quand les visiteurs ne viennent pas dans cette boutique, ça le met de mauvaise humeur.",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_Topic1_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandBDS_Topic1_3": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Il veux que tous viennent ici pour acheter quelque chose. Sinon c'est mauvais pour les affaires.",
+		"Choix":{
+			"Choix1":(">","!_RickeyLandBDS_Waldo"),
+		},
+		"Extra":[],
+	},
+	
+	
+
+	"RickeyLandBDS_Topic2_1": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Ce preux chevalier en armure de plaque ? C'est mon plus gros client.",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_Topic2_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandBDS_Topic2_2": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Il vient tout les mois de la lointaine province de Runan afin d'acheter mes articles !",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_Topic2_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandBDS_Topic2_3": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo_Fou",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Et c'est absolument pas parce que j'ai des choses illégales à vendre dans mon arrière boutique !",
+		"Choix":{
+			"Choix1":(">","!_RickeyLandBDS_Waldo"),
+		},
+		"Extra":[],
+	},
+	
+	
+	"RickeyLandBDS_ChoixMoral_1": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"J'ai beaucoup de choses à vendre ici. Tenez, j'ai l'article parfait pour vous !",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_ChoixMoral_2"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandBDS_ChoixMoral_2": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Voila ! Je peux vous vendre cette poudre blanche, elle vous fera voir de nouvelles couleurs !",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_ChoixMoral_3"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandBDS_ChoixMoral_3": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Il est littéralement en train de me vendre de la drogue, que vais-je faire ?",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_ChoixMoral_4"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandBDS_ChoixMoral_4": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Alors ? Qu'en dites-vous ? Je peux vous faire un prix d'ami !",
+		"Choix":{
+			"Choix1":("Je la prend","RickeyLandBDS_ChoixMoral_5a"),
+			"Choix2":("Hors de question","RickeyLandBDS_ChoixMoral_5b"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandBDS_ChoixMoral_5a": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Parfait ! Voila votre article, vous allez adorer ! C'est ce qu'on donne aux gardes !",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_ChoixMoral_6"),
+		},
+		"Extra":["ModifVar('ptmoral',GetVar('ptmoral')-3)","ModifVar('wentToBds',2)"],
+	},
+	
+	"RickeyLandBDS_ChoixMoral_6": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Je colle mon nez sur la poudre. Waldo n'a pas menti, je vois de nouvelles couleurs.",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_ChoixMoral_7"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandBDS_ChoixMoral_5b": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Je vois, tant pis ! C'était votre seul chance ! Vous avez manqué quelque chose de fou !",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_ChoixMoral_7"),
+		},
+		"Extra":["ModifVar('ptmoral',GetVar('ptmoral')+3)","ModifVar('wentToBds',1)"],
+	},
+	
+	
+	"RickeyLandBDS_ChoixMoral_7": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Un homme en armure de plaque entre dans la boutique. Il m'ignore et va vers Waldo.",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_ChoixMoral_8"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandBDS_ChoixMoral_8": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":"Waldo",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Ah vous voila ! Venez, allons dans l'arrière boutique. J'ai de nouvelles choses pour vous !",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_ChoixMoral_9"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandBDS_ChoixMoral_9": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Waldo et l'homme s’engouffrent dans l'arrière boutique. Je reste seul devant le comptoir.",
+		"Choix":{
+			"Choix1":(">","RickeyLandBDS_ChoixMoral_10"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandBDS_ChoixMoral_10": {
+		"Voix":None,
+		"Decor":"Parc_BDS",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Après quelques minutes, l'homme en armure s'en va avec une caisse et Waldo retourne au comptoir.",
+		"Choix":{
+			"Choix1":(">","!_RickeyLandBDS_Waldo"),
+		},
+		"Extra":[],
+	},
+	
+}
+
+

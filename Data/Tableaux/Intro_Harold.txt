@@ -56,7 +56,7 @@
 		"Mus":"Night",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Entrez-donc ! Je vais tout vous expliquer en detail. J'ai besoin de vous une fois de plus.",
+		"Dialogue":"Entrez-donc ! Je vais tout vous expliquer en détail. J'ai besoin de vous une fois de plus.",
 		"Choix":{
 			"Choix1":(">","!_IntroHarold_Check"),
 		},
@@ -111,7 +111,7 @@
 		"Mus":"Night",
 		"Perso":"!Player",
 		"PersoCouleur":"blue",
-		"Dialogue":"Nous verons cela à l'interieur...",
+		"Dialogue":"Nous verrons cela à l’intérieur...",
 		"Choix":{
 			"Choix1":(">","IntroHarold_7"),
 		},
@@ -223,7 +223,7 @@
 		"Mus":None,
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Depuis, le chaos reigne dans la région. Personne ne sait qui a effectué l'acte, ni pourquoi.",
+		"Dialogue":"Depuis, le chaos règne dans la région. Personne ne sait qui a effectué l'acte, ni pourquoi.",
 		"Choix":{
 			"Choix1":(">","IntroHarold_14"),
 		},
@@ -303,7 +303,7 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"green",
-		"Dialogue":"Harold m'ammène vers son poste de television et il commence à l'allumer.",
+		"Dialogue":"Harold m’amène vers son poste de télévision et il commence à l'allumer.",
 		"Choix":{
 			"Choix1":(">","IntroHarold_19"),
 		},
@@ -354,7 +354,7 @@
 		"Mus":"Rickeyland_Anthem",
 		"Perso":"???",
 		"PersoCouleur":"coral",
-		"Dialogue":"Avez-vous toujours révé de venir dans un parc somptueux ?",
+		"Dialogue":"Avez-vous toujours rêvé de venir dans un parc somptueux ?",
 		"Choix":{
 			"Choix1":(">","IntroHarold_22"),
 		},
@@ -386,7 +386,7 @@
 		"Mus":"Rickeyland_Anthem",
 		"Perso":"Rickey",
 		"PersoCouleur":"coral",
-		"Dialogue":"Je suis Rickey, le PDG de RickeyLand ! J'ai hate de vous voir venir, Ah Ah !",
+		"Dialogue":"Je suis Rickey, le PDG de RickeyLand ! J'ai hâte de vous voir venir, Ah Ah !",
 		"Choix":{
 			"Choix1":(">","IntroHarold_24"),
 		},
@@ -466,7 +466,7 @@
 		"Mus":"Rickeyland_Anthem",
 		"Perso":"Marchand",
 		"PersoCouleur":"steelblue",
-		"Dialogue":"Au secours ! Aisez-moi ! Laissez-moi partir ! Je n'ai rien fait de mal !",
+		"Dialogue":"Au secours ! Aidez-moi ! Laissez-moi partir ! Je n'ai rien fait de mal !",
 		"Choix":{
 			"Choix1":(">","IntroHarold_29"),
 		},
@@ -482,7 +482,7 @@
 		"Mus":"Rickeyland_Anthem",
 		"Perso":"Rickey",
 		"PersoCouleur":"coral",
-		"Dialogue":"La course de Chevaux ! Pourez-vous vaincre mes gardes à la course ?",
+		"Dialogue":"La course de Chevaux ! Pourrez-vous vaincre mes gardes à la course ?",
 		"Choix":{
 			"Choix1":(">","IntroHarold_30"),
 		},
@@ -498,7 +498,7 @@
 		"Mus":"Rickeyland_Anthem",
 		"Perso":"Rickey",
 		"PersoCouleur":"coral",
-		"Dialogue":"L'utilisation d'armes à feux es autorisé sur cette atraction !",
+		"Dialogue":"L'utilisation d'armes à feux es autorisé sur cette attraction !",
 		"Choix":{
 			"Choix1":(">","IntroHarold_31"),
 		},
@@ -562,7 +562,7 @@
 		"Mus":"Rickeyland_Anthem",
 		"Perso":"Rickey",
 		"PersoCouleur":"coral",
-		"Dialogue":"Soyez le premier à finir toute les attractions et gagner un livre dedicacé !",
+		"Dialogue":"Soyez le premier à finir toute les attractions et gagner un livre dédicacé !",
 		"Choix":{
 			"Choix1":(">","IntroHarold_35"),
 		},
@@ -594,7 +594,7 @@
 		"Mus":"Rickeyland_Anthem",
 		"Perso":"Rickey",
 		"PersoCouleur":"coral",
-		"Dialogue":"Ah et j'oubliait, n'oubliez pas d'aller à la boutique de souvenir !",
+		"Dialogue":"Ah et j’oubliais, n'oubliez pas d'aller à la boutique de souvenir !",
 		"Choix":{
 			"Choix1":(">","IntroHarold_37"),
 		},
@@ -658,7 +658,7 @@
 		"Mus":None,
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Pire encore ! Ce livre dedicacé, c'est le mien ! Il me l'a volé !",
+		"Dialogue":"Pire encore ! Ce livre dédicacé, c'est le mien ! Il me l'a volé !",
 		"Choix":{
 			"Choix1":(">","IntroHarold_41"),
 		},
@@ -722,7 +722,7 @@
 		"Mus":None,
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"En guise de remerciment, prenez ceci !",
+		"Dialogue":"En guise de remerciement, prenez ceci !",
 		"Choix":{
 			"Choix1":(">","IntroHarold_45"),
 		},
@@ -738,7 +738,7 @@
 		"Mus":None,
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"C'est une carte à jouer RickeyLand ! Vous pouvez les collectioner si vous voulez !",
+		"Dialogue":"C'est une carte à jouer RickeyLand ! Vous pouvez les collectionner si vous voulez !",
 		"Choix":{
 			"Choix1":(">","IntroHarold_46"),
 		},
@@ -754,7 +754,7 @@
 		"Mus":None,
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"!Player ! Vous pouvez intéragir avec le monde en cliquant sur l'image ! Essayez de prendre la carte !",
+		"Dialogue":"!Player ! Vous pouvez interagir avec le monde en cliquant sur l'image ! Essayez de prendre la carte !",
 		"Choix":{
 		},
 		"Extra":["ClickEvent_Perso('IntroHarold_47')"],

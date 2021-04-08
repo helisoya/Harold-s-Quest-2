@@ -1,5 +1,27 @@
 {	
 
+	"!_RickeyLandEntree_Guichet": {
+    	"DRecours":"RickeyLandEntree_Guichet",
+    	"Evals":[
+			("GetVar('quest') == 7","RickeyLandEntree_Guichet_Ferme"),
+    	],
+	},
+	
+	"RickeyLandEntree_Guichet_Ferme": {
+		"Voix":None,
+		"Decor":"Parc_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Il n'y a personne...",
+		"Choix":{
+			"Choix1":(">","RickeyLandEntree_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
 
 	"RickeyLandEntree_Guichet": {
 		"Voix":None,

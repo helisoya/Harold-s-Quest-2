@@ -5,6 +5,7 @@
     	"Evals":[
         	("GetVar('quest') in [1,2]","RickeyLandEntree_Entree_NoCard_1"),
 			("GetVar('quest') == 3","RickeyLandEntree_Entree_GotCard_1"),
+			("GetVar('quest') == 7","RickeyLandEntree_Entree_Ferme"),
     	],
 	},
 
@@ -40,34 +41,50 @@
 		"Extra":[],
 	},
 	
+	"RickeyLandEntree_Entree_Ferme": {
+		"Voix":None,
+		"Decor":"Parc_Exterieur",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":False,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Le parc est fermée, je ne peux plus entrer...",
+		"Choix":{
+			"Choix1":(">","RickeyLandEntree_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
 
 	
 	"RickeyLandEntree_Entree_GotCard_1": {
 		"Voix":None,
 		"Decor":"Parc_Exterieur",
-		"PersoImg":"Garde",
+		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
 		"Mus":None,
-		"Perso":"Garde",
-		"PersoCouleur":"red",
+		"Perso":"Seigneur Noir",
+		"PersoCouleur":"black",
 		"Dialogue":"Halte ! Montrez-moi votre passe !",
 		"Choix":{
 			"Choix1":(">","RickeyLandEntree_Entree_GotCard_2"),
 		},
-		"Extra":["ModifVar('canMove',False)","ModifVar('quest',4)"],
+		"Extra":["ModifVar('canMove',False)","ModifVar('quest',4)","ModifVar('dic_seigneurnoir',True)"],
 	},
 	
 	"RickeyLandEntree_Entree_GotCard_2": {
 		"Voix":None,
 		"Decor":"Parc_Exterieur",
-		"PersoImg":"Garde",
+		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
 		"Mus":None,
-		"Perso":"Garde",
-		"PersoCouleur":"red",
-		"Dialogue":"... C'est bon, vous pouvez entrer. Bienvenue à RickeyLand !",
+		"Perso":"Seigneur Noir",
+		"PersoCouleur":"black",
+		"Dialogue":"... C'est bon, vous pouvez entrer. Mais ne faites pas de bêtises à l’intérieur.",
 		"Choix":{
 			"Choix1":(">","RickeyLandEntree_Entree_GotCard_3"),
 		},
@@ -77,13 +94,13 @@
 	"RickeyLandEntree_Entree_GotCard_3": {
 		"Voix":None,
 		"Decor":"Parc_Exterieur",
-		"PersoImg":"Garde",
+		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
 		"Mus":None,
-		"Perso":"Garde",
-		"PersoCouleur":"red",
-		"Dialogue":"N'oubliez pas ! Completez les attractions pour obtenir un prix !",
+		"Perso":"Seigneur Noir",
+		"PersoCouleur":"black",
+		"Dialogue":"En tant que bras droit du PDG, je me réserve le droit de vous éliminer...",
 		"Choix":{
 			"Choix1":(">","RickeyLandEntree_Entree_GotCard_4"),
 		},
@@ -93,13 +110,29 @@
 	"RickeyLandEntree_Entree_GotCard_4": {
 		"Voix":None,
 		"Decor":"Parc_Exterieur",
-		"PersoImg":"Garde",
+		"PersoImg":"SeigneurNoir",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"Seigneur Noir",
+		"PersoCouleur":"black",
+		"Dialogue":"N'oubliez pas de venir à la boutique de souvenir, ou je vais vous le faire regretter.",
+		"Choix":{
+			"Choix1":(">","RickeyLandEntree_Entree_GotCard_5"),
+		},
+		"Extra":[],
+	},
+	
+	"RickeyLandEntree_Entree_GotCard_5": {
+		"Voix":None,
+		"Decor":"Parc_Exterieur",
+		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],
 		"UseSpeak":False,
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"red",
-		"Dialogue":"Je peux entrer dans RickeyLand maintenant.",
+		"Dialogue":"...Je peux entrer dans RickeyLand maintenant.",
 		"Choix":{
 			"Choix1":(">","RickeyLandEntree_Arrive"),
 		},

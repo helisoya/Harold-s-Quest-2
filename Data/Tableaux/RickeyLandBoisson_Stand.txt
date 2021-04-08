@@ -1,0 +1,34 @@
+{	
+	"RickeyLandBoisson_Stand_1": {
+		"Voix":None,
+		"Decor":"Parc_Boisson",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je regarde les nombreux stands de boissons de la rue. Il y en a à perte de vue.",
+		"Choix":{
+			"Choix1":(">","RickeyLandBoisson_Stand_2"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandBoisson_Stand_2": {
+		"Voix":None,
+		"Decor":"Parc_Boisson",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Les stands sont tous tenus par des gardes armées, je ferais mieux de me tenir à carreau.",
+		"Choix":{
+			"Choix1":(">","RickeyLandBoisson_Arrive"),
+		},
+		"Extra":[],
+	},
+	
+}

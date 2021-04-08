@@ -1,0 +1,57 @@
+{	
+	"RickeyLandPalais_Regarder_1": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"tan",
+		"Dialogue":"Le palais est très grand, on dirait qu'il représente à lui seul la moitié du budget du parc.",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_Regarder_2"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandPalais_Regarder_2": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"tan",
+		"Dialogue":"Il est aussi extrêmement gardé, il y a des gardes sur tout les murs.",
+		"Choix":{
+			"Choix1":(">","!_RickeyLandPalais_Regarder"),
+		},
+		"Extra":[],
+	},
+	
+	"!_RickeyLandPalais_Regarder": {
+    	"DRecours":"RickeyLandPalais_Arrive",
+    	"Evals":[
+        	("GetVar('page6')==False","RickeyLandPalais_Regarder_3"),
+    	],
+	},
+	
+	"RickeyLandPalais_Regarder_3": {
+		"Voix":None,
+		"Decor":"Parc_Palais",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"tan",
+		"Dialogue":"Il y a un bout de papier par terre, je le prend.",
+		"Choix":{
+			"Choix1":(">","RickeyLandPalais_Arrive"),
+		},
+		"Extra":["ModifVar('page6',True)"],
+	},
+	
+}

@@ -1,0 +1,79 @@
+{
+	"EndScreen_BadEnding": {
+		"Voix":None,
+		"Decor":"ending_bad",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"FIN",
+		"Choix":{
+		},
+		"Extra":[],
+	},
+
+	
+	"EndScreen_CerfGoodEnding": {
+		"Voix":None,
+		"Decor":"Lac",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"FIN",
+		"Choix":{
+		},
+		"Extra":[],
+	},
+
+	"EndScreen_CerfBadEnding": {
+		"Voix":None,
+		"Decor":"Tour_Salle",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"FIN",
+		"Choix":{
+		},
+		"Extra":[],
+	},
+	
+	
+	"EndScreen_HaroldGoodEnding": {
+		"Voix":None,
+		"Decor":"Montagnes",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"FIN",
+		"Choix":{
+		},
+		"Extra":[],
+	},
+
+	"EndScreen_HaroldBadEnding": {
+		"Voix":None,
+		"Decor":"Braise",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":None,
+		"Perso":"",
+		"PersoCouleur":"green",
+		"Dialogue":"FIN",
+		"Choix":{
+		},
+		"Extra":[],
+	},
+	
+}
