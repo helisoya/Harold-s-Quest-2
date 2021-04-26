@@ -9,15 +9,15 @@
 
 	
 	"ChezChasseur_Chasseur_Normal": {
-		"Voix":None,
+		"Voix":"ChezChasseur_Chasseur",
 		"Decor":"ChezChasseur",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Normal_Var1",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
-		"Dialogue":"Chut ! Je suis en train de repérer des galinettes cendrées !",
+		"Dialogue":"Chut ! Je suis en train de repérer des galinettes cendrées ! Fait moins de bruits !",
 		"Choix":{
 			"Choix1":("Parlez-moi de vous","ChezChasseur_Chasseur_Topic1_1"),
 			"Choix2":("Pourquoi m'avoir attaqué ?","ChezChasseur_Chasseur_Topic2_1"),
@@ -27,12 +27,12 @@
 	},
 	
 	"ChezChasseur_Chasseur_GetCard": {
-		"Voix":None,
+		"Voix":"ChezChasseur_Chasseur",
 		"Decor":"ChezChasseur",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Normal_Var1",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
 		"Dialogue":"Chut ! Je suis en train de repérer des galinettes cendrées !",
@@ -47,15 +47,15 @@
 	
 	
 	"ChezChasseur_Chasseur_Topic1_1": {
-		"Voix":None,
+		"Voix":"ChezChasseur_Chasseur_Topic1_1",
 		"Decor":"ChezChasseur",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Normal_Var1",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
-		"Dialogue":"Moi ? Je suis le plus grand chasseur de la province !",
+		"Dialogue":"Comment ça, tu ne me connais pas ! Moi ? Le plus grand chasseur de la province !",
 		"Choix":{
 			"Choix1":(">","ChezChasseur_Chasseur_Topic1_2"),
 		},
@@ -63,15 +63,15 @@
 	},
 	
 	"ChezChasseur_Chasseur_Topic1_2": {
-		"Voix":None,
+		"Voix":"ChezChasseur_Chasseur_Topic1_2",
 		"Decor":"ChezChasseur",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Normal_Var1",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
-		"Dialogue":"Aucune galinette cendrée ne m'a échappée ! Aucune ! Et c'est la même choses avec les humains !",
+		"Dialogue":"Aucune galinette cendrée ne m'a échappée ! Aucune ! Et c'est la même choses avec les femmes !",
 		"Choix":{
 			"Choix1":(">","ChezChasseur_Chasseur_Topic1_3"),
 		},
@@ -79,15 +79,15 @@
 	},
 	
 	"ChezChasseur_Chasseur_Topic1_3": {
-		"Voix":None,
+		"Voix":"ChezChasseur_Chasseur_Topic1_3",
 		"Decor":"ChezChasseur",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Normal_Var1",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
-		"Dialogue":"Certains disent que je suis aveugle, mais c'est faux ! Je vois très bien les galinettes cendrées !",
+		"Dialogue":"Certains disent que je suis aveugle, mais c'est faux ! Je vois très bien les galinettes cendrées ! Regarde, il y en a une devant toi !",
 		"Choix":{
 			"Choix1":(">","!_ChezChasseur_Chasseur"),
 		},
@@ -96,15 +96,15 @@
 	
 	
 	"ChezChasseur_Chasseur_Topic2_1": {
-		"Voix":None,
+		"Voix":"ChezChasseur_Chasseur_Topic2_1",
 		"Decor":"ChezChasseur",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Normal_Var1",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
-		"Dialogue":"Comment ? Je vous aurais tiré dessus ? C'est faux !",
+		"Dialogue":"Comment ? Je vous aurais tiré dessus ? Je vous avait prévenu ! Vous avez une galinette cendrée sur la tête ! Ce n'est pas parce que vous êtes la que je ne vais pas la chasser.",
 		"Choix":{
 			"Choix1":(">","ChezChasseur_Chasseur_Topic2_2"),
 		},
@@ -112,15 +112,15 @@
 	},
 	
 	"ChezChasseur_Chasseur_Topic2_2": {
-		"Voix":None,
+		"Voix":"ChezChasseur_Chasseur_Topic2_2",
 		"Decor":"ChezChasseur",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Normal_Var1",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
-		"Dialogue":"Hier, je chassais la galinette cendrée dans les bois. Il n'y a pas de doutes à cela !",
+		"Dialogue":"Hier, je chassais la galinette cendrée dans les bois. Il n'y a pas de doutes à cela ! Mais... c'était avant ou après ma cinquième bière ?",
 		"Choix":{
 			"Choix1":(">","ChezChasseur_Chasseur_Topic2_3"),
 		},
@@ -128,15 +128,15 @@
 	},
 	
 	"ChezChasseur_Chasseur_Topic2_3": {
-		"Voix":None,
+		"Voix":"ChezChasseur_Chasseur_Topic2_3",
 		"Decor":"ChezChasseur",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Normal_Var1",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
-		"Dialogue":"Même si, je dois l'avouer... l'oiseau d'hier courait très vite. C'est très suspect !",
+		"Dialogue":"Par contre on parle d'hier ou d'aujourd'hui ? Hier je vous ai tiré dessus, aujourd'hui aussi... Mais hier elle courait drôlement vite... C'est comme les femmes je suppose...",
 		"Choix":{
 			"Choix1":(">","!_ChezChasseur_Chasseur"),
 		},
@@ -146,15 +146,15 @@
 	
 	
 	"ChezChasseur_Chasseur_Card_1": {
-		"Voix":None,
+		"Voix":"ChezChasseur_Chasseur_Card_1",
 		"Decor":"ChezChasseur",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Normal_Var1",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
-		"Dialogue":"RickoLand ? Non, je ne vois pas de quoi vous parlez. Je ne connais pas cet oiseau !",
+		"Dialogue":"Le RickoLand ? Non, je ne vois pas de quoi vous parlez. Je ne connais pas cet oiseau !  Ça doit être un oiseau des îles mais ça me parais bizarre.",
 		"Choix":{
 			"Choix1":(">","ChezChasseur_Chasseur_Card_2"),
 		},
@@ -167,7 +167,7 @@
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
 		"UseSpeak":False,
-		"Mus":None,
+		"Mus":"Normal_Var1",
 		"Perso":"!Player",
 		"PersoCouleur":"blue",
 		"Dialogue":"C'est un parc d'attractions au Nord, vous n'avez jamais entendu parlez de lui ?",
@@ -178,15 +178,15 @@
 	},
 	
 	"ChezChasseur_Chasseur_Card_3": {
-		"Voix":None,
+		"Voix":"ChezChasseur_Chasseur_Card_3",
 		"Decor":"ChezChasseur",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Normal_Var1",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
-		"Dialogue":"Maintenant que vous le dites, j'ai ouie dire de cet endroit ! Ils m'ont même envoyé une carte de visite !",
+		"Dialogue":"Vous parlez d'un endroit et pas d'un oiseau... Attendez, je regarde dans ma sacoche, on ne sait jamais. Ah bah si, voila, j'ai retrouvé une carte de visite. Mais franchement je pense que c'était après la cinquième bière.",
 		"Choix":{
 			"Choix1":(">","ChezChasseur_Chasseur_Card_4"),
 		},
@@ -198,40 +198,57 @@
 		"Decor":"ChezChasseur",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
-		"UseSpeak":True,
-		"Mus":None,
-		"Perso":"Chasseur",
-		"PersoCouleur":"brown",
-		"Dialogue":"Mais je suis trop occupé pour y aller, j'ai des galinettes cendrées à chasser, moi !",
+		"UseSpeak":False,
+		"Mus":"Normal_Var1",
+		"Perso":"!Player",
+		"PersoCouleur":"blue",
+		"Dialogue":"Vous n'y êtes pas allé ?",
 		"Choix":{
 			"Choix1":(">","ChezChasseur_Chasseur_Card_5"),
 		},
 		"Extra":[],
 	},
 	
+	
 	"ChezChasseur_Chasseur_Card_5": {
-		"Voix":None,
+		"Voix":"ChezChasseur_Chasseur_Card_5",
 		"Decor":"ChezChasseur",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Normal_Var1",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
-		"Dialogue":"Alors, prenez cette carte et partez ! Je dois chasser en paix.",
+		"Dialogue":"Qu'est ce que vous me baragouinez ? Allez-vous en ! Moi j'ai pas le temps comparé aux petits jeunes comme vous ! Moi j'ai des galinettes cendrées à chercher !",
 		"Choix":{
 			"Choix1":(">","ChezChasseur_Chasseur_Card_6"),
 		},
 		"Extra":[],
 	},
 	
-	"ChezChasseur_Chasseur_Card_5": {
+	"ChezChasseur_Chasseur_Card_6": {
+		"Voix":"ChezChasseur_Chasseur_Card_6",
+		"Decor":"ChezChasseur",
+		"PersoImg":"Chasseur",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":"Normal_Var1",
+		"Perso":"Chasseur",
+		"PersoCouleur":"brown",
+		"Dialogue":"Alors prenez la carte et partez ! Vous m'avez énervé... je vais devoir me défouler sur des galinettes cendrées ou des femmes maintenant.",
+		"Choix":{
+			"Choix1":(">","ChezChasseur_Chasseur_Card_7"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezChasseur_Chasseur_Card_7": {
 		"Voix":None,
 		"Decor":"ChezChasseur",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
 		"UseSpeak":False,
-		"Mus":None,
+		"Mus":"Normal_Var1",
 		"Perso":"",
 		"PersoCouleur":"brown",
 		"Dialogue":"Je peux accéder au parc maintenant. Allons-y !",

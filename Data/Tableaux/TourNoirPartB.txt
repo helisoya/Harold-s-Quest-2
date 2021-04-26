@@ -17,7 +17,7 @@
 	},
 	
 	"TourNoir_PartB_2": {
-		"Voix":None,
+		"Voix":"TourNoir_PartB_2",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Arme",
 		"CustomPlacement":[200,226],
@@ -49,7 +49,7 @@
 	},
 
 	"TourNoir_PartB_4": {
-		"Voix":None,
+		"Voix":"TourNoir_PartB_4",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Arme",
 		"CustomPlacement":[200,226],
@@ -106,7 +106,7 @@
 	},
 	
 	"TourNoir_PartB_Sheperd_3": {
-		"Voix":None,
+		"Voix":"TourNoir_PartB_Sheperd_3",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Sheperd",
 		"CustomPlacement":[200,226],
@@ -122,7 +122,7 @@
 	},
 	
 	"TourNoir_PartB_Sheperd_4": {
-		"Voix":None,
+		"Voix":"TourNoir_PartB_Sheperd_4",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Sheperd",
 		"CustomPlacement":[200,226],
@@ -186,7 +186,7 @@
 	},
 	
 	"TourNoir_PartB_Sheperd_8": {
-		"Voix":None,
+		"Voix":"TourNoir_PartB_Sheperd_8",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Arme",
 		"CustomPlacement":[200,226],
@@ -220,7 +220,7 @@
 	},
 	
 	"TourNoir_PartB_6": {
-		"Voix":None,
+		"Voix":"TourNoir_PartB_6",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Arme",
 		"CustomPlacement":[200,226],
@@ -236,7 +236,7 @@
 	},
 	
 	"TourNoir_PartB_7": {
-		"Voix":None,
+		"Voix":"TourNoir_PartB_7",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Arme",
 		"CustomPlacement":[200,226],
@@ -252,7 +252,7 @@
 	},
 	
 	"TourNoir_PartB_8": {
-		"Voix":None,
+		"Voix":"TourNoir_PartB_8",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":[200,226],
@@ -268,12 +268,12 @@
 	},
 	
 	"TourNoir_PartB_9": {
-		"Voix":None,
+		"Voix":"TourNoir_PartB_9",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono",
 		"CustomPlacement":[200,226],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Harold_Kimono",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
 		"Dialogue":"...Le magicien et le danseur le plus puissant du monde !",
@@ -284,12 +284,12 @@
 	},
 	
 	"TourNoir_PartB_10": {
-		"Voix":None,
+		"Voix":"TourNoir_PartB_10",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono",
 		"CustomPlacement":[200,226],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Harold_Kimono",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
 		"Dialogue":"Je vais vous faire mordre la poussière à la dance !",
@@ -300,12 +300,12 @@
 	},
 	
 	"TourNoir_PartB_11": {
-		"Voix":None,
+		"Voix":"TourNoir_PartB_11",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono",
 		"CustomPlacement":[200,226],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Harold_Kimono",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
 		"Dialogue":"Préparez-vous pour le combat de votre vie !",
@@ -321,7 +321,7 @@
 		"PersoImg":"Harold_Kimono",
 		"CustomPlacement":[200,226],
 		"UseSpeak":False,
-		"Mus":None,
+		"Mus":"Harold_Kimono",
 		"Perso":"",
 		"PersoCouleur":"green",
 		"Dialogue":"Harold commence à danser. Je ne suis pas sur de pouvoir le battre.",
@@ -337,23 +337,22 @@
 		"PersoImg":"Harold_Kimono",
 		"CustomPlacement":[200,226],
 		"UseSpeak":False,
-		"Mus":None,
+		"Mus":"Harold_Kimono",
 		"Perso":"",
 		"PersoCouleur":"green",
-		"Dialogue":"INSERE MINI JEU JUSTE DANCE HAROLD",
+		"Dialogue":"",
 		"Choix":{
-			"Choix1":(">","TourNoir_PartB_14"),
 		},
-		"Extra":[],
+		"Extra":["MiniGame_JDH()"],
 	},
 	
 	"TourNoir_PartB_14": {
-		"Voix":None,
+		"Voix":"TourNoir_PartB_14",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono",
 		"CustomPlacement":[200,226],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Harold_Kimono",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
 		"Dialogue":"Impossible ! Comment ais-je pu perdre à mon propre mini jeu ?",
@@ -364,12 +363,12 @@
 	},
 	
 	"TourNoir_PartB_15": {
-		"Voix":None,
+		"Voix":"TourNoir_PartB_15",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono",
 		"CustomPlacement":[200,226],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Harold_Kimono",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
 		"Dialogue":"Je n'ai plus le choix ! Vous allez le regretter !",

@@ -146,7 +146,7 @@
 	},
 	
 	"IntroChasseur_10": {
-		"Voix":None,
+		"Voix":"IntroChasseur_10",
 		"Decor":"Intro_Forest",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
@@ -154,7 +154,7 @@
 		"Mus":"Night",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
-		"Dialogue":"Tu connaît la différence entre une gallinete cendrée et un Homme en pleine nuit ?",
+		"Dialogue":"Eh, tu connais la différence entre une gallinete cendrée et un Homme en pleine nuit ?",
 		"Choix":{
 			"Choix1":(">","IntroChasseur_11"),
 		},
@@ -178,7 +178,7 @@
 	},
 	
 	"IntroChasseur_12": {
-		"Voix":None,
+		"Voix":"IntroChasseur_12",
 		"Decor":"Intro_Forest",
 		"PersoImg":"Chasseur",
 		"CustomPlacement":[200,220],
@@ -186,7 +186,7 @@
 		"Mus":"Night",
 		"Perso":"Chasseur",
 		"PersoCouleur":"brown",
-		"Dialogue":"Ah bon ? Moi je vois pas la différence ! Meurt petit oiseau !",
+		"Dialogue":"Comment ça tu vois pas la différence entre les deux ? Moi aussi mais bon on va pas parler de ça. Meurt petit oiseau !",
 		"Choix":{
 			"Choix1":(">","IntroChasseur_13"),
 		},

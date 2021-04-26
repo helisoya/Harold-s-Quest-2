@@ -1,6 +1,6 @@
 {
 	"BadEnding_1": {
-		"Voix":None,
+		"Voix":"BadEnding_1",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -16,7 +16,7 @@
 	},
 	
 	"BadEnding_2": {
-		"Voix":None,
+		"Voix":"BadEnding_2",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -32,7 +32,7 @@
 	},
 	
 	"BadEnding_3": {
-		"Voix":None,
+		"Voix":"BadEnding_3",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -48,7 +48,7 @@
 	},
 	
 	"BadEnding_4": {
-		"Voix":None,
+		"Voix":"BadEnding_4",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -64,7 +64,7 @@
 	},
 
 	"BadEnding_5": {
-		"Voix":None,
+		"Voix":"BadEnding_5",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -80,7 +80,7 @@
 	},
 	
 	"BadEnding_6": {
-		"Voix":None,
+		"Voix":"BadEnding_6",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -96,7 +96,7 @@
 	},
 	
 	"BadEnding_7": {
-		"Voix":None,
+		"Voix":"BadEnding_7",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":None,

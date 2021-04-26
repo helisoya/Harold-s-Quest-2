@@ -8,7 +8,7 @@
 
 
 	"Intro_1": {
-		"Voix":None,
+		"Voix":"Intro_1",
 		"Decor":"Intro_Mountain",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -24,7 +24,7 @@
 	},
 	
 	"Intro_2": {
-		"Voix":None,
+		"Voix":"Intro_2",
 		"Decor":"Intro_Braise",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -32,7 +32,7 @@
 		"Mus":"Intro",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Ce tyran sanguinaire, qui se faisair appeler le Seigneur Braise, terrorisait la population, il s'attaquait au femmes, aux enfants.",
+		"Dialogue":"Ce tyran sanguinaire, qui se faisait appeler le Seigneur Braise, terrorisait la population, il s'attaquait au femmes, aux enfants.",
 		"Choix":{
 			"Choix1":(">","Intro_3"),
 		},
@@ -40,7 +40,7 @@
 	},
 	
 	"Intro_3": {
-		"Voix":None,
+		"Voix":"Intro_3",
 		"Decor":"Intro_Braise",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -48,7 +48,7 @@
 		"Mus":"Intro",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Mais un jour, un vaillant héro arriva et partit terrasser le dragon. Nul ne savait d'ou il venait.",
+		"Dialogue":"Mais un jour, un vaillant héro arriva et partit terrasser le dragon. Nul ne savait d’où il venait.",
 		"Choix":{
 			"Choix1":(">","Intro_4"),
 		},
@@ -56,7 +56,7 @@
 	},
 	
 	"Intro_4": {
-		"Voix":None,
+		"Voix":"Intro_4",
 		"Decor":"Intro_Braise_Normal",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -72,7 +72,7 @@
 	},
 	
 	"Intro_5": {
-		"Voix":None,
+		"Voix":"Intro_5",
 		"Decor":"Intro_Braise_Normal",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -88,7 +88,7 @@
 	},
 	
 	"Intro_6": {
-		"Voix":None,
+		"Voix":"Intro_6",
 		"Decor":"Intro_Braise_Normal",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -105,7 +105,7 @@
 	},
 	
 	"Intro_7_Vol": {
-		"Voix":None,
+		"Voix":"Intro_7_Vol",
 		"Decor":"Intro_Braise_Normal",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -121,7 +121,7 @@
 	},	
 	
 	"Intro_7_Rend": {
-		"Voix":None,
+		"Voix":"Intro_7_Rend",
 		"Decor":"Intro_Braise_Normal",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -137,7 +137,7 @@
 	},	
 
 	"Intro_8": {
-		"Voix":None,
+		"Voix":"Intro_8",
 		"Decor":"Intro_Braise_Normal",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -145,7 +145,7 @@
 		"Mus":"Intro",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Mais le Héro disparu après son exploit, il ne fut plus jamais vu après ces évenements dantesques.",
+		"Dialogue":"Mais le Héro disparu après son exploit, il ne fut plus jamais vu après ces événements dantesques.",
 		"Choix":{
 			"Choix1":(">","Intro_9"),
 		},
@@ -153,7 +153,7 @@
 	},	
 
 	"Intro_9": {
-		"Voix":None,
+		"Voix":"Intro_9",
 		"Decor":"Intro_Braise_Normal",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -169,7 +169,7 @@
 	},
 	
 	"Intro_10": {
-		"Voix":None,
+		"Voix":"Intro_10",
 		"Decor":"Intro_AfterMath",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -177,7 +177,7 @@
 		"Mus":"Intro",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Après la mort du seigneur braise, certaines personnes ont vu l'opportunité de s'emparer du chateau.",
+		"Dialogue":"Après la mort du seigneur braise, certaines personnes ont vu l'opportunité de s'emparer du château.",
 		"Choix":{
 			"Choix1":(">","Intro_11"),
 		},
@@ -185,7 +185,7 @@
 	},
 	
 	"Intro_11": {
-		"Voix":None,
+		"Voix":"Intro_11",
 		"Decor":"Intro_AfterMath",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -193,7 +193,7 @@
 		"Mus":"Intro",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Mais une fois de plus, un vaillant héro arriva et empecha leur complot. Il disparu lui aussi, laissant derrière lui une journée folle.",
+		"Dialogue":"Mais une fois de plus, un vaillant héro arriva et empêcha leur complot. Il disparu lui aussi, laissant derrière lui une journée folle.",
 		"Choix":{
 			"Choix1":(">","Intro_12"),
 		},
@@ -201,7 +201,7 @@
 	},	
 	
 	"Intro_12": {
-		"Voix":None,
+		"Voix":"Intro_12",
 		"Decor":"Intro_Braise_Normal",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -209,7 +209,7 @@
 		"Mus":"Intro",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Un an passa et la paix était de retour. Les marchands voyagaient librement, les enfants pouvait jouer dehors sans crainte. Jusqu'à ce que...",
+		"Dialogue":"Un an passa et la paix était de retour. Les marchands voyageaient librement, les enfants pouvaient jouer dehors sans crainte. Jusqu'à ce que...",
 		"Choix":{
 			"Choix1":(">","Intro_13"),
 		},
@@ -217,7 +217,7 @@
 	},	
 	
 	"Intro_13": {
-		"Voix":None,
+		"Voix":"Intro_13",
 		"Decor":"Intro_Braise_Detruit",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -233,7 +233,7 @@
 	},		
 	
 	"Intro_14": {
-		"Voix":None,
+		"Voix":"Intro_14",
 		"Decor":"Intro_Mountain",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -249,7 +249,7 @@
 	},
 	
 	"Intro_15": {
-		"Voix":None,
+		"Voix":"Intro_15",
 		"Decor":"Intro_Mountain",
 		"PersoImg":None,
 		"CustomPlacement":None,

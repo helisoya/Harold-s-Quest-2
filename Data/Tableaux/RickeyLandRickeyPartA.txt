@@ -88,7 +88,7 @@
 		"Mus":None,
 		"Perso":"Rickey",
 		"PersoCouleur":"coral",
-		"Dialogue":"Ah Ah ! C'est vrai ! Mais dites-moi, nous sommes-nous déja vu auparavant ?",
+		"Dialogue":"Ah Ah ! C'est vrai ! Mais dites-moi, nous sommes-nous déjà vu auparavant ?",
 		"Choix":{
 			"Choix1":(">","RickeyLandPalais_RickeyPartA_7"),
 		},

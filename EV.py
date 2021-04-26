@@ -1,4 +1,4 @@
-﻿# Evite vautour par Corentin et Julien
+﻿# Evite vautour par Julien
 
 from tkinter import*
 from random import *

@@ -1,0 +1,32 @@
+{
+
+	"!_RickeyLandArcade_Arc": {
+    	"DRecours":"RickeyLandArcade_Nope",
+    	"Evals":[
+        	("GetVar('cas_arc') == True","RickeyLandArcade_Done"),
+			("GetVar('talkedArcher') == True","RickeyLandArcade_GetArc"),
+    	],
+	},
+
+
+	
+	"RickeyLandArcade_GetArc": {
+		"Voix":None,
+		"Decor":"Parc_Arcade",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":"Parc_Var2",
+		"Perso":"",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Je touche la plaque et elle s'ouvre. Il y a une cassette à l'intérieur.",
+		"Choix":{
+			"Choix1":(">","RickeyLandArcade_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)","ModifVar('cas_arc',True)"],
+	},
+	
+	
+}
+
+

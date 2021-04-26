@@ -5,7 +5,7 @@
 		"PersoImg":None,
 		"CustomPlacement":None,
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Normal_Var1",
 		"Perso":"",
 		"PersoCouleur":"blue",
 		"Dialogue":"Je suis au 3 rue du Merle, que vais-je faire ?",

@@ -5,7 +5,7 @@
 		"PersoImg":None,
 		"CustomPlacement":None,
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Parc_Var1",
 		"Perso":"",
 		"PersoCouleur":"blue",
 		"Dialogue":"Je suis à la boutique de souvenir. Que vais-je faire ?",

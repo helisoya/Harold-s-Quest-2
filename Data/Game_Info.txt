@@ -5,5 +5,5 @@
 
 	"Auteur":"Julien, Mathis, Corentin",
 
-	"Desc":"DESC",
+	"Desc":"Dans la lointaine province de Vlatyr, le chaos règne. Un fou a décidé de prendre le controle de la province. Seul un vaillant héro pourra le vaincre.",
 }

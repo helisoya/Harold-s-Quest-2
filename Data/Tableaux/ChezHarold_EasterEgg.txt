@@ -17,7 +17,7 @@
 	},
 	
 	"ChezHarold_ReveilEasterEgg_2": {
-		"Voix":None,
+		"Voix":"ChezHarold_ReveilEasterEgg_2",
 		"Decor":"ChezHarold_EasterEgg",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -49,7 +49,7 @@
 	},
 	
 	"ChezHarold_ReveilEasterEgg_4": {
-		"Voix":None,
+		"Voix":"ChezHarold_ReveilEasterEgg_4",
 		"Decor":"ChezHarold_EasterEgg",
 		"PersoImg":"Harold_Hurt_Secret",
 		"CustomPlacement":[200,226],
@@ -65,11 +65,11 @@
 	},
 	
 	"ChezHarold_ReveilEasterEgg_5": {
-		"Voix":None,
+		"Voix":"ChezHarold_ReveilEasterEgg_5",
 		"Decor":"ChezHarold_EasterEgg",
 		"PersoImg":"Harold_Hurt_Secret",
 		"CustomPlacement":[200,226],
-		"UseSpeak":False,
+		"UseSpeak":True,
 		"Mus":None,
 		"Perso":"Harold",
 		"PersoCouleur":"green",

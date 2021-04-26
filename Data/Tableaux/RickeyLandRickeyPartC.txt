@@ -10,7 +10,7 @@
 		"Mus":None,
 		"Perso":"Waldo",
 		"PersoCouleur":"forestgreen",
-		"Dialogue":"Vous partez affronter Harold ? Je pense qu'il est dans la salle du trône.",
+		"Dialogue":"Vous partez affronter Rickey ? Je pense qu'il est dans la salle du trône.",
 		"Choix":{
 			"Choix1":(">","RickeyLandPalais_RickeyPartC_2"),
 		},
@@ -122,7 +122,7 @@
 		"Mus":None,
 		"Perso":"Rickey",
 		"PersoCouleur":"coral",
-		"Dialogue":"Mais j'ai quelque chose à faire avant ! Vois-tu, je dois faire un discours de méchant démoniaque ! Ah Ah !",
+		"Dialogue":"Mais j'ai quelque chose à faire avant ! Je dois faire un discours de méchant pour t'expliquer mon plan diabolique ! Ah Ah !",
 		"Choix":{
 			"Choix1":(">","RickeyLandPalais_RickeyPartC_9"),
 		},
@@ -433,11 +433,10 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"coral",
-		"Dialogue":"INSERER MINI JEU COMBAT CONTRE RICK0",
+		"Dialogue":"",
 		"Choix":{
-			"Choix1":(">","RickeyLandPalais_RickeyPartC_DuelRick0_6"),
 		},
-		"Extra":[],
+		"Extra":["MiniGame_CR0()"],
 	},
 	
 	"RickeyLandPalais_RickeyPartC_DuelRick0_6": {

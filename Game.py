@@ -5,6 +5,7 @@ from Pages import *
 from Livre import *
 from Cartes import *
 from MiniMap import *
+from Cassete import *
 
 from random import *
 import os
@@ -21,6 +22,8 @@ def AddCustomMenu():
     Visuel.tag_bind("Card_Button","<Button-1>",lambda arg=0:CardsWindow())
     Visuel.create_image(242,516,image=D_Data["Icons"]["map"],tags="Map_Button")
     Visuel.tag_bind("Map_Button","<Button-1>",lambda arg=0:MapWindow())
+    Visuel.create_image(274,516,image=D_Data["Icons"]["cas"],tags="Cas_Button")
+    Visuel.tag_bind("Cas_Button","<Button-1>",lambda arg=0:CasWindow())
     
 def NewGame():
     name = simpledialog.askstring("HQ2","Quel est votre nom ?")
@@ -276,19 +279,24 @@ def Cutscene_IntroA():
         curr = 0
         fenetre.after(1000,ChooseMenu)
 
+skip = messagebox.askyesno("HQ2","Demarage rapide ?")
 
-de = randint(1,100)
-if 1 <= de <= 50: # Lancement texte d'acceuil
-    menu.create_text(200,150,text=choice(tab))
-    fenetre.after(1500,ChooseMenu)
-elif 51 <= de <= 91: # Cutscene A (Montagne avec Chateau)
-    Cutscene_IntroA()
-    
-elif 92 <= de <= 99: # Easter Egg 6 (DLC Missing)
-    menu.create_text(200,150,text="Attention, il vous manque des DLCs pour pouvoir jouer ! \n -Premium Edition \n -Gold Edition \n -Game Of The Year Edition \n -Skin Packs n°1-50")
-    fenetre.after(4000,lambda:exit())
-else: # Easter Egg 7 (CoV)
-    menu.create_text(200,150,text="Mini-jeu manquant !")
-    fenetre.after(2000,lambda:exit())
+if skip: #Skip (DEBUG)
+    AfficheDefaultMenu()
+    StartScreenNormal()
+else: # Demarage normal
+    de = randint(1,100)
+    if 1 <= de <= 50: # Lancement texte d'acceuil
+        menu.create_text(200,150,text=choice(tab))
+        fenetre.after(1500,ChooseMenu)
+    elif 51 <= de <= 91: # Cutscene A (Montagne avec Chateau)
+        Cutscene_IntroA()
+        
+    elif de == 99: # Easter Egg 6 (DLC Missing)
+        menu.create_text(200,150,text="Attention, il vous manque des DLCs pour pouvoir jouer ! \n -Premium Edition \n -Gold Edition \n -Game Of The Year Edition \n -Skin Packs n°1-50")
+        fenetre.after(4000,lambda:exit())
+    else: # Easter Egg 7 (CoV)
+        menu.create_text(200,150,text="Mini-jeu manquant !")
+        fenetre.after(2000,lambda:exit())
 
 fenetre.mainloop()

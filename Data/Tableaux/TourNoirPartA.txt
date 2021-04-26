@@ -287,11 +287,10 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"red",
-		"Dialogue":"INSERER MINI JEU TIR SUR SBIRE",
+		"Dialogue":"",
 		"Choix":{
-			"Choix1":(">","TourNoir_PartA_19"),
 		},
-		"Extra":[],
+		"Extra":["MiniGame_TSS()"],
 	},
 	
 	"TourNoir_PartA_19": {

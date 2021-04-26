@@ -1,0 +1,53 @@
+{	
+	"RickeyLandArcade_Arrive": {
+		"Voix":None,
+		"Decor":"Parc_Arcade",
+		"PersoImg":None,
+		"CustomPlacement":None,
+		"UseSpeak":True,
+		"Mus":"Parc_Var2",
+		"Perso":"",
+		"PersoCouleur":"blue",
+		"Dialogue":"Je suis dans la salle d'arcade du parc. Il y a des plaques étranges dans la salle. Que vais-je faire ?",
+		"Choix":{
+			"Choix1":("Regarder la plaque avec l'arc","!_RickeyLandArcade_Arc"),
+			"Choix2":("Regarder la plaque avec le casque","!_RickeyLandArcade_Casque"),
+			"Choix3":("Regarder la plaque avec la toque","!_RickeyLandArcade_Toque"),
+		},
+		"Extra":["ModifVar('canMove',True)"],
+	},
+	
+	
+	"RickeyLandArcade_Nope": {
+		"Voix":None,
+		"Decor":"Parc_Arcade",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":"Parc_Var2",
+		"Perso":"",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Je n'arrive pas à comprendre son fonctionnement.",
+		"Choix":{
+			"Choix1":(">","RickeyLandArcade_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"RickeyLandArcade_Done": {
+		"Voix":None,
+		"Decor":"Parc_Arcade",
+		"PersoImg":None,
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":"Parc_Var2",
+		"Perso":"",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"J'ai déjà utilisé cette plaque.",
+		"Choix":{
+			"Choix1":(">","RickeyLandArcade_Arrive"),
+		},
+		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+}

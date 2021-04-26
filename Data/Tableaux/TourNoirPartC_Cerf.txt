@@ -1,7 +1,7 @@
 {
 	
 	"TourNoir_PartC_Cerf_1": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_1",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono",
 		"CustomPlacement":[200,226],
@@ -17,7 +17,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_2": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_2",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono",
 		"CustomPlacement":[200,226],
@@ -33,7 +33,7 @@
 	},
 
 	"TourNoir_PartC_Cerf_3": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_3",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono",
 		"CustomPlacement":[200,226],
@@ -49,7 +49,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_4": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_4",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono",
 		"CustomPlacement":[200,226],

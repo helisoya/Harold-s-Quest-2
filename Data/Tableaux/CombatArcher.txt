@@ -106,7 +106,7 @@
 		"Mus":None,
 		"Perso":"Archer",
 		"PersoCouleur":"palegreen",
-		"Dialogue":"Silence, je vais je faire manger par mes vatours ! BRAHHH !",
+		"Dialogue":"Silence, je vais je faire manger par mes vautours ! BRAHHH !",
 		"Choix":{
 			"Choix1":(">","Event_Archer_8"),
 		},
@@ -122,7 +122,7 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"palegreen",
-		"Dialogue":"J'entend des bruits d'oiseaux au loin, ils ont l'air de se rapprocher.",
+		"Dialogue":"J'entends des bruits d'oiseaux au loin, ils ont l'air de se rapprocher.",
 		"Choix":{
 			"Choix1":(">","Event_Archer_9"),
 		},

@@ -21,7 +21,7 @@
     "ultimateCard":{
 	"save":True,
     	"type":"bool",
-    	"valeur":True,
+    	"valeur":False,
     },
 
     "canMove":{
@@ -275,4 +275,25 @@
     	"type":"bool",
     	"valeur":False,
     },
+	
+	
+	
+	
+    "cas_arc":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+	
+    "cas_toque":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+    "cas_casque":{
+	"save":True,
+    	"type":"bool",
+    	"valeur":False,
+    },
+	
 }

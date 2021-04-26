@@ -48,6 +48,7 @@ def MapWindow():
         "RickeyLandResto":"Restaurant du Parc",
         "RickeyLandBoisson":"Allée des boissons",
         "RickeyLandPalais":"Palais du PDG",
+        "RickeyLandArcade":"Salle d'Arcade",
     }
 
     dic = {}
@@ -166,6 +167,12 @@ def MapWindow():
         else:
             can.create_rectangle(207,114,217,124,fill="red",activefill="blue",tags=("RickeyLandPalais","parc"))
 
+        if "RickeyLandArcade" in GetVar("Current"):
+            can.create_rectangle(441,182,451,192,fill="green",activefill="blue",tags=("RickeyLandArcade","parc"))
+        else:
+            can.create_rectangle(441,182,451,192,fill="red",activefill="blue",tags=("RickeyLandArcade","parc"))
+
+
         can.tag_bind("RickeyLandStatue","<Button-1>",lambda arg=0:Select("RickeyLandStatue"))
         can.tag_bind("RickeyLandWaldo","<Button-1>",lambda arg=0:Select("RickeyLandWaldo"))
         can.tag_bind("RickeyLandHorse","<Button-1>",lambda arg=0:Select("RickeyLandHorse"))
@@ -175,5 +182,6 @@ def MapWindow():
         can.tag_bind("RickeyLandBoisson","<Button-1>",lambda arg=0:Select("RickeyLandBoisson"))
         can.tag_bind("RickeyLandBDS","<Button-1>",lambda arg=0:Select("RickeyLandBDS"))
         can.tag_bind("RickeyLandPalais","<Button-1>",lambda arg=0:Select("RickeyLandPalais"))
+        can.tag_bind("RickeyLandArcade","<Button-1>",lambda arg=0:Select("RickeyLandArcade"))
 
     map.mainloop()

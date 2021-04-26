@@ -1,15 +1,15 @@
 {
 	
 	"TourNoir_PartC_Harold_1": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Harold_1",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono",
 		"CustomPlacement":[200,226],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Harold_Kimono",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Je vais utiliser ma plus grand arme !",
+		"Dialogue":"Je vais utiliser ma plus grande arme !",
 		"Choix":{
 			"Choix1":(">","TourNoir_PartC_Harold_2"),
 		},
@@ -17,12 +17,12 @@
 	},
 
 	"TourNoir_PartC_Harold_2": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Harold_2",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono_Card",
 		"CustomPlacement":[200,226],
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Harold_Kimono",
 		"Perso":"Harold",
 		"PersoCouleur":"green",
 		"Dialogue":"La carte Harold ! Avec elle, je vais lancer un sortilège qui va vous détruire !",
@@ -57,7 +57,7 @@
 	},
 	
 	"TourNoir_PartC_Harold_Good_2": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Harold_Good_2",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono",
 		"CustomPlacement":[200,226],
@@ -89,7 +89,7 @@
 	},
 	
 	"TourNoir_PartC_Harold_Good_4": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Harold_Good_4",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono",
 		"CustomPlacement":[200,226],
@@ -155,7 +155,7 @@
 	},
 	
 	"TourNoir_PartC_Harold_Ultimate_2": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Harold_Ultimate_2",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono_Ultimate",
 		"CustomPlacement":[200,226],
@@ -163,7 +163,7 @@
 		"Mus":None,
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Quel est cette chose ? Au secours ! Mes yeux sont en train de bruler !",
+		"Dialogue":"Quel est cette chose ? Au secours ! Mes yeux sont en train de brûler !",
 		"Choix":{
 			"Choix1":(">","TourNoir_PartC_Harold_Ultimate_3"),
 		},
@@ -189,7 +189,7 @@
 	
 	
 	"TourNoir_PartC_Harold_Bad_1": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Harold_Bad_1",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Harold_Kimono_Card",
 		"CustomPlacement":[200,226],

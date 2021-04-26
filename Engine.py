@@ -3,7 +3,7 @@
 #-------------------------------------------------------------
 #----------------- !!! NE PAS MODIFIER !!! -------------------
 
-Engine_Version = "3.6.3" # Version du Moteur
+Engine_Version = "3.6.4" # Version du Moteur
 
 from tkinter import *
 from tkinter import simpledialog
@@ -103,9 +103,19 @@ Next4 = Button(fenetre, text=">",overrelief="groove")
 
 
 def DisableWindow():
+    """
+
+    Désactive la fenetre de jeu
+
+    """
     fenetre.attributes('-disabled', True)
     
 def EnableWindow():
+    """
+
+    Active la fenetre de jeu
+
+    """
     fenetre.attributes('-disabled', False)
 
 def RenameWindow(New):
@@ -117,6 +127,11 @@ def RenameWindow(New):
     fenetre.title(New)
 
 def CrashReport(text):
+    """
+
+    Effectue un rapport de crash
+
+    """
     with open("crashlog.txt","w") as log:
         log.write(os.environ['COMPUTERNAME'])
         log.write("\n"+str(localtime()))
@@ -266,6 +281,11 @@ def SetDialogue(Texte,Id):
         TypeWriterEffect(0,Texte,Id)
 
 def ImageSetUseSpeak(Image):
+    """
+
+    Regarde si l'image est en capacité d'utiliser le speak
+
+    """
     if "speak" in list(D_Data["Persos"][Image].keys()) and D_Tableaux[GetVar("Current")]["UseSpeak"] == True:
         return True
     return False
@@ -282,6 +302,11 @@ def SetTitre(Text,Id,corID):
     TypeWriterEffectTitle(0,Text,Id,corID)
 
 def SkipText():
+    """
+
+    Passe l'effet écriture quand on clique avant qu'il soit fini
+
+    """
     Cvoix.fadeout(1)
     txt = D_Tableaux[GetVar("Current")]["Dialogue"].replace("!Player",GetVar("PlayerName"))
     Visuel.itemconfigure("Dialog",text=txt)
@@ -526,6 +551,10 @@ def AnimationPersoVisuel(Image,Counter):
     Animation Personnage
 
     """
+    
+    if GetVar("Current")[:2] in ["?_","§_"]:
+        return
+    
     if Image == D_Tableaux[GetVar("Current")]["PersoImg"] and not GetVar("IsUsingSpeak"):
         Duree = 50
         if Counter > len(D_Data["Persos"][Image]["normal"])-1:
@@ -814,6 +843,73 @@ def Apparition():
     Visuel.tag_bind("Help_Button","<Button-1>",lambda arg=0:BuiltInHelpMenu())
 
 
+def Init_UpdateBar(total,current,can):
+    """
+       
+    Mise à jour de la barre de chargement Init
+      
+    """
+    can.delete("progress")
+    can.create_rectangle(10,130,(390*current)/total,170,fill="green",tags="progress")
+    can.update()
+    
+def Init_GetTotal():
+    """
+       
+    Obtention du nombre total d'opération à effectuer
+      
+    """
+    if not os.path.exists("Data"):
+        CrashReport("Erreur : Dossier Data manquant")
+    if not os.path.exists("Data\\Tableaux"):
+        CrashReport("Erreur : Dossier Tableaux manquant")
+    if not os.path.exists("Data\\BGM"):
+        CrashReport("Erreur : Dossier BGM manquant")
+    if not os.path.exists("Data\\SE"):
+        CrashReport("Erreur : Dossier SE manquant")
+    if not os.path.exists("Data\\Voix"):
+        CrashReport("Erreur : Dossier Voix manquant")
+    if not os.path.exists("Data\\Decors"):
+        CrashReport("Erreur : Dossier Decors manquant")
+    if not os.path.exists("Data\\Persos"):
+        CrashReport("Erreur : Dossier Persos manquant")
+    if not os.path.exists("Data\\Variables.txt"):
+        CrashReport("Erreur : Fichier Variables manquant")    
+    if not os.path.exists("Data\\Icons.zip"):
+        CrashReport("Erreur : Fichier Icons manquant")   
+    if not os.path.exists("Data\\Game_Info.txt"):
+        CrashReport("Erreur : Fichier Game_Info manquant")            
+    
+    nb = 3
+    for file in os.listdir("Data\Tableaux"):
+        nb+=1
+     
+    if pygame.mixer.get_init() != None:
+        for file in os.listdir("Data\BGM"):
+            nb+=1
+        for file in os.listdir("Data\SE"):
+            nb+=1
+        for file in os.listdir("Data\Voix"):
+            nb+=1
+           
+    for file in os.listdir("Data\Decors"):
+        nb+=1
+        
+    for file in os.listdir("Data\Persos"):
+        nb+=1
+        
+    return nb
+    
+def Init_UpdateText(status,current,can):
+    """
+       
+    Mise à jour du texte informatif
+      
+    """
+    can.itemconfigure("status",text=status)
+    can.itemconfigure("current",text=current)
+    can.update()
+
 def Init():
     """
 
@@ -822,93 +918,126 @@ def Init():
     """
     global D_Tableaux,Dic_Variables,D_Data,GameInfo
     print("Version du Moteur : "+Engine_Version)
+    
+    total = Init_GetTotal()
+    curr = 0
 
-    if True:
+    canvas = Canvas(fenetre,width=400,height=300)
+    canvas.pack(padx=5,pady=5)
+    canvas.create_text(200,110,text="",tags="status")
+    canvas.create_text(200,190,text="",tags="current")
 
-        for file in os.listdir("Data\Tableaux"):
-            if file.split(".")[1] == "txt":
-                with open("Data\\Tableaux\\"+file,encoding="utf8") as jsonp_file:
-                    jsonp_str = jsonp_file.read()
-                    Dico_Full = eval(jsonp_str)
-                D_Tableaux.update(Dico_Full)
+    for file in os.listdir("Data\Tableaux"):
+        curr+=1
+        Init_UpdateBar(total,curr,canvas)
+        Init_UpdateText("Chargement des tableaux",file,canvas)
+        if file.split(".")[1] == "txt":
+            with open("Data\\Tableaux\\"+file,encoding="utf8") as jsonp_file:
+                jsonp_str = jsonp_file.read()
+                Dico_Full = eval(jsonp_str)
+            D_Tableaux.update(Dico_Full)
+            
+    if pygame.mixer.get_init() != None:
+        for file in os.listdir("Data\BGM"):
+            curr+=1
+            Init_UpdateBar(total,curr,canvas)
+            Init_UpdateText("Chargement des musiques",file,canvas)
+            key = file.split(".")[0]
+            if file.split(".")[1] == "ogg":
+                D_Data["BGM"][key] = pygame.mixer.Sound("Data\\BGM\\"+file)
+
+        for file in os.listdir("Data\SE"):
+            curr+=1
+            Init_UpdateBar(total,curr,canvas)
+            Init_UpdateText("Chargement des effets sonores",file,canvas)
+            key = file.split(".")[0]
+            if file.split(".")[1] == "wav":
+                D_Data["SE"][key] = pygame.mixer.Sound("Data\\SE\\"+file)
+
+        for file in os.listdir("Data\Voix"):
+            curr+=1
+            Init_UpdateBar(total,curr,canvas)
+            Init_UpdateText("Chargement des voix",file,canvas)
+            key = file.split(".")[0]
+            if file.split(".")[1] == "wav":
+                D_Data["Voix"][key] = pygame.mixer.Sound("Data\\Voix\\"+file)
+
+    for file in os.listdir("Data\Decors"):
+        curr+=1
+        Init_UpdateBar(total,curr,canvas)
+        Init_UpdateText("Chargement des décors",file,canvas)
+        key = file.split(".")[0]
+        if file.split(".")[1] == "png":
+            D_Data["Decor"][key] = PhotoImage(file="Data\\Decors\\"+file)
+        elif file.split(".")[1] == "zip":
+            D_Data["Decor"][key] = []
+            with zipfile.ZipFile("Data\\Decors\\"+file) as myzip:
+                L = Sort(myzip.namelist())
+                myzip.extractall("Data\\Zip")
+                for item in L:
+                    D_Data["Decor"][key].append(PhotoImage(file="Data\\Zip\\"+item))
+                    os.remove("Data\\Zip\\"+item)
+
+    for file in os.listdir("Data\Persos"):
+        curr+=1
+        Init_UpdateBar(total,curr,canvas)
+        Init_UpdateText("Chargement des personnages",file,canvas)
+        key = file.split(".")[0]
+        if file.split(".")[1] == "png":
+            D_Data["Persos"][key] = PhotoImage(file="Data\\Persos\\"+file)
+        elif file.split(".")[1] == "zip":
+            D_Data["Persos"][key] = {}
+            D_Data["Persos"][key]["normal"] = []
+            with zipfile.ZipFile("Data\\Persos\\"+file) as myzip:
+                L = myzip.namelist()
+                myzip.extractall("Data\\Zip")
+                if "speak.png" in L:
+                    L.remove("speak.png")
+                    D_Data["Persos"][key]["speak"] = PhotoImage(file="Data\\Zip\\speak.png")
+                    os.remove("Data\\Zip\\speak.png")
+                L = Sort(L)
+                for item in L:
+                    D_Data["Persos"][key]["normal"].append(PhotoImage(file="Data\\Zip\\"+item))
+                    os.remove("Data\\Zip\\"+item)
+                    
+
+    curr+=1
+    Init_UpdateBar(total,curr,canvas)
+    Init_UpdateText("Chargement des variables","Variables.txt",canvas)
+    with open("Data\\Variables.txt",encoding="utf8") as jsonp_file:
+        jsonp_str = jsonp_file.read()
+        New = eval(jsonp_str)
+        for item in New.keys():
+            if not item in Dic_Variables.keys():
+                Dic_Variables[item] = New[item]
                 
-        if pygame.mixer.get_init() != None:
-            for file in os.listdir("Data\BGM"):
-                key = file.split(".")[0]
-                if file.split(".")[1] == "ogg":
-                    D_Data["BGM"][key] = pygame.mixer.Sound("Data\\BGM\\"+file)
+                
+    curr+=1
+    Init_UpdateBar(total,curr,canvas)
+    Init_UpdateText("Chargement des informations du jeu","Game_Info.txt",canvas)
+    with open("Data\\Game_Info.txt",encoding="utf8") as jsonp_file:
+        file = eval(jsonp_file.read())
+        check = file["Nom"]
+        check = file["Version"]
+        check = file["Auteur"]
+        check = file["Desc"]
+        GameInfo = file
 
-            for file in os.listdir("Data\SE"):
-                key = file.split(".")[0]
-                if file.split(".")[1] == "wav":
-                    D_Data["SE"][key] = pygame.mixer.Sound("Data\\SE\\"+file)
+    curr+=1
+    Init_UpdateBar(total,curr,canvas)
+    Init_UpdateText("Chargement des icônes","Icons.zip",canvas)
+    with zipfile.ZipFile("Data\\Icons.zip") as myzip:
+        L = myzip.namelist()
+        myzip.extractall("Data\\Zip")
 
-            for file in os.listdir("Data\Voix"):
-                key = file.split(".")[0]
-                if file.split(".")[1] == "wav":
-                    D_Data["Voix"][key] = pygame.mixer.Sound("Data\\Voix\\"+file)
+        for item in L:
+            D_Data["Icons"][item.split(".")[0]] = PhotoImage(file="Data\\Zip\\"+item)
+            os.remove("Data\\Zip\\"+item)
 
-        for file in os.listdir("Data\Decors"):
-            key = file.split(".")[0]
-            if file.split(".")[1] == "png":
-                D_Data["Decor"][key] = PhotoImage(file="Data\\Decors\\"+file)
-            elif file.split(".")[1] == "zip":
-                D_Data["Decor"][key] = []
-                with zipfile.ZipFile("Data\\Decors\\"+file) as myzip:
-                    L = Sort(myzip.namelist())
-                    myzip.extractall("Data\\Zip")
-                    for item in L:
-                        D_Data["Decor"][key].append(PhotoImage(file="Data\\Zip\\"+item))
-                        os.remove("Data\\Zip\\"+item)
+    os.rmdir("Data\\Zip")
+    canvas.pack_forget()
+    Chargement("settings.sav")
 
-        for file in os.listdir("Data\Persos"):
-            key = file.split(".")[0]
-            if file.split(".")[1] == "png":
-                D_Data["Persos"][key] = PhotoImage(file="Data\\Persos\\"+file)
-            elif file.split(".")[1] == "zip":
-                D_Data["Persos"][key] = {}
-                D_Data["Persos"][key]["normal"] = []
-                with zipfile.ZipFile("Data\\Persos\\"+file) as myzip:
-                    L = myzip.namelist()
-                    myzip.extractall("Data\\Zip")
-                    if "speak.png" in L:
-                        L.remove("speak.png")
-                        D_Data["Persos"][key]["speak"] = PhotoImage(file="Data\\Zip\\speak.png")
-                        os.remove("Data\\Zip\\speak.png")
-                    L = Sort(L)
-                    for item in L:
-                        D_Data["Persos"][key]["normal"].append(PhotoImage(file="Data\\Zip\\"+item))
-                        os.remove("Data\\Zip\\"+item)
-
-
-        with open("Data\\Variables.txt",encoding="utf8") as jsonp_file:
-            jsonp_str = jsonp_file.read()
-            New = eval(jsonp_str)
-            for item in New.keys():
-                if not item in Dic_Variables.keys():
-                    Dic_Variables[item] = New[item]
-
-        with open("Data\\Game_Info.txt",encoding="utf8") as jsonp_file:
-            file = eval(jsonp_file.read())
-            check = file["Nom"]
-            check = file["Version"]
-            check = file["Auteur"]
-            check = file["Desc"]
-            GameInfo = file
-
-        with zipfile.ZipFile("Data\\Icons.zip") as myzip:
-            L = myzip.namelist()
-            myzip.extractall("Data\\Zip")
-
-            for item in L:
-                D_Data["Icons"][item.split(".")[0]] = PhotoImage(file="Data\\Zip\\"+item)
-                os.remove("Data\\Zip\\"+item)
-
-        os.rmdir("Data\\Zip")
-        Chargement("settings.sav")
-
-    else:
-        CrashReport("Erreur : Dossier Data endommagé, vérifier l'intégrité des éléments ")
 
 
 from Functions import *

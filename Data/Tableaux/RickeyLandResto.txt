@@ -5,7 +5,7 @@
 		"PersoImg":None,
 		"CustomPlacement":None,
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Parc_Var2",
 		"Perso":"",
 		"PersoCouleur":"blue",
 		"Dialogue":"Je suis au restaurant du parc. Que vais-je faire ?",

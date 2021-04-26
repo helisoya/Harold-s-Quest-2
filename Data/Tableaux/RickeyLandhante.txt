@@ -5,7 +5,7 @@
 		"PersoImg":None,
 		"CustomPlacement":None,
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Parc_Var1",
 		"Perso":"",
 		"PersoCouleur":"blue",
 		"Dialogue":"Je suis devant la maison hantée. Que vais-je faire ?",

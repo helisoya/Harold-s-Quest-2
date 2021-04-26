@@ -50,7 +50,7 @@
 	},
 	
 	"ChezHarold_End_4": {
-		"Voix":None,
+		"Voix":"ChezHarold_End_4",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,226],
@@ -82,7 +82,7 @@
 	},
 	
 	"ChezHarold_End_6": {
-		"Voix":None,
+		"Voix":"ChezHarold_End_6",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,226],
@@ -98,7 +98,7 @@
 	},
 	
 	"ChezHarold_End_7": {
-		"Voix":None,
+		"Voix":"ChezHarold_End_7",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,226],
@@ -106,7 +106,7 @@
 		"Mus":None,
 		"Perso":"Harold",
 		"PersoCouleur":"green",
-		"Dialogue":"Ceci-dis, je vous est reconnaissant. Vous m'avez aider une fois de plus et je suis sur que vous avez aidé d'autre personnes.",
+		"Dialogue":"Ceci-dis, je vous est reconnaissant. Vous m'avez aidé une fois de plus et je suis sur que vous avez aidé d'autre personnes.",
 		"Choix":{
 			"Choix1":(">","ChezHarold_End_8"),
 		},
@@ -130,7 +130,7 @@
 	},
 	
 	"ChezHarold_End_9": {
-		"Voix":None,
+		"Voix":"ChezHarold_End_9",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,226],
@@ -146,7 +146,7 @@
 	},
 	
 	"ChezHarold_End_10": {
-		"Voix":None,
+		"Voix":"ChezHarold_End_10",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,226],
@@ -162,7 +162,7 @@
 	},
 	
 	"ChezHarold_End_11": {
-		"Voix":None,
+		"Voix":"ChezHarold_End_11",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,226],
@@ -178,7 +178,7 @@
 	},
 	
 	"ChezHarold_End_12": {
-		"Voix":None,
+		"Voix":"ChezHarold_End_12",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,226],
@@ -194,7 +194,7 @@
 	},
 	
 	"ChezHarold_End_13": {
-		"Voix":None,
+		"Voix":"ChezHarold_End_13",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,226],
@@ -211,7 +211,7 @@
 	},
 	
 	"ChezHarold_End_14": {
-		"Voix":None,
+		"Voix":"ChezHarold_End_14",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,226],
@@ -227,7 +227,7 @@
 	},
 	
 	"ChezHarold_End_15": {
-		"Voix":None,
+		"Voix":"ChezHarold_End_15",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt_Arme",
 		"CustomPlacement":[200,226],

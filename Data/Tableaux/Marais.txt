@@ -5,7 +5,7 @@
 		"PersoImg":None,
 		"CustomPlacement":None,
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Normal_Var2",
 		"Perso":"",
 		"PersoCouleur":"blue",
 		"Dialogue":"Je suis dans le marais maudit, que vais-je faire ?",

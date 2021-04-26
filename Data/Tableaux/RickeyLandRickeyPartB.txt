@@ -176,7 +176,7 @@
 		"Mus":None,
 		"Perso":"Rickey",
 		"PersoCouleur":"coral",
-		"Dialogue":"Merci beaucoup, mais cela ne va pas m'empecher de te torturer un peu, juste pour rire ! Ah Ah !",
+		"Dialogue":"Merci beaucoup, mais cela ne va pas m’empêcher de te torturer un peu, juste pour rire ! Ah Ah !",
 		"Choix":{
 			"Choix1":(">","RickeyLandPalais_RickeyPartB_12"),
 		},

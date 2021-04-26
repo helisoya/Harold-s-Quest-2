@@ -32,7 +32,7 @@
 	},
 	
 	"IntroHarold_3": {
-		"Voix":None,
+		"Voix":"IntroHarold_3",
 		"Decor":"Intro_Harold",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -48,7 +48,7 @@
 	},
 
 	"IntroHarold_4": {
-		"Voix":None,
+		"Voix":"IntroHarold_4",
 		"Decor":"Intro_Harold",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -71,7 +71,7 @@
 	},
 	
 	"IntroHarold_5a": {
-		"Voix":None,
+		"Voix":"IntroHarold_5a",
 		"Decor":"Intro_Harold",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -87,7 +87,7 @@
 	},
 
 	"IntroHarold_5b": {
-		"Voix":None,
+		"Voix":"IntroHarold_5b",
 		"Decor":"Intro_Harold",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -151,7 +151,7 @@
 	},
 	
 	"IntroHarold_9": {
-		"Voix":None,
+		"Voix":"IntroHarold_9",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -183,7 +183,7 @@
 	},
 
 	"IntroHarold_11": {
-		"Voix":None,
+		"Voix":"IntroHarold_11",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -199,7 +199,7 @@
 	},
 	
 	"IntroHarold_12": {
-		"Voix":None,
+		"Voix":"IntroHarold_12",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -215,7 +215,7 @@
 	},
 
 	"IntroHarold_13": {
-		"Voix":None,
+		"Voix":"IntroHarold_13",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -231,7 +231,7 @@
 	},
 
 	"IntroHarold_14": {
-		"Voix":None,
+		"Voix":"IntroHarold_14",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -247,7 +247,7 @@
 	},
 	
 	"IntroHarold_15": {
-		"Voix":None,
+		"Voix":"IntroHarold_15",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -279,7 +279,7 @@
 	},
 
 	"IntroHarold_17": {
-		"Voix":None,
+		"Voix":"IntroHarold_17",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -311,7 +311,7 @@
 	},
 	
 	"IntroHarold_19": {
-		"Voix":None,
+		"Voix":"IntroHarold_19",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -498,7 +498,7 @@
 		"Mus":"Rickeyland_Anthem",
 		"Perso":"Rickey",
 		"PersoCouleur":"coral",
-		"Dialogue":"L'utilisation d'armes à feux es autorisé sur cette attraction !",
+		"Dialogue":"L'utilisation d'armes à feux est autorisé sur cette attraction !",
 		"Choix":{
 			"Choix1":(">","IntroHarold_31"),
 		},
@@ -562,7 +562,7 @@
 		"Mus":"Rickeyland_Anthem",
 		"Perso":"Rickey",
 		"PersoCouleur":"coral",
-		"Dialogue":"Soyez le premier à finir toute les attractions et gagner un livre dédicacé !",
+		"Dialogue":"Soyez le premier à finir toute les attractions et gagnez un livre dédicacé !",
 		"Choix":{
 			"Choix1":(">","IntroHarold_35"),
 		},
@@ -634,7 +634,7 @@
 	},
 
 	"IntroHarold_39": {
-		"Voix":None,
+		"Voix":"IntroHarold_39",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -650,7 +650,7 @@
 	},
 
 	"IntroHarold_40": {
-		"Voix":None,
+		"Voix":"IntroHarold_40",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -666,7 +666,7 @@
 	},
 
 	"IntroHarold_41": {
-		"Voix":None,
+		"Voix":"IntroHarold_41",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -698,7 +698,7 @@
 	},	
 
 	"IntroHarold_43": {
-		"Voix":None,
+		"Voix":"IntroHarold_43",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -714,7 +714,7 @@
 	},	
 
 	"IntroHarold_44": {
-		"Voix":None,
+		"Voix":"IntroHarold_44",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt_Card",
 		"CustomPlacement":[200,228],
@@ -730,7 +730,7 @@
 	},	
 	
 	"IntroHarold_45": {
-		"Voix":None,
+		"Voix":"IntroHarold_45",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt_Card",
 		"CustomPlacement":[200,228],
@@ -746,7 +746,7 @@
 	},	
 	
 	"IntroHarold_46": {
-		"Voix":None,
+		"Voix":"IntroHarold_46",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt_Card",
 		"CustomPlacement":[200,228],
@@ -761,7 +761,7 @@
 	},	
 	
 	"IntroHarold_47": {
-		"Voix":None,
+		"Voix":"IntroHarold_47",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],
@@ -777,7 +777,7 @@
 	},
 	
 	"IntroHarold_48": {
-		"Voix":None,
+		"Voix":"IntroHarold_48",
 		"Decor":"ChezHarold_Var2",
 		"PersoImg":"Harold_Hurt",
 		"CustomPlacement":[200,228],

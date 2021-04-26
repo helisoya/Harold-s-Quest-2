@@ -5,7 +5,7 @@
 		"PersoImg":None,
 		"CustomPlacement":None,
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"Normal_Var2",
 		"Perso":"",
 		"PersoCouleur":"blue",
 		"Dialogue":"Je suis au bord du lac de Vlatyr, un coffre étrange flotte sur le lac. Que vais-je faire ?",
