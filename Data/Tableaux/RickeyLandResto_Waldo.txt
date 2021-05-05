@@ -10,7 +10,7 @@
 
 	
 	"RickeyLandResto_Normal": {
-		"Voix":None,
+		"Voix":"RickeyLand_Generic_Attr",
 		"Decor":"Parc_Restaurant",
 		"PersoImg":"Waldo_Cuisine",
 		"CustomPlacement":[200,220],
@@ -28,7 +28,7 @@
 	},
 	
 	"RickeyLandResto_Done": {
-		"Voix":None,
+		"Voix":"RickeyLand_Generic_Attr",
 		"Decor":"Parc_Restaurant",
 		"PersoImg":"Waldo_Cuisine",
 		"CustomPlacement":[200,220],
@@ -46,7 +46,7 @@
 	},
 	
 	"RickeyLandResto_Topic1_1": {
-		"Voix":None,
+		"Voix":"RickeyLandResto_Topic1_1",
 		"Decor":"Parc_Restaurant",
 		"PersoImg":"Waldo_Cuisine",
 		"CustomPlacement":[200,220],
@@ -62,7 +62,7 @@
 	},
 	
 	"RickeyLandResto_Topic1_2": {
-		"Voix":None,
+		"Voix":"RickeyLandResto_Topic1_2",
 		"Decor":"Parc_Restaurant",
 		"PersoImg":"Waldo_Cuisine_Fou",
 		"CustomPlacement":[200,220],
@@ -78,7 +78,7 @@
 	},
 	
 	"RickeyLandResto_Topic1_3": {
-		"Voix":None,
+		"Voix":"RickeyLandResto_Topic1_3",
 		"Decor":"Parc_Restaurant",
 		"PersoImg":"Waldo_Cuisine",
 		"CustomPlacement":[200,220],
@@ -96,7 +96,7 @@
 	
 
 	"RickeyLandResto_Topic2_1": {
-		"Voix":None,
+		"Voix":"RickeyLandResto_Topic2_1",
 		"Decor":"Parc_Restaurant",
 		"PersoImg":"Waldo_Cuisine",
 		"CustomPlacement":[200,220],
@@ -112,7 +112,7 @@
 	},
 	
 	"RickeyLandResto_Topic2_2": {
-		"Voix":None,
+		"Voix":"RickeyLandResto_Topic2_2",
 		"Decor":"Parc_Restaurant",
 		"PersoImg":"Waldo_Cuisine",
 		"CustomPlacement":[200,220],
@@ -128,7 +128,7 @@
 	},
 	
 	"RickeyLandResto_Topic2_3": {
-		"Voix":None,
+		"Voix":"RickeyLandResto_Topic2_3",
 		"Decor":"Parc_Restaurant",
 		"PersoImg":"Waldo_Cuisine_Fou",
 		"CustomPlacement":[200,220],
@@ -145,7 +145,7 @@
 	
 	
 	"RickeyLandResto_PrendreMenu_1": {
-		"Voix":None,
+		"Voix":"RickeyLandResto_PrendreMenu_1",
 		"Decor":"Parc_Restaurant",
 		"PersoImg":"Waldo_Cuisine",
 		"CustomPlacement":[200,220],
@@ -161,7 +161,7 @@
 	},
 	
 	"RickeyLandResto_PrendreMenu_2": {
-		"Voix":None,
+		"Voix":"RickeyLandResto_PrendreMenu_2",
 		"Decor":"Parc_Restaurant",
 		"PersoImg":"Waldo_Cuisine",
 		"CustomPlacement":[200,220],

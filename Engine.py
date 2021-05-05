@@ -843,6 +843,28 @@ def Apparition():
     Visuel.tag_bind("Help_Button","<Button-1>",lambda arg=0:BuiltInHelpMenu())
 
 
+def Verifications():
+    """
+       
+    Vérifie si les tableaux utilisent des composants inéxistants
+      
+    """
+    print("Début Vérifications")
+    for key in D_Tableaux:
+        if not key[:2] in ["!_","?_","§_"]:
+            
+            if not D_Tableaux[key]["Voix"] in D_Data["Voix"].keys() and D_Tableaux[key]["Voix"] != None:
+                print("Erreur Voix : "+key+" -> "+D_Tableaux[key]["Voix"])
+            if not D_Tableaux[key]["Mus"] in D_Data["BGM"].keys() and D_Tableaux[key]["Mus"] != None:
+                print("Erreur BGM : "+key+" -> "+D_Tableaux[key]["Mus"])
+            if not D_Tableaux[key]["PersoImg"] in D_Data["Persos"].keys() and D_Tableaux[key]["PersoImg"] != None:
+                print("Erreur Perso : "+key+" -> "+D_Tableaux[key]["PersoImg"])
+            if not D_Tableaux[key]["Decor"] in D_Data["Decor"].keys() and D_Tableaux[key]["Decor"] != None:
+                print("Erreur Decor : "+key+" -> "+D_Tableaux[key]["Decor"])
+            
+    print("Fin Vérifications")
+
+
 def Init_UpdateBar(total,current,can):
     """
        
@@ -907,7 +929,7 @@ def Init_UpdateText(status,current,can):
       
     """
     can.itemconfigure("status",text=status)
-    can.itemconfigure("current",text=current)
+    can.itemconfigure("curr",text=current)
     can.update()
 
 def Init():
@@ -925,7 +947,7 @@ def Init():
     canvas = Canvas(fenetre,width=400,height=300)
     canvas.pack(padx=5,pady=5)
     canvas.create_text(200,110,text="",tags="status")
-    canvas.create_text(200,190,text="",tags="current")
+    canvas.create_text(200,190,text="",tags="curr")
 
     for file in os.listdir("Data\Tableaux"):
         curr+=1
@@ -1037,6 +1059,7 @@ def Init():
     os.rmdir("Data\\Zip")
     canvas.pack_forget()
     Chargement("settings.sav")
+    Verifications()
 
 
 

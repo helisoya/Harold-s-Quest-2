@@ -7,6 +7,8 @@ from Cartes import *
 from MiniMap import *
 from Cassete import *
 
+from COV import *
+
 from random import *
 import os
 
@@ -24,7 +26,7 @@ def AddCustomMenu():
     Visuel.tag_bind("Map_Button","<Button-1>",lambda arg=0:MapWindow())
     Visuel.create_image(274,516,image=D_Data["Icons"]["cas"],tags="Cas_Button")
     Visuel.tag_bind("Cas_Button","<Button-1>",lambda arg=0:CasWindow())
-    
+
 def NewGame():
     name = simpledialog.askstring("HQ2","Quel est votre nom ?")
     if name != "":
@@ -43,8 +45,8 @@ def LoadSave():
     AddCustomMenu()
     Chargement("save.sav")
 
-    
-    
+
+
 img = PhotoImage(file="Data//Autres//HQ2.png")
 img2 = PhotoImage(file="Data//Autres//HQ2_white.png")
 img5 = PhotoImage(file="Data//Autres//HQ2_secret.png")
@@ -82,12 +84,12 @@ def SetUpDifficulty():
     menu.create_rectangle(275,205,375,225,fill="red",tags="t3")
     menu.create_text(325,215,text="Difficile",tags="t3")
     menu.tag_bind("t3","<Button-1>",lambda arg=3:SetDifficulty(3))
-    
+
 
 def SetDifficulty(diff):
     ModifVar("difficulte",diff)
     NewGame()
-    
+
 
 def StartScreenNormal():
     global curr
@@ -121,7 +123,7 @@ def EasterEggDialog1():
         PlaySE("Cerf_1")
         menu.itemconfigure("dia",fill="red",text="Bientôt, le monde sera à nos pieds, et vous serez à mes cotés")
     elif curr == 1200:
-        menu.itemconfigure("dia",fill="white",text="Oui...maitre...")   
+        menu.itemconfigure("dia",fill="white",text="Oui...maitre...")
     elif curr == 1500:
         curr = 0
         StartScreenNormal()
@@ -145,7 +147,7 @@ def EasterEggDialog2():
     elif curr == 1500:
         menu.itemconfigure("dia",fill="white",text="Cette fois, je vais l'avoir")
     elif curr == 1800:
-        menu.itemconfigure("dia",fill="lightgray",text="Oui...maitre...")   
+        menu.itemconfigure("dia",fill="lightgray",text="Oui...maitre...")
     elif curr == 2100:
         curr = 0
         StartScreenNormal()
@@ -189,7 +191,7 @@ def ChooseMenu():
     if 1 <= de <= 50 : # Menu Normal
         AfficheDefaultMenu()
         StartScreenNormal()
-        
+
     elif  51 <= de <= 80 : # Menu Fort
         if randint(1,100) < 71:
             menu.create_image(200,150,image=img_fort_normal)
@@ -204,9 +206,9 @@ def ChooseMenu():
             menu.create_rectangle(150,335,250,355,fill="red",tags=("but","c"))
             menu.create_text(200,345,text="Continuer",tags=("but","c"))
         StartScreenNormal()
-        
-    elif 81 <= de <= 85: # Easter Egg 1 (Yeux) 
-        
+
+    elif 81 <= de <= 85: # Easter Egg 1 (Yeux)
+
         AfficheDefaultMenu()
         menu.create_rectangle(0,0,400,300,fill="black",tags="egg")
         menu.create_oval(150,150,160,160,fill="red",tags="egg")
@@ -233,7 +235,7 @@ def ChooseMenu():
         menu.create_text(205,200,text="Tout ce passe comme prévu, il arrivera bientôt",fill="white",tags=("egg","dia"))
         EasterEggDialog1()
 
-    elif 96 <= de <= 99: # Easter Egg 4 (Dialogue - 2) 
+    elif 96 <= de <= 99: # Easter Egg 4 (Dialogue - 2)
 
         AfficheDefaultMenu()
 
@@ -269,7 +271,7 @@ def Cutscene_IntroA():
         menu.move("right",1,1)
         menu.move("left",-1,1)
         menu.move("castle",0,-2)
-        
+
 
     menu.update()
     curr+=1
@@ -291,12 +293,12 @@ else: # Demarage normal
         fenetre.after(1500,ChooseMenu)
     elif 51 <= de <= 91: # Cutscene A (Montagne avec Chateau)
         Cutscene_IntroA()
-        
+
     elif de == 99: # Easter Egg 6 (DLC Missing)
         menu.create_text(200,150,text="Attention, il vous manque des DLCs pour pouvoir jouer ! \n -Premium Edition \n -Gold Edition \n -Game Of The Year Edition \n -Skin Packs n°1-50")
         fenetre.after(4000,lambda:exit())
     else: # Easter Egg 7 (CoV)
-        menu.create_text(200,150,text="Mini-jeu manquant !")
-        fenetre.after(2000,lambda:exit())
+        fenetre.destroy()
+        MiniGame_COV()
 
 fenetre.mainloop()

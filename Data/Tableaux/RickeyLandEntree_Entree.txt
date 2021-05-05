@@ -10,7 +10,7 @@
 	},
 
 	"RickeyLandEntree_Entree_NoCard_1": {
-		"Voix":None,
+		"Voix":"RickeyLandEntree_Entree_NoCard_1",
 		"Decor":"Parc_Exterieur",
 		"PersoImg":"Garde",
 		"CustomPlacement":[200,220],
@@ -60,7 +60,7 @@
 
 	
 	"RickeyLandEntree_Entree_GotCard_1": {
-		"Voix":None,
+		"Voix":"RickeyLandEntree_Entree_GotCard_1",
 		"Decor":"Parc_Exterieur",
 		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],
@@ -76,7 +76,7 @@
 	},
 	
 	"RickeyLandEntree_Entree_GotCard_2": {
-		"Voix":None,
+		"Voix":"RickeyLandEntree_Entree_GotCard_2",
 		"Decor":"Parc_Exterieur",
 		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],
@@ -92,7 +92,7 @@
 	},
 	
 	"RickeyLandEntree_Entree_GotCard_3": {
-		"Voix":None,
+		"Voix":"RickeyLandEntree_Entree_GotCard_3",
 		"Decor":"Parc_Exterieur",
 		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],
@@ -108,7 +108,7 @@
 	},
 	
 	"RickeyLandEntree_Entree_GotCard_4": {
-		"Voix":None,
+		"Voix":"RickeyLandEntree_Entree_GotCard_4",
 		"Decor":"Parc_Exterieur",
 		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],

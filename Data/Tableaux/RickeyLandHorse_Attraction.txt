@@ -9,7 +9,7 @@
 
 	
 	"RickeyLandHorse_Done": {
-		"Voix":None,
+		"Voix":"RickeyLand_Generic_Done",
 		"Decor":"Parc_Cheval",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -25,7 +25,7 @@
 	},
 	
 	"RickeyLandHorse_Maitre": {
-		"Voix":None,
+		"Voix":"RickeyLand_Generic_Attr",
 		"Decor":"Parc_Cheval",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -43,7 +43,7 @@
 	},
 	
 	"RickeyLandHorse_Topic1_1": {
-		"Voix":None,
+		"Voix":"RickeyLandHorse_Topic1_1",
 		"Decor":"Parc_Cheval",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -59,7 +59,7 @@
 	},
 	
 	"RickeyLandHorse_Topic1_2": {
-		"Voix":None,
+		"Voix":"RickeyLandHorse_Topic1_2",
 		"Decor":"Parc_Cheval",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -75,7 +75,7 @@
 	},
 	
 	"RickeyLandHorse_Topic1_3": {
-		"Voix":None,
+		"Voix":"RickeyLandHorse_Topic1_3",
 		"Decor":"Parc_Cheval",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -91,7 +91,7 @@
 	},
 	
 	"RickeyLandHorse_Attr_1": {
-		"Voix":None,
+		"Voix":"RickeyLandHorse_Attr_1",
 		"Decor":"Parc_Cheval",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -122,7 +122,7 @@
 	},
 	
 	"RickeyLandHorse_Attr_3": {
-		"Voix":None,
+		"Voix":"RickeyLandHorse_Attr_2",
 		"Decor":"Parc_Cheval",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],

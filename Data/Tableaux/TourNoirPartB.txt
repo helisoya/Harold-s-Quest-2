@@ -162,11 +162,10 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"green",
-		"Dialogue":"INSERER MINI JEU COMBAT QTE",
+		"Dialogue":"",
 		"Choix":{
-			"Choix1":(">","TourNoir_PartB_Sheperd_7"),
 		},
-		"Extra":[],
+		"Extra":["MiniGame_CQTE()"],
 	},
 	
 	"TourNoir_PartB_Sheperd_7": {

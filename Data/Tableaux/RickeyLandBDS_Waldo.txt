@@ -10,7 +10,7 @@
 
 	
 	"RickeyLandBDS_Normal": {
-		"Voix":None,
+		"Voix":"RickeyLand_Generic_Attr",
 		"Decor":"Parc_BDS",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -28,7 +28,7 @@
 	},
 	
 	"RickeyLandBDS_Done": {
-		"Voix":None,
+		"Voix":"RickeyLand_Generic_Attr",
 		"Decor":"Parc_BDS",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -46,7 +46,7 @@
 	},
 	
 	"RickeyLandBDS_Topic1_1": {
-		"Voix":None,
+		"Voix":"RickeyLandBDS_Topic1_1",
 		"Decor":"Parc_BDS",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -62,7 +62,7 @@
 	},
 	
 	"RickeyLandBDS_Topic1_2": {
-		"Voix":None,
+		"Voix":"RickeyLandBDS_Topic1_2",
 		"Decor":"Parc_BDS",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -78,7 +78,7 @@
 	},
 	
 	"RickeyLandBDS_Topic1_3": {
-		"Voix":None,
+		"Voix":"RickeyLandBDS_Topic1_3",
 		"Decor":"Parc_BDS",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -96,7 +96,7 @@
 	
 
 	"RickeyLandBDS_Topic2_1": {
-		"Voix":None,
+		"Voix":"RickeyLandBDS_Topic2_1",
 		"Decor":"Parc_BDS",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -112,7 +112,7 @@
 	},
 	
 	"RickeyLandBDS_Topic2_2": {
-		"Voix":None,
+		"Voix":"RickeyLandBDS_Topic2_2",
 		"Decor":"Parc_BDS",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -128,7 +128,7 @@
 	},
 	
 	"RickeyLandBDS_Topic2_3": {
-		"Voix":None,
+		"Voix":"RickeyLandBDS_Topic2_3",
 		"Decor":"Parc_BDS",
 		"PersoImg":"Waldo_Fou",
 		"CustomPlacement":[200,220],
@@ -145,7 +145,7 @@
 	
 	
 	"RickeyLandBDS_ChoixMoral_1": {
-		"Voix":None,
+		"Voix":"RickeyLandBDS_ChoixMoral_1",
 		"Decor":"Parc_BDS",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -161,7 +161,7 @@
 	},
 	
 	"RickeyLandBDS_ChoixMoral_2": {
-		"Voix":None,
+		"Voix":"RickeyLandBDS_ChoixMoral_2",
 		"Decor":"Parc_BDS",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -193,7 +193,7 @@
 	},
 	
 	"RickeyLandBDS_ChoixMoral_4": {
-		"Voix":None,
+		"Voix":"RickeyLandBDS_ChoixMoral_4",
 		"Decor":"Parc_BDS",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -210,7 +210,7 @@
 	},
 	
 	"RickeyLandBDS_ChoixMoral_5a": {
-		"Voix":None,
+		"Voix":"RickeyLandBDS_ChoixMoral_5a",
 		"Decor":"Parc_BDS",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -242,7 +242,7 @@
 	},
 	
 	"RickeyLandBDS_ChoixMoral_5b": {
-		"Voix":None,
+		"Voix":"RickeyLandBDS_ChoixMoral_5b",
 		"Decor":"Parc_BDS",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -275,7 +275,7 @@
 	},
 	
 	"RickeyLandBDS_ChoixMoral_8": {
-		"Voix":None,
+		"Voix":"RickeyLandBDS_ChoixMoral_8",
 		"Decor":"Parc_BDS",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],

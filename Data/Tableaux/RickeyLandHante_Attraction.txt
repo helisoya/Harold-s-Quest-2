@@ -9,7 +9,7 @@
 
 	
 	"RickeyLandHante_Done": {
-		"Voix":None,
+		"Voix":"RickeyLand_Generic_Done",
 		"Decor":"Parc_Hante",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -25,7 +25,7 @@
 	},
 	
 	"RickeyLandHante_Maitre": {
-		"Voix":None,
+		"Voix":"RickeyLand_Generic_Attr",
 		"Decor":"Parc_Hante",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -43,7 +43,7 @@
 	},
 	
 	"RickeyLandHante_Topic1_1": {
-		"Voix":None,
+		"Voix":"RickeyLandHante_Topic1_1",
 		"Decor":"Parc_Hante",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -59,7 +59,7 @@
 	},
 	
 	"RickeyLandHante_Topic1_2": {
-		"Voix":None,
+		"Voix":"RickeyLandHante_Topic1_2",
 		"Decor":"Parc_Hante",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -75,7 +75,7 @@
 	},
 	
 	"RickeyLandHante_Topic1_3": {
-		"Voix":None,
+		"Voix":"RickeyLandHante_Topic1_3",
 		"Decor":"Parc_Hante",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -91,7 +91,7 @@
 	},
 	
 	"RickeyLandHante_Attr_1": {
-		"Voix":None,
+		"Voix":"RickeyLandHante_Attr_1",
 		"Decor":"Parc_Hante",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -122,7 +122,7 @@
 	},
 	
 	"RickeyLandHante_Attr_3": {
-		"Voix":None,
+		"Voix":"RickeyLandHante_Attr_2",
 		"Decor":"Parc_Hante",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],

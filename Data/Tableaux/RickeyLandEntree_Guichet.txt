@@ -24,7 +24,7 @@
 	},
 
 	"RickeyLandEntree_Guichet": {
-		"Voix":None,
+		"Voix":"RickeyLandEntree_Guichet",
 		"Decor":"Parc_Exterieur",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -43,7 +43,7 @@
 
 
 	"RickeyLandEntree_Guichet_Topic1_1": {
-		"Voix":None,
+		"Voix":"RickeyLandEntree_Guichet_Topic1_1",
 		"Decor":"Parc_Exterieur",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -59,7 +59,7 @@
 	},
 	
 	"RickeyLandEntree_Guichet_Topic1_2": {
-		"Voix":None,
+		"Voix":"RickeyLandEntree_Guichet_Topic1_2",
 		"Decor":"Parc_Exterieur",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -76,7 +76,7 @@
 	
 	
 	"RickeyLandEntree_Guichet_Topic2_1": {
-		"Voix":None,
+		"Voix":"RickeyLandEntree_Guichet_Topic2_1",
 		"Decor":"Parc_Exterieur",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -92,7 +92,7 @@
 	},
 	
 	"RickeyLandEntree_Guichet_Topic2_2": {
-		"Voix":None,
+		"Voix":"RickeyLandEntree_Guichet_Topic2_2",
 		"Decor":"Parc_Exterieur",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],

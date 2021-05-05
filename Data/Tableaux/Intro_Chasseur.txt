@@ -218,11 +218,10 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"brown",
-		"Dialogue":"INSERER MINI JEU 'COURSE POURSUITE AVEC CHASSEUR' .",
+		"Dialogue":"",
 		"Choix":{
-			"Choix1":(">","IntroChasseur_15"),
 		},
-		"Extra":[],
+		"Extra":["MiniGame_CPC()"],
 	},
 	
 	"IntroChasseur_15": {

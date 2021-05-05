@@ -2,7 +2,7 @@
 
 	
 	"RickeyLandPalais_RickeyPartC_1": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_1",
 		"Decor":"Palais_Placard",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -18,7 +18,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_2": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_2",
 		"Decor":"Palais_Placard",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -98,7 +98,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_7": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_7",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey_Fou",
 		"CustomPlacement":[200,220],
@@ -114,7 +114,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_8": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_8",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -130,7 +130,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_9": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_9",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -146,7 +146,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_10": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_10",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -162,7 +162,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_11": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_11",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -178,7 +178,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_12": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_12",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -194,7 +194,7 @@
 	},
 
 	"RickeyLandPalais_RickeyPartC_13": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_13",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey_Fou",
 		"CustomPlacement":[200,220],
@@ -210,7 +210,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_14": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_14",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey_Fou",
 		"CustomPlacement":[200,220],
@@ -226,7 +226,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_15": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_15",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey_Fou",
 		"CustomPlacement":[200,220],
@@ -242,7 +242,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_16": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_16",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey_Fou",
 		"CustomPlacement":[200,220],
@@ -258,7 +258,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_17": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_17",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -298,15 +298,14 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"coral",
-		"Dialogue":"INSERER MINI JEU JOUTE VERBAL",
+		"Dialogue":"",
 		"Choix":{
-			"Choix1":(">","RickeyLandPalais_RickeyPartC_20"),
 		},
-		"Extra":[],
+		"Extra":["MiniGame_JV()"],
 	},
 	
 	"RickeyLandPalais_RickeyPartC_20": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_20",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey_Fou",
 		"CustomPlacement":[200,220],
@@ -377,7 +376,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_DuelRick0_2": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_DuelRick0_2",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rick0",
 		"CustomPlacement":[200,220],
@@ -393,7 +392,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_DuelRick0_3": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_DuelRick0_3",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rick0",
 		"CustomPlacement":[200,220],
@@ -440,7 +439,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_DuelRick0_6": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_DuelRick0_6",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rick0",
 		"CustomPlacement":[200,220],
@@ -554,7 +553,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_27": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_27",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Waldo_Uniforme",
 		"CustomPlacement":[200,220],
@@ -570,7 +569,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_28": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_28",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Waldo_Uniforme",
 		"CustomPlacement":[200,220],
@@ -586,7 +585,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_29": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_29",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Waldo_Uniforme",
 		"CustomPlacement":[200,220],
@@ -618,7 +617,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_31": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_31",
 		"Decor":"Parc_Exterieur",
 		"PersoImg":"Waldo_Uniforme",
 		"CustomPlacement":[200,220],
@@ -634,7 +633,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_32": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_32",
 		"Decor":"Parc_Exterieur",
 		"PersoImg":"Waldo_Uniforme",
 		"CustomPlacement":[200,220],
@@ -650,7 +649,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartC_33": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartC_33",
 		"Decor":"Parc_Exterieur",
 		"PersoImg":"Waldo_Uniforme",
 		"CustomPlacement":[200,220],
@@ -660,12 +659,12 @@
 		"PersoCouleur":"forestgreen",
 		"Dialogue":"Bonne chance à vous, j'ai beaucoup de choses à régler maintenant que je suis PDG.",
 		"Choix":{
-			"Choix1":(">","RickeyLandPalais_RickeyPartC_34"),
+			"Choix1":(">","RickeyLandPalais_RickeyPartC_33b"),
 		},
 		"Extra":[],
 	},
 	
-	"RickeyLandPalais_RickeyPartC_33": {
+	"RickeyLandPalais_RickeyPartC_33b": {
 		"Voix":None,
 		"Decor":"Parc_Exterieur",
 		"PersoImg":None,

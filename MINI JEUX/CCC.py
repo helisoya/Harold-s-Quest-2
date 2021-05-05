@@ -108,28 +108,28 @@ def Mainloop():
     global list_att,PV,cooldown,temps
 
     can.delete("all")
-    temps-=3
+    temps-=1
 
     if cooldown > 0:
         cooldown-=1
     else:
-        cooldown = 50-10*diff
+        cooldown = 100-10*diff
         de = randint(1,4)
         l = [-50]
-        for i in range(3+diff):
+        for i in range(2+diff):
             p = randint(10,290)
             while CheckAllWithin(l,p):
                 p = randint(10,290)
             l.append(p)
             
             if de == 1: # Gauche
-                list_att.append(Attaque(0,randint(10,290),3,0,"h"))
+                list_att.append(Attaque(0,randint(10,290),1,0,"h"))
             elif de == 2: # Droite
-                list_att.append(Attaque(300,randint(10,290),-3,0,"h"))
+                list_att.append(Attaque(300,randint(10,290),-1,0,"h"))
             elif de == 3: # Haut
-                list_att.append(Attaque(randint(10,290),0,0,3,"v"))
+                list_att.append(Attaque(randint(10,290),0,0,1,"v"))
             else: # Bas
-                list_att.append(Attaque(randint(10,290),300,0,-3,"v"))
+                list_att.append(Attaque(randint(10,290),300,0,-1,"v"))
 
 
     perso.Update()
@@ -162,7 +162,7 @@ def Mainloop():
             PV = 6-diff
             temps = 2000
             list_att = []
-            root.after(8,Mainloop)
+            root.after(15,Mainloop)
 
 
 

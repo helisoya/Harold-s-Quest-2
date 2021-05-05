@@ -20,11 +20,21 @@
 		"PersoCouleur":"green",
 		"Dialogue":"Vous avez besoin de quelque chose, !Player ?",
 		"Choix":{
-			"Choix1":("Rappelez-moi ma mission","ChezHarold_Harold_Topic1_1"),
+			"Choix1":("Rappelez-moi ma mission","!_ChezHarold_Harold_Topic"),
 			"Choix2":("Parlez-moi de la région","ChezHarold_Harold_Topic2_1"),
 			"Choix3":("Rien (Partir)","ChezHarold_Arrive"),
 		},
 		"Extra":["ModifVar('canMove',False)"],
+	},
+	
+	"!_ChezHarold_Harold_Topic": {
+    	"DRecours":"ChezHarold_Harold_Topic1_1",
+    	"Evals":[
+        	("GetVar('quest') == 2","ChezHarold_Harold_Topic3_1"),
+			("GetVar('quest') == 4 and GetVar('wentToBds')!=0","ChezHarold_Harold_Topic6_1"),
+			("GetVar('quest') == 4","ChezHarold_Harold_Topic4_1"),
+			("GetVar('quest') == 5","ChezHarold_Harold_Topic5_1"),
+    	],
 	},
 	
 	
@@ -141,6 +151,183 @@
 		"Perso":"Harold",
 		"PersoCouleur":"green",
 		"Dialogue":"Au nord, il y a les raideurs du Nord. Au sud, les montagnards. A l'est Marklicht et à l'ouest Oremil.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold"),
+		},
+		"Extra":[],
+	},
+	
+	
+	"ChezHarold_Harold_Topic3_1": {
+		"Voix":"ChezHarold_Harold_Topic3_1",
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":"Normal_Var1",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"!Player ! Vous devez trouver une invitation. C'est le seul moyen d'entrer au parc.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold_Topic3_2"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic3_2": {
+		"Voix":"ChezHarold_Harold_Topic3_2",
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":"Normal_Var1",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Je ne peux malheureusement pas vous aider pour cela. Je n'en ai pas eu.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold_Topic3_3"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic3_3": {
+		"Voix":"ChezHarold_Harold_Topic3_3",
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":"Normal_Var1",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Mais peux-être que mes voisins en ont eu. Allez chercher aux alentours.",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic4_1": {
+		"Voix":"ChezHarold_Harold_Topic4_1",
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":"Normal_Var1",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"!Player ! Vous devez réussir ces attractions !",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold_Topic4_2"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic4_2": {
+		"Voix":"ChezHarold_Harold_Topic4_2",
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":"Normal_Var1",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Je sais, elles sont difficiles... Mais vous ne pouvez pas échouer !",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold_Topic4_3"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic4_3": {
+		"Voix":"ChezHarold_Harold_Topic4_3",
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":"Normal_Var1",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"J'ai foi en vous, !Player !",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic5_1": {
+		"Voix":"ChezHarold_Harold_Topic5_1",
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":"Normal_Var1",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"!Player ! Vous pouvez enfin aller au palais !",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold_Topic5_2"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic5_2": {
+		"Voix":"ChezHarold_Harold_Topic5_2",
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":"Normal_Var1",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Qu'attendez-vous ? La victoire est proche !",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic6_1": {
+		"Voix":"ChezHarold_Harold_Topic6_1",
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":"Normal_Var1",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"!Player ! Vous avez rencontré le Chevalier de Runan ?!",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold_Topic6_2"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic6_2": {
+		"Voix":"ChezHarold_Harold_Topic6_2",
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":"Normal_Var1",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"C'est mon rival de toujours, mon Némésis !",
+		"Choix":{
+			"Choix1":(">","ChezHarold_Harold_Topic6_3"),
+		},
+		"Extra":[],
+	},
+	
+	"ChezHarold_Harold_Topic6_3": {
+		"Voix":"ChezHarold_Harold_Topic6_3",
+		"Decor":"ChezHarold_Var1",
+		"PersoImg":"Harold_Hurt",
+		"CustomPlacement":[200,226],
+		"UseSpeak":True,
+		"Mus":"Normal_Var1",
+		"Perso":"Harold",
+		"PersoCouleur":"green",
+		"Dialogue":"Nous avons croisé le fer à de nombreuses reprises dans la province de Runan !",
 		"Choix":{
 			"Choix1":(">","ChezHarold_Harold"),
 		},

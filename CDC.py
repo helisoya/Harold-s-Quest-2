@@ -218,6 +218,7 @@ def MiniGame_CDC():
             TableauSuivant("RickeyLandHorse_Attr_3")
             root.destroy()
             EnableWindow()
+            return
         else:
             root.after(15,MainLoop)
 

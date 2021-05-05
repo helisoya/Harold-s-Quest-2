@@ -346,7 +346,7 @@
 	
 	
 	"IntroHarold_21": {
-		"Voix":None,
+		"Voix":"IntroHarold_21",
 		"Decor":"Parc_Palais",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -362,7 +362,7 @@
 	},
 	
 	"IntroHarold_22": {
-		"Voix":None,
+		"Voix":"IntroHarold_22",
 		"Decor":"Parc_Palais",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -378,7 +378,7 @@
 	},
 	
 	"IntroHarold_23": {
-		"Voix":None,
+		"Voix":"IntroHarold_23",
 		"Decor":"Parc_Palais",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -394,7 +394,7 @@
 	},
 	
 	"IntroHarold_24": {
-		"Voix":None,
+		"Voix":"IntroHarold_24",
 		"Decor":"Parc_Palais",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -410,7 +410,7 @@
 	},
 	
 	"IntroHarold_25": {
-		"Voix":None,
+		"Voix":"IntroHarold_25",
 		"Decor":"Parc_Quiz",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -426,7 +426,7 @@
 	},
 
 	"IntroHarold_26": {
-		"Voix":None,
+		"Voix":"IntroHarold_26",
 		"Decor":"Parc_Quiz",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -442,7 +442,7 @@
 	},
 	
 	"IntroHarold_27": {
-		"Voix":None,
+		"Voix":"IntroHarold_27",
 		"Decor":"Parc_Marchand",
 		"PersoImg":None,
 		"CustomPlacement":[200,220],
@@ -474,7 +474,7 @@
 	},
 	
 	"IntroHarold_29": {
-		"Voix":None,
+		"Voix":"IntroHarold_29",
 		"Decor":"Parc_Cheval",
 		"PersoImg":None,
 		"CustomPlacement":[200,220],
@@ -490,7 +490,7 @@
 	},
 	
 	"IntroHarold_30": {
-		"Voix":None,
+		"Voix":"IntroHarold_30",
 		"Decor":"Parc_Cheval",
 		"PersoImg":None,
 		"CustomPlacement":[200,220],
@@ -506,7 +506,7 @@
 	},
 	
 	"IntroHarold_31": {
-		"Voix":None,
+		"Voix":"IntroHarold_31",
 		"Decor":"Parc_Hante",
 		"PersoImg":None,
 		"CustomPlacement":[200,220],
@@ -522,7 +522,7 @@
 	},
 	
 	"IntroHarold_32": {
-		"Voix":None,
+		"Voix":"IntroHarold_32",
 		"Decor":"Parc_Hante",
 		"PersoImg":None,
 		"CustomPlacement":[200,220],
@@ -538,7 +538,7 @@
 	},
 	
 	"IntroHarold_33": {
-		"Voix":None,
+		"Voix":"IntroHarold_33",
 		"Decor":"Parc_Palais",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -554,7 +554,7 @@
 	},
 
 	"IntroHarold_34": {
-		"Voix":None,
+		"Voix":"IntroHarold_34",
 		"Decor":"Parc_Palais",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -570,7 +570,7 @@
 	},
 	
 	"IntroHarold_35": {
-		"Voix":None,
+		"Voix":"IntroHarold_35",
 		"Decor":"Parc_Palais",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -586,7 +586,7 @@
 	},
 	
 	"IntroHarold_36": {
-		"Voix":None,
+		"Voix":"IntroHarold_36",
 		"Decor":"Parc_Palais",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -602,7 +602,7 @@
 	},
 
 	"IntroHarold_37": {
-		"Voix":None,
+		"Voix":"IntroHarold_37",
 		"Decor":"Parc_Palais",
 		"PersoImg":"Rickey_Fou",
 		"CustomPlacement":[200,220],

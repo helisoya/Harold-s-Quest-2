@@ -97,7 +97,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_7": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_7",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Cerf",
 		"CustomPlacement":[200,220],
@@ -113,7 +113,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_8": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_8",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Cerf",
 		"CustomPlacement":[200,220],
@@ -129,7 +129,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_9": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_9",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Cerf",
 		"CustomPlacement":[200,220],
@@ -161,7 +161,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_11": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_11",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Cerf",
 		"CustomPlacement":[200,220],
@@ -177,7 +177,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_12": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_12",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Cerf",
 		"CustomPlacement":[200,220],
@@ -217,15 +217,14 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"purple",
-		"Dialogue":"INSERER MINI JEU COMBAT CONTRE SEIGNEUR CERF",
+		"Dialogue":"",
 		"Choix":{
-			"Choix1":(">","TourNoir_PartC_Cerf_15"),
 		},
-		"Extra":[],
+		"Extra":["MiniGame_CCC()"],
 	},
 	
 	"TourNoir_PartC_Cerf_15": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_15",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Cerf",
 		"CustomPlacement":[200,220],
@@ -248,7 +247,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_Good_1": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_Good_1",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Cerf",
 		"CustomPlacement":[200,220],
@@ -264,7 +263,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_Good_2": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_Good_2",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Cerf",
 		"CustomPlacement":[200,220],
@@ -280,7 +279,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_Good_3": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_Good_3",
 		"Decor":"Tour_Salle",
 		"PersoImg":"Cerf",
 		"CustomPlacement":[200,220],
@@ -312,7 +311,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_Good_5": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_Good_5",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":[200,220],
@@ -328,7 +327,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_Good_6": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_Good_6",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":[200,220],
@@ -344,7 +343,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_Good_7": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_Good_7",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":[200,220],
@@ -361,7 +360,7 @@
 	
 	
 	"TourNoir_PartC_Cerf_Bad_1": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_Bad_1",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":[200,220],
@@ -377,7 +376,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_Bad_2": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_Bad_2",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":[200,220],
@@ -393,7 +392,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_Bad_3": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_Bad_3",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":[200,220],
@@ -409,7 +408,7 @@
 	},
 	
 	"TourNoir_PartC_Cerf_Bad_4": {
-		"Voix":None,
+		"Voix":"TourNoir_PartC_Cerf_Bad_4",
 		"Decor":None,
 		"PersoImg":None,
 		"CustomPlacement":[200,220],

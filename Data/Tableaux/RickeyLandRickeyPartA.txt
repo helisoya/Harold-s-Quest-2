@@ -48,7 +48,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartA_4": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartA_4",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -80,7 +80,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartA_6": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartA_6",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -128,7 +128,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartA_9": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartA_9",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -144,7 +144,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartA_10": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartA_10",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -176,7 +176,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartA_12": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartA_12",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey_Fou",
 		"CustomPlacement":[200,220],
@@ -208,7 +208,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartA_14": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartA_14",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey_Fou",
 		"CustomPlacement":[200,220],
@@ -240,7 +240,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartA_16": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartA_16",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -256,7 +256,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartA_17": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartA_17",
 		"Decor":"Palais_Trone",
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
@@ -312,11 +312,10 @@
 		"Mus":None,
 		"Perso":"",
 		"PersoCouleur":"blue",
-		"Dialogue":"INSERER MINI JEU COURSE POURSUITE AVEC RICKEY",
+		"Dialogue":"",
 		"Choix":{
-			"Choix1":(">","RickeyLandPalais_RickeyPartA_21"),
 		},
-		"Extra":[],
+		"Extra":["MiniGame_CPR()"],
 	},
 	
 	"RickeyLandPalais_RickeyPartA_21": {
@@ -352,7 +351,7 @@
 	},
 	
 	"RickeyLandPalais_RickeyPartA_23": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_RickeyPartA_23",
 		"Decor":"Palais_Couloir",
 		"PersoImg":"Rickey_Fou",
 		"CustomPlacement":[200,220],

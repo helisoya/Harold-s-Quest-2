@@ -9,7 +9,7 @@
 
 	
 	"RickeyLandPalais_Before": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_Before",
 		"Decor":"Parc_Palais",
 		"PersoImg":"Garde_Uniforme",
 		"CustomPlacement":[200,220],
@@ -45,7 +45,7 @@
 	
 	
 	"RickeyLandPalais_SNEncounter_1": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_SNEncounter_1",
 		"Decor":"Parc_Palais",
 		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],
@@ -77,7 +77,7 @@
 	},
 	
 	"RickeyLandPalais_SNEncounter_3": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_SNEncounter_3",
 		"Decor":"Parc_Palais",
 		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],
@@ -151,7 +151,7 @@
 
 
 	"RickeyLandPalais_SNEncounter_OK_1": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_SNEncounter_OK_1",
 		"Decor":"Parc_Palais",
 		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],
@@ -167,7 +167,7 @@
 	},
 	
 	"RickeyLandPalais_SNEncounter_OK_2": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_SNEncounter_OK_2",
 		"Decor":"Parc_Palais",
 		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],
@@ -200,7 +200,7 @@
 	
 	
 	"RickeyLandPalais_SNEncounter_Battle_1": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_SNEncounter_Battle_1",
 		"Decor":"Parc_Palais",
 		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],
@@ -216,7 +216,7 @@
 	},
 
 	"RickeyLandPalais_SNEncounter_Battle_2": {
-		"Voix":None,
+		"Voix":"RickeyLandPalais_SNEncounter_Battle_2",
 		"Decor":"Parc_Palais",
 		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],

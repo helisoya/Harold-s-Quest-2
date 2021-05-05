@@ -9,7 +9,7 @@
 
 	
 	"RickeyLandWaldo_Done": {
-		"Voix":None,
+		"Voix":"RickeyLand_Generic_Done",
 		"Decor":"Parc_Quiz",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -25,7 +25,7 @@
 	},
 	
 	"RickeyLandWaldo_Waldo": {
-		"Voix":None,
+		"Voix":"RickeyLand_Generic_Attr",
 		"Decor":"Parc_Quiz",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -43,7 +43,7 @@
 	},
 	
 	"RickeyLandWaldo_Topic1_1": {
-		"Voix":None,
+		"Voix":"RickeyLandWaldo_Topic1_1",
 		"Decor":"Parc_Quiz",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -59,7 +59,7 @@
 	},
 	
 	"RickeyLandWaldo_Topic1_2": {
-		"Voix":None,
+		"Voix":"RickeyLandWaldo_Topic1_2",
 		"Decor":"Parc_Quiz",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -75,7 +75,7 @@
 	},
 	
 	"RickeyLandWaldo_Topic1_3": {
-		"Voix":None,
+		"Voix":"RickeyLandWaldo_Topic1_3",
 		"Decor":"Parc_Quiz",
 		"PersoImg":"Waldo_Fou",
 		"CustomPlacement":[200,220],
@@ -91,7 +91,7 @@
 	},
 	
 	"RickeyLandWaldo_Attr_1": {
-		"Voix":None,
+		"Voix":"RickeyLandWaldo_Attr_1",
 		"Decor":"Parc_Quiz",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
@@ -115,15 +115,30 @@
 		"Mus":"Parc_Var1",
 		"Perso":"Waldo",
 		"PersoCouleur":"forestgreen",
-		"Dialogue":"AJOUTER MINI JEU QUIZ DE WALDO",
+		"Dialogue":"",
 		"Choix":{
-			"Choix1":(">","RickeyLandWaldo_Attr_3"),
+		},
+		"Extra":["MiniGame_QW()"],
+	},
+	
+	"RickeyLandWaldo_Attr_Echec": {
+		"Voix":"RickeyLandWaldo_Attr_Echec",
+		"Decor":"Parc_Quiz",
+		"PersoImg":"Waldo_Fou",
+		"CustomPlacement":[200,220],
+		"UseSpeak":True,
+		"Mus":"Parc_Var1",
+		"Perso":"Waldo",
+		"PersoCouleur":"forestgreen",
+		"Dialogue":"Non c'est faux ! Tu t'es trompé !",
+		"Choix":{
+			"Choix1":(">","RickeyLandWaldo_Waldo"),
 		},
 		"Extra":[],
 	},
 	
 	"RickeyLandWaldo_Attr_3": {
-		"Voix":None,
+		"Voix":"RickeyLandWaldo_Attr_2",
 		"Decor":"Parc_Quiz",
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],

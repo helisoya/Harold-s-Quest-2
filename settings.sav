@@ -1,1 +1,1 @@
-{'TWESpeed': {'save': False, 'type': 'int', 'valeur': 75}, 'MusicVolume': {'save': False, 'type': 'float', 'valeur': 0.15}, 'VoiceVolume': {'save': False, 'type': 'float', 'valeur': 0.8}, 'SEVolume': {'save': False, 'type': 'float', 'valeur': 0.2}}
+{'TWESpeed': {'save': False, 'valeur': 75, 'type': 'int'}, 'MusicVolume': {'save': False, 'valeur': 0.1, 'type': 'float'}, 'VoiceVolume': {'save': False, 'valeur': 0.85, 'type': 'float'}, 'SEVolume': {'save': False, 'valeur': 0.2, 'type': 'float'}}

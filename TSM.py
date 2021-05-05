@@ -101,6 +101,7 @@ def MiniGame_TSM():
                     TableauSuivant("RickeyLandMarchand_Attr_3")
                     root.destroy()
                     EnableWindow() 
+                    return
                 else:
                     score = 0
                     remain = 5
