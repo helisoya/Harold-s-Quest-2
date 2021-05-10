@@ -253,7 +253,7 @@
 		"PersoImg":"SeigneurNoir",
 		"CustomPlacement":[200,220],
 		"UseSpeak":False,
-		"Mus":"Parc_Var1",
+		"Mus":"MiniGame",
 		"Perso":"",
 		"PersoCouleur":"black",
 		"Dialogue":"",

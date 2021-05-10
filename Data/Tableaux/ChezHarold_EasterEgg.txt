@@ -13,7 +13,7 @@
 		"Choix":{
 			"Choix1":(">","ChezHarold_ReveilEasterEgg_2"),
 		},
-		"Extra":[],
+		"Extra":["PlaySE('Porte')"],
 	},
 	
 	"ChezHarold_ReveilEasterEgg_2": {

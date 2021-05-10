@@ -5,6 +5,8 @@ from tkinter import *
 from Engine import *
 
 from COV import *
+from FH import *
+from VAB import *
 
 
 def CasWindow():
@@ -32,8 +34,10 @@ def CasWindow():
         can.tag_bind("b1","<Button-1>",lambda e=0: MiniGame_COV())
     if GetVar("cas_toque"):
         can.itemconfigure("b2",image=dic["fh"])
+        can.tag_bind("b2","<Button-1>",lambda e=0: MiniGame_FH())
     if GetVar("cas_casque"):
         can.itemconfigure("b3",image=dic["vab"])
+        can.tag_bind("b3","<Button-1>",lambda e=0: MiniGame_VAB())
 
 
     cas.mainloop()

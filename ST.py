@@ -75,12 +75,15 @@ def MiniGame_ST():
             temps = 20
         root.after(200-diff*50,MainLoop)
 
-
-    root.bind("<KeyPress-space>",Input)
-    root.bind("<KeyRelease-space>",Input)
-
-    Time()
-    MainLoop()
+    def Start():
+        can.delete("txt")
+        root.bind("<KeyPress-space>",Input)
+        root.bind("<KeyRelease-space>",Input)
+        Time()
+        MainLoop()
+    
+    can.create_text(200,150,text="Appuyez rapidement sur Espace !",fill="white",tags="txt")
+    root.after(2000,Start)
 
     root.mainloop()
 

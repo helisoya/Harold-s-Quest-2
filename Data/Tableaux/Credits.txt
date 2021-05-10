@@ -1,33 +1,33 @@
 {
 
 	"§_BadEnding_Credits": {
-		"Text":" Harold's Quest 2 \n Crée par Julien, Corentin et Mathis \n \n Jeu Principal : \n Julien \n \n Mini-Jeux : \n Julien \n Mathis \n Corentin \n \n Doublages : \n A AJOUTER \n \n \n \n Le héro de Vlatyr disparu une fois de plus. Après quelques mois de paix, des membres d'une secte inconnu lancèrent des assauts répétés sur les villes de la province. Après des mois de combats, le chaos régna une fois de plus et des rumeurs laissèrent dire que le héro de Vlatyr faisait partie du culte. ",
+		"Text":" Harold's Quest 2 \n Crée par Julien, Corentin et Mathis \n \n Jeu Principal : \n Julien \n \n Mini-Jeux : \n Julien \n Mathis \n Corentin \n \n Doublages : \n Harold : Julien \n Waldo : Julien \n Rickey : Kenny \n Gardes : Mathis \n Seigneur Noir : Mathis \n Cerf & Caribou : Julien \n Archer : Corentin \n Marchand : Edgar \n Chasseur : Romain \n \n \n \n Le héro de Vlatyr disparu une fois de plus. Après quelques mois de paix, des membres d'une secte inconnu lancèrent des assauts répétés sur les villes de la province. Après des mois de combats, le chaos régna une fois de plus et des rumeurs laissèrent dire que le héro de Vlatyr faisait partie du culte. ",
     	"Suite":"EndScreen_BadEnding",
-		"Mus":None,
+		"Mus":"Rickeyland_Anthem",
 	},
 	
 	"§_CerfGoodEnding_Credits": {
-		"Text":" Harold's Quest 2 \n Crée par Julien, Corentin et Mathis \n \n Jeu Principal : \n Julien \n \n Mini-Jeux : \n Julien \n Mathis \n Corentin \n \n Doublages : \n A AJOUTER \n \n \n \n Le héro de Vlatyr disparu une fois de plus. Il ne fut plus jamais revu, ainsi qu'Harold. Le culte des Invocateurs disparu mystérieusement lui aussi. La paix était enfin revenu pour toujours dans Vlatyr.",
+		"Text":" Harold's Quest 2 \n Crée par Julien, Corentin et Mathis \n \n Jeu Principal : \n Julien \n \n Mini-Jeux : \n Julien \n Mathis \n Corentin \n \n Doublages : \n Harold : Julien \n Waldo : Julien \n Rickey : Kenny \n Gardes : Mathis \n Seigneur Noir : Mathis \n Cerf & Caribou : Julien \n Archer : Corentin \n Marchand : Edgar \n Chasseur : Romain \n \n \n \n Le héro de Vlatyr disparu une fois de plus. Il ne fut plus jamais revu, ainsi qu'Harold. Le culte des Invocateurs disparu mystérieusement lui aussi. La paix était enfin revenu pour toujours dans Vlatyr.",
     	"Suite":"EndScreen_CerfGoodEnding",
-		"Mus":None,
+		"Mus":"Rickeyland_Anthem",
 	},
 	
 	"§_CerfBadEnding_Credits": {
-		"Text":" Harold's Quest 2 \n Crée par Julien, Corentin et Mathis \n \n Jeu Principal : \n Julien \n \n Mini-Jeux : \n Julien \n Mathis \n Corentin \n \n Doublages : \n A AJOUTER \n \n \n \n Le héro de Vlatyr disparu une fois de plus. Après quelques mois, des rumeurs affirmaient qu'il était devenu le chef du culte des Invocateurs, remplaçant l'ancien chef ayant disparu. Certains disent qu'il est possédé par un esprit maléfique.",
+		"Text":" Harold's Quest 2 \n Crée par Julien, Corentin et Mathis \n \n Jeu Principal : \n Julien \n \n Mini-Jeux : \n Julien \n Mathis \n Corentin \n \n Doublages : \n Harold : Julien \n Waldo : Julien \n Rickey : Kenny \n Gardes : Mathis \n Seigneur Noir : Mathis \n Cerf & Caribou : Julien \n Archer : Corentin \n Marchand : Edgar \n Chasseur : Romain \n \n \n \n Le héro de Vlatyr disparu une fois de plus. Après quelques mois, des rumeurs affirmaient qu'il était devenu le chef du culte des Invocateurs, remplaçant l'ancien chef ayant disparu. Certains disent qu'il est possédé par un esprit maléfique.",
     	"Suite":"EndScreen_CerfBadEnding",
-		"Mus":None,
+		"Mus":"Rickeyland_Anthem",
 	},
 	
 	"§_HaroldGoodEnding_Credits": {
-		"Text":" Harold's Quest 2 \n Crée par Julien, Corentin et Mathis \n \n Jeu Principal : \n Julien \n \n Mini-Jeux : \n Julien \n Mathis \n Corentin \n \n Doublages : \n A AJOUTER \n \n \n \n Le héro de Vlatyr disparu une fois de plus. Certains racontent qu'il voyageait dans le monde entier à la recherche de magiciens assez puissants pour pouvoir le renvoyer chez lui. La paix était revenu et le culte des Invocateurs avait cessé d'être.",
+		"Text":" Harold's Quest 2 \n Crée par Julien, Corentin et Mathis \n \n Jeu Principal : \n Julien \n \n Mini-Jeux : \n Julien \n Mathis \n Corentin \n \n Doublages : \n Harold : Julien \n Waldo : Julien \n Rickey : Kenny \n Gardes : Mathis \n Seigneur Noir : Mathis \n Cerf & Caribou : Julien \n Archer : Corentin \n Marchand : Edgar \n Chasseur : Romain \n \n \n \n Le héro de Vlatyr disparu une fois de plus. Certains racontent qu'il voyageait dans le monde entier à la recherche de magiciens assez puissants pour pouvoir le renvoyer chez lui. La paix était revenu et le culte des Invocateurs avait cessé d'être.",
     	"Suite":"EndScreen_HaroldGoodEnding",
-		"Mus":None,
+		"Mus":"Rickeyland_Anthem",
 	},
 	
 	"§_HaroldBadEnding_Credits": {
-		"Text":" Harold's Quest 2 \n Crée par Julien, Corentin et Mathis \n \n Jeu Principal : \n Julien \n \n Mini-Jeux : \n Julien \n Mathis \n Corentin \n \n Doublages : \n A AJOUTER \n \n \n \n Le héro de Vlatyr disparu une fois de plus. Une explosion énorme fut entendu proche de la région de Runan, dans l'Ouest Koskyien. Les culte des Invocateurs disparu mystérieusement lui aussi, la paix était donc revenu.",
+		"Text":" Harold's Quest 2 \n Crée par Julien, Corentin et Mathis \n \n Jeu Principal : \n Julien \n \n Mini-Jeux : \n Julien \n Mathis \n Corentin \n \n Doublages : \n Harold : Julien \n Waldo : Julien \n Rickey : Kenny \n Gardes : Mathis \n Seigneur Noir : Mathis \n Cerf & Caribou : Julien \n Archer : Corentin \n Marchand : Edgar \n Chasseur : Romain \n \n \n \n Le héro de Vlatyr disparu une fois de plus. Une explosion énorme fut entendu proche de la région de Runan, dans l'Ouest Koskyien. Les culte des Invocateurs disparu mystérieusement lui aussi, la paix était donc revenu.",
     	"Suite":"EndScreen_HaroldBadEnding",
-		"Mus":None,
+		"Mus":"Rickeyland_Anthem",
 	},
 	
 }

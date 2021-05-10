@@ -102,7 +102,7 @@
 		"Choix":{
 			"Choix1":(">","TourNoir_PartB_Sheperd_3"),
 		},
-		"Extra":[""],
+		"Extra":[],
 	},
 	
 	"TourNoir_PartB_Sheperd_3": {
@@ -159,7 +159,7 @@
 		"PersoImg":"Sheperd",
 		"CustomPlacement":[200,226],
 		"UseSpeak":False,
-		"Mus":None,
+		"Mus":"MiniGame",
 		"Perso":"",
 		"PersoCouleur":"green",
 		"Dialogue":"",

@@ -18,7 +18,7 @@ colors = {
 data = []
 input = 0
 
-nb = 5*diff
+nb = 10
 
 def MiniGame_T():
     global currBloc,diff,data,colors,input,nb
@@ -32,7 +32,7 @@ def MiniGame_T():
     }
     data = []
     input = 0
-    nb = 5*diff  
+    nb = 10 
     
     DisableWindow()
     
@@ -120,7 +120,7 @@ def MiniGame_T():
                 data[i].append(0)
 
         currBloc = []
-        nb = 5*diff
+        nb = 10
         input = 0
         
     def DestroyRow(row,i):
@@ -174,22 +174,25 @@ def MiniGame_T():
             Update()
 
         root.after(550-50*diff,MainLoop)
-
-    Apparition(choice([
-        [ [0,0],[1,0],[2,0] ], # |
-        [ [0,0],[0,1],[0,2] ], # -
-        [ [0,0],[0,1],[0,2],[1,1] ], # T
-        [ [0,1],[1,0],[1,1],[1,2] ], # T enverse
-        [ [0,0],[1,0],[1,1] ], # L
-        [ [1,0],[1,1],[0,1] ], # L envers
-        ]))
-
-    Update()
-
-    root.bind("<Left>",GetInput)
-    root.bind("<Right>",GetInput)
-
-    MainLoop()
+        
+    def Start():
+        can.delete("txt")
+        
+        Apparition(choice([
+            [ [0,0],[1,0],[2,0] ], # |
+            [ [0,0],[0,1],[0,2] ], # -
+            [ [0,0],[0,1],[0,2],[1,1] ], # T
+            [ [0,1],[1,0],[1,1],[1,2] ], # T enverse
+            [ [0,0],[1,0],[1,1] ], # L
+            [ [1,0],[1,1],[0,1] ], # L envers
+            ]))
+        Update()
+        root.bind("<Left>",GetInput)
+        root.bind("<Right>",GetInput)
+        MainLoop()
+        
+    can.create_text(6*40/2,10*40+50/2,text="Flèches pour déplacer les blocs",tags="txt")
+    root.after(2000,Start)
 
     root.mainloop()
 

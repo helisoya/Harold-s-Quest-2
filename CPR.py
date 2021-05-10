@@ -104,11 +104,18 @@ def MiniGame_CPR():
         root.after(10,Check)
         
 
-    can.tag_bind("t1","<Button-1>",Choice)
-    can.tag_bind("t2","<Button-1>",Choice)
-    can.tag_bind("t3","<Button-1>",Choice)
-    UpdateBg()
-    Check()
-    root.after(2000,EnableChoice)
+    
+    def Start():
+        can.delete("txt")
+        can.tag_bind("t1","<Button-1>",Choice)
+        can.tag_bind("t2","<Button-1>",Choice)
+        can.tag_bind("t3","<Button-1>",Choice)
+        UpdateBg()
+        Check()
+        root.after(2000,EnableChoice)
+    
+    
+    can.create_text(200,150,text="Choisissez le bon chemin !",tags="txt")
+    root.after(2000,Start)
 
     root.mainloop()

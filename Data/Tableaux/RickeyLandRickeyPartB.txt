@@ -237,7 +237,7 @@
 		"PersoImg":"Rickey",
 		"CustomPlacement":[200,220],
 		"UseSpeak":False,
-		"Mus":None,
+		"Mus":"MiniGame",
 		"Perso":"",
 		"PersoCouleur":"coral",
 		"Dialogue":"",

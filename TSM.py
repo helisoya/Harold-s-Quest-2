@@ -107,12 +107,17 @@ def MiniGame_TSM():
                     remain = 5
                     can.itemconfigure("remain",text="Restant : "+str(remain))
                     can.itemconfigure("score",text="Score : "+str(score))
+                    
+                    
+    def Start():
+        root.bind("<Button-1>",Tir)
+        MoveMarchand()
+        can.delete("txt")
 
 
+    can.create_text(200,150,text="Cliquez pour tirer ! \n Ne touchez pas le Marchand !",tags="txt")
+    root.after(2000,Start)
 
 
-    root.bind("<Button-1>",Tir)
-
-    MoveMarchand()
 
     root.mainloop()

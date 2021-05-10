@@ -142,7 +142,7 @@
 		"Choix":{
 			"Choix1":(">","IntroChasseur_10"),
 		},
-		"Extra":[],
+		"Extra":["PlaySE('Pistolet_Degainage')"],
 	},
 	
 	"IntroChasseur_10": {
@@ -215,7 +215,7 @@
 		"PersoImg":None,
 		"CustomPlacement":None,
 		"UseSpeak":True,
-		"Mus":None,
+		"Mus":"MiniGame",
 		"Perso":"",
 		"PersoCouleur":"brown",
 		"Dialogue":"",

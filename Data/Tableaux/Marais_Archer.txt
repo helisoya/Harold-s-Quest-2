@@ -32,7 +32,7 @@
 
 	
 	"Marais_Archer_Normal": {
-		"Voix":None,
+		"Voix":"Marais_Archer",
 		"Decor":"Marais",
 		"PersoImg":"Archer",
 		"CustomPlacement":None,
@@ -50,7 +50,7 @@
 	},
 	
 	"Marais_Archer_Talked": {
-		"Voix":None,
+		"Voix":"Marais_Archer",
 		"Decor":"Marais",
 		"PersoImg":"Archer",
 		"CustomPlacement":None,
@@ -68,7 +68,7 @@
 	
 	
 	"Marais_Archer_Topic1_1": {
-		"Voix":None,
+		"Voix":"Marais_Archer_Topic1_1",
 		"Decor":"Marais",
 		"PersoImg":"Archer",
 		"CustomPlacement":None,
@@ -84,7 +84,7 @@
 	},
 	
 	"Marais_Archer_Topic1_2": {
-		"Voix":None,
+		"Voix":"Marais_Archer_Topic1_2",
 		"Decor":"Marais",
 		"PersoImg":"Archer",
 		"CustomPlacement":None,
@@ -100,7 +100,7 @@
 	},
 	
 	"Marais_Archer_Topic1_3": {
-		"Voix":None,
+		"Voix":"Marais_Archer_Topic1_3",
 		"Decor":"Marais",
 		"PersoImg":"Archer",
 		"CustomPlacement":None,
@@ -117,7 +117,7 @@
 	
 	
 	"Marais_Archer_Topic2_1": {
-		"Voix":None,
+		"Voix":"Marais_Archer_Topic2_1",
 		"Decor":"Marais",
 		"PersoImg":"Archer",
 		"CustomPlacement":None,
@@ -133,7 +133,7 @@
 	},
 	
 	"Marais_Archer_Topic2_2": {
-		"Voix":None,
+		"Voix":"Marais_Archer_Topic2_2",
 		"Decor":"Marais",
 		"PersoImg":"Archer",
 		"CustomPlacement":None,
@@ -149,7 +149,7 @@
 	},
 	
 	"Marais_Archer_Topic2_3": {
-		"Voix":None,
+		"Voix":"Marais_Archer_Topic2_3",
 		"Decor":"Marais",
 		"PersoImg":"Archer",
 		"CustomPlacement":None,
@@ -165,7 +165,7 @@
 	},
 	
 	"Marais_Archer_Topic2_4": {
-		"Voix":None,
+		"Voix":"Marais_Archer_Topic2_4",
 		"Decor":"Marais",
 		"PersoImg":"Archer",
 		"CustomPlacement":None,
@@ -182,7 +182,7 @@
 	},
 	
 	"Marais_Archer_Topic2_5a": {
-		"Voix":None,
+		"Voix":"Marais_Archer_Topic2_5a",
 		"Decor":"Marais",
 		"PersoImg":"Archer",
 		"CustomPlacement":None,
@@ -198,7 +198,7 @@
 	},
 
 	"Marais_Archer_Topic2_5b": {
-		"Voix":None,
+		"Voix":"Marais_Archer_Topic2_5b",
 		"Decor":"Marais",
 		"PersoImg":"Archer",
 		"CustomPlacement":None,
@@ -214,7 +214,7 @@
 	},	
 	
 	"Marais_Archer_Topic2_6": {
-		"Voix":None,
+		"Voix":"Marais_Archer_Topic2_6",
 		"Decor":"Marais",
 		"PersoImg":"Archer",
 		"CustomPlacement":None,

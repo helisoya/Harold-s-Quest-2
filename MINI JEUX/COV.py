@@ -54,7 +54,7 @@ def Click(event):
     click_x = event.x
     click_y = event.y
     root.after(10,Reset_Click)
-    
+
 def Reset_Click():
     global click_x,click_y
     click_x = -50
@@ -89,9 +89,10 @@ def MainLoop():
         del vautours[:]
         vautours = []
         end = False
+        score = 0
         can.create_text(750/2,250,text="Perdu !",fill="white",tags="v")
         root.after(2000,MainLoop)
-    
+
 
 root.bind("<Button-1>",Click)
 MainLoop()

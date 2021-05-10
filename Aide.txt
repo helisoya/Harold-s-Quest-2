@@ -1,0 +1,15 @@
+Bonjour,
+
+Ceci est une aide pour mieux comprendre le fonctionnement du jeu.
+
+Il se lance soit avec Game.py, soit avec Launcher.exe.
+Après avoir chargé les différents composants du jeu (sons/images...), il va proposer un choix :
+On a le choix entre faire un démarage rapide ou non, le démarage rapide permet de sauter les différents menus et secrets du départ (pour aller plus vite).
+
+Le fichier Engine.py représente le moteur du jeu, réalisés à la main sans recopiages sur internet.
+Grâce à lui, le jeu lui-même peut se créer sans code. Le moteur n'utilise pygames que pour pour le son, sinon c'est tkinter qui est utilisé.
+Le jeu en lui-même n'est qu'abstrait, les fichiers déterminant ce qui sera affiché dans le jeu sont présent dans le dossier Data/Tableaux.
+
+Le fichier Game.py ne représente que le menu principal, dès que la fonction TableauSuivant() est utilisé, c'est le moteur qui prend le relai grâce aux fichiers du jeu.
+Il est compliqué d'expliquer en détail comment le moteur fonctionne, mais il faut se rappeler qu'il effectue automatiquement les affichages.
+

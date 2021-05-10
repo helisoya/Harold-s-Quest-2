@@ -112,7 +112,7 @@
 		"PersoImg":"Waldo",
 		"CustomPlacement":[200,220],
 		"UseSpeak":False,
-		"Mus":"Parc_Var1",
+		"Mus":"MiniGame",
 		"Perso":"Waldo",
 		"PersoCouleur":"forestgreen",
 		"Dialogue":"",

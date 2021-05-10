@@ -239,7 +239,7 @@
 		"Choix":{
 			"Choix1":(">","ChezHarold_End_16"),
 		},
-		"Extra":[],
+		"Extra":["PlaySE('Pistolet_Degainage')"],
 	},
 	
 	"ChezHarold_End_16": {
@@ -255,7 +255,7 @@
 		"Choix":{
 			"Choix1":(">","?_EndGame"),
 		},
-		"Extra":[],
+		"Extra":["PlaySE('Pistolet')"],
 	},
 
 }

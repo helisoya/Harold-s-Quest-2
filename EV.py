@@ -151,10 +151,13 @@ def MiniGame_EV():
            return
         loop = fenetre.after(15,MainLoop)
 
+    def Start():
+        canvas.delete("txt")
+        MainLoop()
 
+    canvas.create_text(480/2,450/2,text="Flèches pour se déplacer",fill="white",tags="txt")
+    fenetre.after(2000,Start)
+    
 
-
-
-    MainLoop()
 
     fenetre.mainloop()

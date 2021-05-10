@@ -221,10 +221,15 @@ def MiniGame_CDC():
             return
         else:
             root.after(15,MainLoop)
-
-    root.bind("<KeyPress>",perso.KeyPress)
-    root.bind("<KeyRelease>",perso.KeyRelease)
+            
+    def Start():
+        can.delete("txt")
+        root.bind("<KeyPress>",perso.KeyPress)
+        root.bind("<KeyRelease>",perso.KeyRelease)  
+        MainLoop()
         
-    MainLoop()
+    can.create_text(200,150,text="Utilisez les flèches pour vous déplacer !",tags="txt")
+    root.after(2000,Start)
+        
     root.mainloop()
 

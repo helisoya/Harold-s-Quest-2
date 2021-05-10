@@ -8,7 +8,7 @@ from Engine import *
 diff = 3
 temps=20*diff
 pos1 = 805/2
-pos2 = -805/2
+pos2 = -800/2
 xperso=360
 yperso=255
 xchasseur=360
@@ -70,7 +70,7 @@ def MiniGame_CPC():
     def MoveBalle(x,y,z):
         global photo2
         global p
-        global temps
+        global temps,hp
 
         dessin.delete(z)
         if p==1:
@@ -85,8 +85,12 @@ def MiniGame_CPC():
 
         for elem in w:
             if elem == "joueur":
-                temps=20*diff
-                legende.configure(text="Perdu !")
+                hp-=1
+                if hp == 0:
+                    temps=20*diff
+                    hp = 6-diff
+                    legende.configure(text="Perdu !")
+                dessin.itemconfigure("hp",text="HP : "+str(hp))
                 return
 
         if y>0:
@@ -184,7 +188,7 @@ def MiniGame_CPC():
 
     dessin.create_image(720/2,pos1,image=bg,tags="plaine1")
     dessin.create_image(720/2,pos2,image=bg,tags="plaine2")
-    dessin.create_text(20,20,text="HP : "+str(hp),tags="hp")
+    dessin.create_text(20,20,text="HP : "+str(hp),fill="white",tags="hp")
 
     def UpdateScrollDownGrass():
         global pos1,pos2
@@ -218,12 +222,17 @@ def MiniGame_CPC():
 
     dessin.create_image(xchasseur, ychasseur, image=photo3,tags="chasseur")
 
+    def Start():
+        dessin.delete("txt")
+        root.bind("<Left>", gauche)
+        root.bind("<Right>", droite)
 
-    root.bind("<Left>", gauche)
-    root.bind("<Right>", droite)
-
-    UpdateScrollDownGrass()
-    TirreBalle()
-    appbarrière()
-    timer()
+        UpdateScrollDownGrass()
+        TirreBalle()
+        appbarrière()
+        timer()
+    
+    dessin.create_text(805/2,720/2,text="Flèches pour se déplacer",fill="white",tags="txt")
+    root.after(2000,Start)
+    
     root.mainloop()

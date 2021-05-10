@@ -112,7 +112,7 @@
 		"PersoImg":None,
 		"CustomPlacement":None,
 		"UseSpeak":False,
-		"Mus":"Parc_Var1",
+		"Mus":"MiniGame",
 		"Perso":"Marchand",
 		"PersoCouleur":"steelblue",
 		"Dialogue":"",
