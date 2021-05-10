@@ -281,7 +281,8 @@ def Cutscene_IntroA():
         curr = 0
         fenetre.after(1000,ChooseMenu)
 
-skip = messagebox.askyesno("HQ2","Demarage rapide ?")
+#skip = messagebox.askyesno("HQ2","Demarage rapide ?")
+skip = False
 
 if skip: #Skip (DEBUG)
     AfficheDefaultMenu()

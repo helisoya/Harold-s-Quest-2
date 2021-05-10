@@ -9,7 +9,7 @@
 
 	
 	"RickeyLandMarchand_Done": {
-		"Voix":None,
+		"Voix":"RickeyLandMarchand_Done",
 		"Decor":"Parc_Marchand",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -25,7 +25,7 @@
 	},
 	
 	"RickeyLandMarchand_Marchand": {
-		"Voix":None,
+		"Voix":"RickeyLandMarchand_Marchand",
 		"Decor":"Parc_Marchand",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -43,7 +43,7 @@
 	},
 	
 	"RickeyLandMarchand_Topic1_1": {
-		"Voix":None,
+		"Voix":"RickeyLandMarchand_Topic1_1",
 		"Decor":"Parc_Marchand",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -59,7 +59,7 @@
 	},
 	
 	"RickeyLandMarchand_Topic1_2": {
-		"Voix":None,
+		"Voix":"RickeyLandMarchand_Topic1_2",
 		"Decor":"Parc_Marchand",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -75,7 +75,7 @@
 	},
 	
 	"RickeyLandMarchand_Topic1_3": {
-		"Voix":None,
+		"Voix":"RickeyLandMarchand_Topic1_3",
 		"Decor":"Parc_Marchand",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -91,7 +91,7 @@
 	},
 	
 	"RickeyLandMarchand_Attr_1": {
-		"Voix":None,
+		"Voix":"RickeyLandMarchand_Attr_1",
 		"Decor":"Parc_Marchand",
 		"PersoImg":None,
 		"CustomPlacement":None,
@@ -122,7 +122,7 @@
 	},
 	
 	"RickeyLandMarchand_Attr_3": {
-		"Voix":None,
+		"Voix":"RickeyLandMarchand_Attr_3",
 		"Decor":"Parc_Marchand",
 		"PersoImg":None,
 		"CustomPlacement":None,

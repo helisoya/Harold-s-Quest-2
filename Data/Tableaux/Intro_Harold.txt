@@ -458,7 +458,7 @@
 	},
 	
 	"IntroHarold_28": {
-		"Voix":None,
+		"Voix":"IntroHarold_28",
 		"Decor":"Parc_Marchand",
 		"PersoImg":None,
 		"CustomPlacement":[200,220],
